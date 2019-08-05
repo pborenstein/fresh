@@ -1,6 +1,7 @@
 ---
 date: 2018-01-01
 title: Stylesheet
+layout: layouts/base.njk
 ---
 
 # Heading 1
