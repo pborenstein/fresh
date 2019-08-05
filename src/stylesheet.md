@@ -5,6 +5,10 @@ title: Stylesheet
 
 # Heading 1
 
+Title: {{title}}
+
+date: {{date}}
+
 Nostra gravida felis suspendisse lectus netus
 adipiscing, erat cubilia elementum nibh senectus,
 nostra eros lectus tempor aenean senectus rutrum congue
