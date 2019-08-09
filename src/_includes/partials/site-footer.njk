@@ -1,0 +1,60 @@
+<style>
+footer {
+  grid-area: foot;
+  font-size: 1rem;
+  color: var(--color-gray);
+  font-family: var(--font-footer);
+  font-size: 0.6rem;
+  margin: 0 0 1rem 0;
+  border-top: 1px solid var(--color-darkred);
+  padding-top: 0.5em;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between ;
+}
+
+.footer-text {
+  line-height: 1.4em;
+  vertical-align: top;
+  margin: 0
+}
+
+.footer-item {
+	display: inline-block;
+}
+
+#sha a,
+#sha a:hover
+{
+  text-decoration: none;
+  color: var(--color-gray);
+}
+
+
+</style>
+
+
+<ul>
+  <li>
+    <p class="footer-text" style="color: var(--body)">
+    Copyright &copy; 2019 Philip Borenstein</p>
+            <p class="footer-text" style="color: var(--body)">
+    Made with <a href="https://www.11ty.io/">11y</a>  and <span>🔥</span>  in Manchester, USA
+    </p>
+  </li>
+  <li>
+    <p class="footer-text" id="sha">
+    <a href="https://github.com/pborenstein/pborenstein.com/blob/master{{ page.inputPath.slice(1) }}">
+    {%- if git.curbranch != 'HEAD' -%}
+      {{- git.curbranch-}}@
+    {%- endif -%}
+    {{- git.commitsha -}}
+    </a>
+    </p>
+  </li>
+</ul>

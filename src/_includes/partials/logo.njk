@@ -1,0 +1,44 @@
+<style>
+#logo {
+  clear: both;
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+  padding: 0 0em 0.1em 0em;
+  font-size: 4rem;
+  line-height: 5rem;
+  margin-bottom: 0rem;
+  font-weight: 700;
+  --tt-key: logo;
+}
+@keyframes logo {
+  0%, 25% {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+
+
+span.slug {
+  color: var(--color-red);
+}
+
+#logo a[href] {
+  text-decoration: none;
+  color: inherit;
+}
+
+#logo a[href]:hover {
+  text-decoration: none;
+  color: var(--color-red);
+}
+#logo a[href]:hover .slug{
+  text-decoration: none;
+  color: var(--color-heading);
+}
+
+</style>
+
+<div id="logo">
+  <a href="/"><span class="slug">pborenstein</span>.com</a>
+</div>
