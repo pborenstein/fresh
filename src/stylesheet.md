@@ -6,8 +6,7 @@ layout: layouts/page.njk
 
 # Heading 1
 
-Title: {{title}}
-
+Title: {{title}}<br>
 date: {{date}}
 
 Nostra gravida felis suspendisse lectus netus
@@ -33,6 +32,78 @@ misheard selfishly greyhound wherever rat darn
 accurately far wherever conductive toucan komodo
 dalmatian much dove methodically gosh far near and
 objective sold more misheard dear hello.
+
+<p style="font-weight: 100">
+Taped mammoth adroit woefully aboard much beaver ouch
+misheard selfishly greyhound wherever rat darn
+domestic without credibly said yikes this passably when
+much next much jeepers iguanodon this thus giraffe
+hence mannish much less wailed hamster steadfastly 100
+</p>
+
+<p style="font-weight: 200">
+Taped mammoth adroit woefully aboard much beaver ouch
+misheard selfishly greyhound wherever rat darn
+domestic without credibly said yikes this passably when
+much next much jeepers iguanodon this thus giraffe
+hence mannish much less wailed hamster steadfastly 200
+</p>
+
+<p style="font-weight: 300">
+Taped mammoth adroit woefully aboard much beaver ouch
+misheard selfishly greyhound wherever rat darn
+domestic without credibly said yikes this passably when
+much next much jeepers iguanodon this thus giraffe
+hence mannish much less wailed hamster steadfastly 300
+</p>
+
+<p style="font-weight: 400">
+Taped mammoth adroit woefully aboard much beaver ouch
+misheard selfishly greyhound wherever rat darn
+domestic without credibly said yikes this passably when
+much next much jeepers iguanodon this thus giraffe
+hence mannish much less wailed hamster steadfastly 400
+</p>
+
+<p style="font-weight: 500">
+Taped mammoth adroit woefully aboard much beaver ouch
+misheard selfishly greyhound wherever rat darn
+domestic without credibly said yikes this passably when
+much next much jeepers iguanodon this thus giraffe
+hence mannish much less wailed hamster steadfastly 500
+</p>
+
+<p style="font-weight: 600">
+Taped mammoth adroit woefully aboard much beaver ouch
+misheard selfishly greyhound wherever rat darn
+domestic without credibly said yikes this passably when
+much next much jeepers iguanodon this thus giraffe
+hence mannish much less wailed hamster steadfastly 600
+</p>
+
+<p style="font-weight: 700">
+Taped mammoth adroit woefully aboard much beaver ouch
+misheard selfishly greyhound wherever rat darn
+domestic without credibly said yikes this passably when
+much next much jeepers iguanodon this thus giraffe
+hence mannish much less wailed hamster steadfastly 700
+</p>
+
+<p style="font-weight: 800">
+Taped mammoth adroit woefully aboard much beaver ouch
+misheard selfishly greyhound wherever rat darn
+domestic without credibly said yikes this passably when
+much next much jeepers iguanodon this thus giraffe
+hence mannish much less wailed hamster steadfastly 800
+</p>
+
+<p style="font-weight: 900">
+Taped mammoth adroit woefully aboard much beaver ouch
+misheard selfishly greyhound wherever rat darn
+domestic without credibly said yikes this passably when
+much next much jeepers iguanodon this thus giraffe
+hence mannish much less wailed hamster steadfastly 900
+</p>
 
 > Or classically a far some grizzly rode however jeepers
 > along mounted fishy bet owing versus leapt because

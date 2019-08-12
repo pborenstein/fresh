@@ -13,6 +13,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0-beta.1"
+    "@11ty/eleventy": "^0.8.3"
   }
 }
