@@ -47,7 +47,7 @@ footer ul {
   </li>
   <li>
     <p class="footer-text" id="sha">
-    <a href="https://github.com/pborenstein/pborenstein.com/blob/master{{ page.inputPath.slice(1) }}">
+    <a href="https://github.com/pborenstein/{{git.repo}}/blob/master{{ page.inputPath.slice(1) }}">
     {%- if git.curbranch != 'HEAD' -%}
       {{- git.curbranch-}}@
     {%- endif -%}
