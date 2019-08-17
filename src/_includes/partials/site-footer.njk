@@ -40,9 +40,9 @@ footer ul {
 <ul>
   <li>
     <p class="footer-text" style="color: var(--body)">
-    Copyright &copy; 2019 Philip Borenstein</p>
+    Copyright &copy; 2019 {{ site.authorName }}</p>
             <p class="footer-text" style="color: var(--body)">
-    Made with <a href="https://www.11ty.io/">11y</a>  and <span>🔥</span>  in Manchester, USA
+    {{ site.madeLine | safe }}
     </p>
   </li>
   <li>

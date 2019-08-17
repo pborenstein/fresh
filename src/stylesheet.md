@@ -7,7 +7,8 @@ layout: layouts/page.njk
 # Heading 1
 
 Title: {{title}}<br>
-date: {{date}}
+date | w3DateFilter: {{date | w3DateFilter }}<br>
+date | dateFilter: {{date | dateFilter }}
 
 Nostra gravida felis suspendisse lectus netus
 adipiscing, erat cubilia elementum nibh senectus,
