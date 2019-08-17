@@ -13,7 +13,7 @@
   --color-shadow:       3px 3px 4px 0px rgba(0, 0, 0, 0.19);
                         /* offset-x | offset-y | blur-radius | spread-radius | color */
 
-  --font-body:          'neue-kabel',  Georgia, serif;
+  --font-body:          'neue-kabel', "Helvetica Neue", 'Gill Sans', Georgia, serif;
   --font-caption:       'Cochin', 'Times', serif;
   --font-code-size:     .875em;
   --font-code:          Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
@@ -50,9 +50,10 @@ body {
     word-wrap: break-word;
     color: var(--color-body);
     background-color: var(--color-white);
-    font-variant-numeric: oldstyle-nums;
+/* 
     -moz-font-feature-settings: var(--font-features);
     -webkit-font-feature-settings: var(--font-features);
+ */
     font-feature-settings: var(--font-features);
     --tt-key: body;
     font-size: 1rem;
