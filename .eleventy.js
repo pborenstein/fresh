@@ -1,15 +1,11 @@
-// Import filters
-const dateFilter = require('./src/filters/date-filter.js');
-const w3DateFilter = require('./src/filters/w3-date-filter.js');
-
 
 module.exports = function(eleventyConfig) {
 
-  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/css")
 
   // Filters
-  eleventyConfig.addFilter('dateFilter', dateFilter);
-  eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
+  eleventyConfig.addFilter('dateFilter',   require('./src/filters/date-filter.js'))
+  eleventyConfig.addFilter('w3DateFilter', require('./src/filters/w3-date-filter.js'))
 
   return {
     dir: {
