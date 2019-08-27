@@ -140,6 +140,15 @@ enthusiastically more alas when close unceremoniously
 hey well tragic while far far ouch unthinkingly one
 vibrant far much ouch.
 
+```mermaid
+graph TD;
+    A(Start)-->B;
+    A-->C;
+    B-->D[End];
+    C-.->D;
+```
+
+
 <details>
 <summary>Folding text</summary>
 Tempus rutrum taciti mollis diam dapibus ligula, sit
