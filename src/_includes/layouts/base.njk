@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.typekit.net/ztn6rcs.css">
-  <link rel="stylesheet" href="/css/root.css">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  {%- if config.mermaid %}
   <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
   <script>mermaid.initialize({ startOnLoad: true });</script>
+  {% endif -%}
 </head>
-<body>
+<body class="wrapper">
   <header>
     {% block header %}
       {% include "partials/logo.njk" %}

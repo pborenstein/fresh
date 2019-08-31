@@ -44,12 +44,7 @@ body {
     word-wrap: break-word;
     color: var(--color-body);
     background-color: var(--color-white);
-/* 
-    -moz-font-feature-settings: var(--font-features);
-    -webkit-font-feature-settings: var(--font-features);
- */
     font-feature-settings: var(--font-features);
-    --tt-key: body;
     font-size: 1rem;
     line-height: 1.4;
 }
@@ -72,13 +67,3 @@ a[href].direct-link:focus:visited,
 	color: #aaa;
 }
 
-/* --- headings --- */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading);
-}
