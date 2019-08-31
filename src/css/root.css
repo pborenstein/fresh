@@ -60,3 +60,20 @@ body {
     line-height: 1.4;
 }
 
+/* links to markdown header with disappearing # */
+.direct-link {
+	font-family: var(--font-heading);
+	text-decoration: none;
+	font-style: normal;
+	margin-left: .1em;
+}
+a[href].direct-link,
+a[href].direct-link:visited {
+	color: transparent;
+}
+a[href].direct-link:focus,
+a[href].direct-link:focus:visited,
+:hover > a[href].direct-link,
+:hover > a[href].direct-link:visited {
+	color: #aaa;
+}
