@@ -148,14 +148,12 @@ graph TD;
     C-.->D;
 ```
 
-
 <details>
 <summary>Folding text</summary>
 Tempus rutrum taciti mollis diam dapibus ligula, sit
 malesuada feugiat aptent donec, curabitur habitasse
 nisl consectetur porta semper augue mollis quam hac
 dictumst tellus lobortis etiam habitant ac.
-
 
 </details>
 
