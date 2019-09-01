@@ -13,20 +13,14 @@
   --color-shadow:       3px 3px 4px 0px rgba(0, 0, 0, 0.19);
                         /* offset-x | offset-y | blur-radius | spread-radius | color */
 
-  --font-body:          'neue-kabel', "Helvetica Neue", 'Gill Sans', Georgia, serif;
+  --font-body:          Georgia, serif;
   --font-caption:       'Cochin', 'Times', serif;
   --font-code-size:     .875em;
   --font-code:          Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
-  --font-footer:        'neue-kabel', 'Gill Sans', "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
-  --font-heading:       'neue-kabel', 'Gill Sans', "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
-  --font-list:          'neue-kabel', 'Gill Sans', "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
-  --font-features:      "onum",   /*  onum:   Old style numbers */
-                        "ss04",   /*  ss04:   Overlapping W   */
-                        "ss06",   /*  ss06:   happy e */
-                        "ss08",   /*  ss08:   diamond I dots */
-                        "ss11",   /*  ss11:   round a */
-                        "xs14";   /*  ss14:   tail l */
-                                /* https://www.myfonts.com/fonts/linotype/neue-kabel/regular/glyphs.html */
+  --font-footer:        "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+  --font-heading:       "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+  --font-list:          "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+  --font-features:      "xnum"   /*  onum:   Old style numbers */
 }
 
 html {
@@ -41,22 +35,29 @@ html {
 }
 
 body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; /* WTFF: https://stackoverflow.com/questions/26352852/fonts-are-displaying-different-in-chrome-firefox */
     font-family: var(--font-body);
     font-weight:  400;
-    margin: 0 20px;
-    padding: 0;
-    word-wrap: break-word;
     color: var(--color-body);
     background-color: var(--color-white);
-/* 
-    -moz-font-feature-settings: var(--font-features);
-    -webkit-font-feature-settings: var(--font-features);
- */
-    font-feature-settings: var(--font-features);
-    --tt-key: body;
     font-size: 1rem;
     line-height: 1.4;
+}
+
+/* links to markdown header with disappearing # */
+.direct-link {
+	font-family: var(--font-heading);
+	text-decoration: none;
+	font-style: normal;
+	margin-left: .1em;
+}
+a[href].direct-link,
+a[href].direct-link:visited {
+	color: transparent;
+}
+a[href].direct-link:focus,
+a[href].direct-link:focus:visited,
+:hover > a[href].direct-link,
+:hover > a[href].direct-link:visited {
+	color: #aaa;
 }
 

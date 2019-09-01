@@ -4,7 +4,7 @@
 
 {% block kontent %}
   <article>
-    <h1>{{title}}</h1>
+    {% include "partials/common-title.njk" %}
     <hr>
     {{ content | safe }}
   </article>
