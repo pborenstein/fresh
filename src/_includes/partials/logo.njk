@@ -1,22 +1,14 @@
 <style>
 #logo {
+  width: 100%;
   clear: both;
   padding: 0 0em 0.1em 0em;
   margin-bottom: 0rem;
   color: var(--color-heading);
   font-family: var(--font-heading);
-}
-
-#logo {
-  {% if pagetype == "page" %}
     font-size: 4rem;
     line-height: 5rem;
     font-weight: 700;
-  {% else %}
-    font-size: 2rem;
-    line-height: 2rem;
-    font-weight: 100;
-  {% endif %}
 }
 
 span.slug {
@@ -39,6 +31,9 @@ span.slug {
 }
 </style>
 
-<div id="logo">
-  <a href="/"><span class="slug">example</span>.com</a>
+<div id="logox">
+  <span>example.com</span>
 </div>
+<!-- 
+  <a href="/"><span class="slug">example</span>.com</a>
+ -->

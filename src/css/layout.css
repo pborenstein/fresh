@@ -1,6 +1,6 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr minmax(17rem, 35rem) 1fr;
+  grid-template-columns: 1.2fr minmax(12rem, 27rem) 1.2fr;
   grid-template-rows: auto;
   grid-row-gap: 0;
   grid-column-gap: 0;
@@ -63,4 +63,3 @@ footer ul {
   text-decoration: none;
   color: var(--color-gray);
 }
-

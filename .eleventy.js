@@ -11,6 +11,8 @@ module.exports = function(eleventyConfig) {
 
   const highlighter = eleventyConfig.markdownHighlighter
   
+  // http://cornishweb.com/index.php/2019/05/25/using-mermaid-js-with-eleventy-io/
+  
   eleventyConfig.addMarkdownHighlighter((str, language) => {
     if (language === "mermaid") {
       return `<pre class="mermaid">${str}</pre>`;
