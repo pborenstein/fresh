@@ -6,10 +6,6 @@ module.exports = function(eleventyConfig) {
   // Filters
   eleventyConfig.addFilter('dateFilter',   require('./src/filters/date-filter.js'))
   eleventyConfig.addFilter('w3DateFilter', require('./src/filters/w3-date-filter.js'))
-
-  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"))
-
-  const highlighter = eleventyConfig.markdownHighlighter
   
   // http://cornishweb.com/index.php/2019/05/25/using-mermaid-js-with-eleventy-io/
   
@@ -17,7 +13,6 @@ module.exports = function(eleventyConfig) {
     if (language === "mermaid") {
       return `<pre class="mermaid">${str}</pre>`;
     }
-    return highlighter(str, language);
   });
 
 
