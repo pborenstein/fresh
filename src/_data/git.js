@@ -6,7 +6,7 @@ module.exports = async function() {
    commitsha:   await git.short,
    curbranch:   await git.branch,
    commitdate:  await git.date,
-   repo:        await git.name
+   repo:        "fresh" // await git.name
  }
 
   return ret
