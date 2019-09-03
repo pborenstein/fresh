@@ -1,0 +1,17 @@
+---
+date: 2001-03-01
+layout: layouts/page.njk
+tags:
+  - _nav
+navtitle: Articles
+---
+
+<h1>All the things</h1>
+
+<div class="articleList">
+    <ul>
+  {%-for post in collections.posts | reverse -%}
+      <li>{{post.url | url}}</li>
+  {%-endfor -%}
+    </ul>
+</div>
