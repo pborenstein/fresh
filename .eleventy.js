@@ -15,9 +15,11 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-
-
-
+  eleventyConfig.addMarkdownHighlighter((str, language) => {
+    if (language === "turnip") {
+      return `<pre class="turnip">XX ${str} XX</pre>`;
+    }
+  });
 
   eleventyConfig.setLibrary("md", require("markdown-it")({
                                     html: true,
