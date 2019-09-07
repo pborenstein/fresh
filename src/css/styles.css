@@ -1,3 +1,162 @@
-@import 'root.css';
-@import 'headings.css';
-@import 'layout.css';
+:root {
+  --color-body:         #111;
+  --color-darkgray:     #666;
+  --color-darkred:      #7F0036; /* 127, 0, 54 */
+  --color-fadeddarkred: #7F00364d;
+  --color-fadedred:     #c223234d;
+  --color-fadedred2:    #dab3c3; /* faded red with 100 alpha */
+  --color-gray:         #C0C0C0;
+  --color-heading:      #333;
+  --color-lightgray:    #f2f2f2;
+  --color-red:          #c22323;
+  --color-white:        #fff;
+  --color-shadow:       3px 3px 4px 0px rgba(0, 0, 0, 0.19);
+                        /* offset-x | offset-y | blur-radius | spread-radius | color */
+
+  --font-body:          Georgia, serif;
+  --font-caption:       'Cochin', 'Times', serif;
+  --font-code-size:     .875em;
+  --font-code:          Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  --font-footer:        "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+  --font-heading:       "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+  --font-list:          "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+  --font-features:      "xnum"   /*  onum:   Old style numbers */
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  overflow: scroll;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    /* border: 1px solid red !important; */
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight:  400;
+    color: var(--color-body);
+    background-color: var(--color-white);
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* links to markdown header with disappearing # */
+.direct-link {
+	font-family: var(--font-heading);
+	text-decoration: none;
+	font-style: normal;
+	margin-left: .1em;
+}
+a[href].direct-link,
+a[href].direct-link:visited {
+	color: transparent;
+}
+a[href].direct-link:focus,
+a[href].direct-link:focus:visited,
+:hover > a[href].direct-link,
+:hover > a[href].direct-link:visited {
+	color: #aaa;
+}
+
+/* --- headings --- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr minmax(12rem, 27rem) 1.2fr;
+  grid-template-rows: auto;
+  grid-row-gap: 0;
+  grid-column-gap: 0;
+  grid-template-areas:
+  "... head ..."
+  "... nav  ..."
+  "... main ..."
+  "... foot ...";
+  hyphens: auto;
+}
+
+/*  page header */
+
+header {
+  display: grid;
+  grid-area: head;
+}
+
+
+/*  Main content */
+
+main {
+  grid-area: main;
+  padding-top: 0;
+}
+
+/*  footer  */
+
+footer {
+  grid-area: foot;
+  font-size: 1rem;
+  color: var(--color-gray);
+  font-family: var(--font-footer);
+  font-size: 0.6rem;
+  margin: 0 0 1rem 0;
+  border-top: 1px solid var(--color-darkred);
+  padding-top: 0.5em;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between ;
+}
+
+.footer-text {
+  line-height: 1.4em;
+  vertical-align: top;
+  margin: 0
+}
+
+.footer-item {
+	display: inline-block;
+}
+
+#sha a,
+#sha a:hover
+{
+  text-decoration: none;
+  color: var(--color-gray);
+}
+
+
+/*  --------------- BLOCKS ----------------  */
+
+pre {
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  overflow-wrap: break-word;
+}
+
+code {
+  overflow-wrap: break-word;
+}
+
+table {
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  overflow-wrap: break-word;
+}

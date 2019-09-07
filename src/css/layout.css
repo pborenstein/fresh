@@ -9,6 +9,7 @@
   "... nav  ..."
   "... main ..."
   "... foot ...";
+  hyphens: auto;
 }
 
 /*  page header */
@@ -62,4 +63,27 @@ footer ul {
 {
   text-decoration: none;
   color: var(--color-gray);
+}
+
+
+/*  --------------- BLOCKS ----------------  */
+
+pre {
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  overflow-wrap: break-word;
+}
+
+code {
+  overflow-wrap: break-word;
+}
+
+table {
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  overflow-wrap: break-word;
 }
