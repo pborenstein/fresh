@@ -6,6 +6,7 @@ module.exports = function(eleventyConfig) {
   // Filters
   eleventyConfig.addFilter('dateFilter',   require('./src/filters/date-filter.js'))
   eleventyConfig.addFilter('w3DateFilter', require('./src/filters/w3-date-filter.js'))
+  eleventyConfig.addFilter("pdump",        require("./src/filters/pdump.js"))
   
   // http://cornishweb.com/index.php/2019/05/25/using-mermaid-js-with-eleventy-io/
   
