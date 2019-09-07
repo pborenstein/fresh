@@ -1,6 +1,6 @@
 {
   "name":             "fresh",
-  "madeLine":         "Made with <a href='https://www.11ty.io/'>eleventy</a>  and <span>🔥</span>  in Manchester, USA",
+  "madeLine":         "Made with <a href='https://www.11ty.io/'>eleventy</a>  and <span style='font-size: 200%'>🔥</span>  in Manchester, USA",
   "url":              "https://example.com",
   "authorEmail":      "johndoe@example.com",
   "authorHandle":     "@johndoe",
