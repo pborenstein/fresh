@@ -70,14 +70,14 @@ footer ul {
 
 pre {
   max-width: 100%;
-  overflow: auto;
+  overflow: scroll;
   padding: 1em 1.5em;
   display: block;
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
 }
 
 code {
-  overflow-wrap: break-word;
+  word-break: break-all;
 }
 
 table {
