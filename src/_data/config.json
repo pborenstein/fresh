@@ -7,5 +7,5 @@
   "authorName":       "John Doe",
   "maxPostsPerPage":  5,
   "mermaid":          true,
-  "kabel":            false
+  "kabel":            true
 }
