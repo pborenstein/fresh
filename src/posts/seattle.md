@@ -1,5 +1,5 @@
 ---
-date: 2019-02-07T00-05:00
+date: 2019-03-02T00-05:00
 title: Seattle
 subhead: <img src="https://farm8.staticflickr.com/7864/40172543793_ee08748fbb.jpg" width="100%" alt="Seattle">
 category: Visual
