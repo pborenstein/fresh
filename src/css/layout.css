@@ -77,7 +77,7 @@ pre {
 }
 
 code {
-  word-break: break-all;
+  word-break: normal;
 }
 
 table {
