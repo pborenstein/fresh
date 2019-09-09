@@ -18,7 +18,7 @@
   --font-code-size:     .875em;
   --font-code:          Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
   --font-footer:        "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
-  --font-heading:       'neue-kabel',"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+  --font-heading:       "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
   --font-list:          "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
   --font-features:      "xnum"   /*  onum:   Old style numbers */
 }
@@ -39,7 +39,7 @@ body {
     font-weight:  400;
     color: var(--color-body);
     background-color: var(--color-white);
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
