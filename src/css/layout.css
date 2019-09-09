@@ -27,6 +27,12 @@ main {
   padding-top: 0;
 }
 
+/*  Navigation */
+nav {
+  grid-area: nav;
+}
+
+
 /*  footer  */
 
 footer {
