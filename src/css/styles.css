@@ -13,12 +13,12 @@
   --color-shadow:       3px 3px 4px 0px rgba(0, 0, 0, 0.19);
                         /* offset-x | offset-y | blur-radius | spread-radius | color */
 
-  --font-body:          'neue-kabel', Georgia, serif;
+  --font-body:          'IBM Plex Serif','Cormorant Garamond','EB Garamond','Linden Hill', 'neue-kabel', Georgia, serif;
   --font-caption:       'Cochin', 'Times', serif;
   --font-code-size:     .875em;
   --font-code:          Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
   --font-footer:        "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
-  --font-heading:       "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+  --font-heading:       'neue-kabel',"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
   --font-list:          "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
   --font-features:      "xnum"   /*  onum:   Old style numbers */
 }

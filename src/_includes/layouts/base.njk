@@ -10,7 +10,11 @@
   {%- if config.kabel %}
   <link rel="stylesheet" href="https://use.typekit.net/ztn6rcs.css">
   {% endif -%}
-  {%- if config.mermaid %}
+  <link href="https://fonts.googleapis.com/css?family=Linden+Hill:400,400i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Crimson+Pro|IBM+Plex+Serif&display=swap" rel="stylesheet">
+
+ {%- if config.mermaid %}
   <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
   <script>mermaid.initialize({ startOnLoad: true });</script>
   {% endif -%}
