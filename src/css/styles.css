@@ -71,9 +71,48 @@ h5,
 h6 {
   font-family: var(--font-heading);
 }
+nav {
+  grid-area: nav;
+  margin: 0 0 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none inside;
+  margin: 0 0 0 0rem;
+  padding: 0 0 0 .2em;
+  max-width: 4rem;
+  width: 6em;
+  border: 0;
+  box-shadow: 0px 0px 0px 0px transparent;
+}
+
+.nav-item {
+  display: inline;
+  margin-right: 1em;
+  margin-left: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+  font-size: 60%;
+}
+
+.nav-item-active {
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.nav-item a[href] {
+  text-decoration: none;
+  color: var(--color-darkgray)
+}
+
+.nav-item a[href]:hover {
+  text-decoration: underline;
+}
 .wrapper {
   display: grid;
-  grid-template-columns: 1.2fr minmax(12rem, 27rem) 1.2fr;
+  grid-template-columns: minmax(2rem, 1.2fr) minmax(12rem, 32rem) minmax(2rem, 1.2fr);
   grid-template-rows: auto;
   grid-row-gap: 0;
   grid-column-gap: 0;
@@ -99,6 +138,12 @@ main {
   grid-area: main;
   padding-top: 0;
 }
+
+/*  Navigation */
+nav {
+  grid-area: nav;
+}
+
 
 /*  footer  */
 

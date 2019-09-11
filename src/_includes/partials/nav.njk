@@ -1,0 +1,6 @@
+<ul>
+  {%- for nav in collections._nav  -%}
+    <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
+      <a href="{{ nav.url | url }}">{{ nav.data.navtitle or nav.data.title }}</a></li>
+  {%- endfor -%}
+</ul>

@@ -1,6 +1,6 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 1.2fr minmax(12rem, 27rem) 1.2fr;
+  grid-template-columns: minmax(2rem, 1.2fr) minmax(12rem, 32rem) minmax(2rem, 1.2fr);
   grid-template-rows: auto;
   grid-row-gap: 0;
   grid-column-gap: 0;
@@ -26,6 +26,12 @@ main {
   grid-area: main;
   padding-top: 0;
 }
+
+/*  Navigation */
+nav {
+  grid-area: nav;
+}
+
 
 /*  footer  */
 

@@ -1,6 +1,9 @@
 ---
 date: 2018-01-01
 layout: layouts/page.njk
+title: Home
+tags:
+  _nav
 ---
 # {{ config.name }}
 
