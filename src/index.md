@@ -1,5 +1,5 @@
 ---
-date: 2018-01-01
+date: 1918-01-01
 layout: layouts/page.njk
 title: Home
 tags:

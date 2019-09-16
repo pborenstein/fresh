@@ -8,6 +8,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('w3DateFilter', require('./src/filters/w3-date-filter.js'))
   eleventyConfig.addFilter("pdump",        require("./src/filters/pdump.js"))
   
+  // shortcodes
+  eleventyConfig.addShortcode('hasMermaid', require("./src/filters/has-mermaid.js"))
+
+
   // http://cornishweb.com/index.php/2019/05/25/using-mermaid-js-with-eleventy-io/
   
   eleventyConfig.addMarkdownHighlighter((str, language) => {

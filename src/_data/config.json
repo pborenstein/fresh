@@ -6,6 +6,6 @@
   "authorHandle":     "@johndoe",
   "authorName":       "John Doe",
   "maxPostsPerPage":  5,
-  "mermaid":          true,
-  "kabel":            true
+  "kabel":            true,
+  "debug":            false
 }
