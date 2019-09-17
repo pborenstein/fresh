@@ -1,0 +1,33 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - _nav
+    - tagList
+    - posts
+layout: layouts/page.njk
+renderData:
+  title: Tagged “{{ tag }}”
+permalink: /tags/{{ tag }}/
+---
+
+<h1>posts tagged {{tag}}</h1>
+
+<div>
+  {%-for post in collections[ tag ] | reverse -%}
+    <h2>{{post.data.title}}</h2>
+      <ul>
+        <li><a href={{post.url}}>{{post.url}}</a></li>
+        <li>{{post.data.subhead or
+             post.templateContent|truncate(128)}}</li>
+        <li>{{post.data.category}}</li>
+        <li>{{post.data.tags}}</li>
+        <li>{{post.date}}</li>
+     </ul>
+  {%- endfor -%}
+</div>
+
+<p>See <a href="/tags/">all tags</a>.</p>

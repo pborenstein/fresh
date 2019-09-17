@@ -1,5 +1,5 @@
 {
-  "name":             "fresh",
+  "siteName":             "fresh",
   "madeInLabel":      "Made in Manchester, NH",
   "madeWithLabel":    "with <span style='font-size: 125%'>🔥</span>  and <a href='https://www.11ty.io/'>eleventy</a>",
   "url":              "https://example.com",

@@ -7,6 +7,7 @@ tags:
   - eleventy
   - collections
 ---
+<!-- markdownlint-disable html code-block-style -->
 
 Eleventy uses `collections`
 to group posts
@@ -78,9 +79,7 @@ item in the collection.
 {% endraw %}
 ```
 
-
 The `collections` object itself looks like this:
-
 
 ```json
 {
@@ -112,7 +111,6 @@ of all of the page objects that Eleventy generates.
 
 [collection-data]: https://www.11ty.io/docs/collections/#collection-item-data-structure
 
-
 <div class="mdhack" id="collection-items"></div>
 
 | Property          | Description                                                                                                                                                                 |
@@ -126,9 +124,6 @@ of all of the page objects that Eleventy generates.
 | `templateContent` | The rendered content, not including any layout wrappers.<hr><code class="phony">&lt;p&gt;As with most books ... much about The Wizard of Oz&lt;/li&gt;\n&lt;/ul&gt;\n</code>|
 | `template`        | All sorts of data parsed out of the template. Things like the Eleventy configuration, markdown engine setup, and lots of stuff we probably shouldn't rely on.               |
 [<div class="table-caption">collection item properties</div>]
-
-
-
 
 <details style="margin-top: 1em">
 <summary>
@@ -162,9 +157,6 @@ in `TemplateMap.cache()` which is where
 Eleventy builds the collections.
 </details>
 
-
-
-
 ## Custom Collections
 
 In addition to the collections
@@ -172,7 +164,6 @@ built from tags, you can
 use `addCollection()` in your
 `.eleventy.js` configuration file
 to create your own collections.
-
 
 For example, this is how to
 create a collection called `articles`
@@ -189,6 +180,7 @@ eleventyConfig.addCollection("articles",
 ```
 
 `addCollection()` takes two arguments:[^addcollection]
+
 - the name of the collection (a string)
 - a function that takes a `collection` as an argument.
 
@@ -212,7 +204,6 @@ eleventyConfig.addCollection("articles",
         this.collections[name] = callback;
       }
       ```
-
 
 You might think that the `collection` parameter
 is an array of template objects like the
@@ -324,4 +315,3 @@ async getUserConfigCollectionsData() {
 in `TemplateMap.cache()` which is where
 Eleventy builds the collections.
 </details>
-

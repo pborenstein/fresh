@@ -28,8 +28,6 @@ some weird code would be
 in different categories,
 but they could both be tagged `weird`.
 
-
-
 ## How we'll use them
 
 Let's look at how we'll use categories:
@@ -55,7 +53,6 @@ tags:
   - eleventy
 ---
 ```
-
 
 ### Using the category in a template
 
@@ -86,7 +83,6 @@ you could do it this way:
 </ul>
 ```
 
-
 Just as
 `collections`
 is an object that has
@@ -106,7 +102,6 @@ collections: {
   }
 }
 ```
-
 
 ## The implementation
 

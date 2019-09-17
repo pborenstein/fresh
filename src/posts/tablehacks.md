@@ -8,6 +8,7 @@ tags:
   - tables
   - css
 ---
+<!-- markdownlint-disable html ul-indent list-indent code-block-style no-emphasis-as-header no-trailing-punctuation -->
 
 I think that tables are the best way
 to present a lot of structured information.
@@ -18,10 +19,10 @@ but because maintaining them is error prone.]
 There really has to be an easier way to do tables.
 
 **tl;dr**
+
 - use the `display` property to make list elements behave like table elements
 - the [CSS you're looking for](https://gist.github.com/pborenstein/12c787ab201e275a7449f602c95324b8)
 - a [codepen](https://codepen.io/pborenstein/pen/QYxWNR) if you just want to see the code
-
 
 ## How Markdown Does Tables
 
@@ -70,7 +71,6 @@ complicated cells:
 | Nebraska      | Lincoln<ul><li>Omaha</li><li>Lincoln</li><li>Bellevue</li></ul>                                                           |
 | New Hampshire | Concord<ul><li>Manchester</li><li>Nashua</li><li>Concord</li></ul>                                                        |
 
-
 <br><a id="complex-table">
 
 In GFM, table cells can be only one line,
@@ -93,13 +93,11 @@ that doesn't involve introducing
 new Markdown elements or using
 a preprocessor?
 
-
 ## How reStructuredText Does It
 
 In [reStructuredText](http://docutils.sourceforge.net/rst.html) (RST)
 you can use the [`list-table`](http://docutils.sourceforge.net/docs/ref/rst/directives.html#list-table)
 directive to express a table as a list:
-
 
 ``` text
 .. list-table:: Title
@@ -120,27 +118,27 @@ directive to express a table as a list:
 This gets rendered as a table:
 
 <table border="0" class~="colwidths-given table" id="id1">
-	<caption><span class~="caption-text">Title</span><a class~="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
-	<colgroup> <col width="25%"> <col width="25%"> <col width="50%"> </colgroup>
-	<thead valign="bottom">
-		<tr class~="row-odd">
-			<th class~="head">Heading row 1, column 1</th>
-			<th class~="head">Heading row 1, column 2</th>
-			<th class~="head">Heading row 1, column 3</th>
-		</tr>
-	</thead>
-	<tbody valign="top">
-		<tr class~="row-even">
-			<td>Row 1, column 1</td>
-			<td>&nbsp;</td>
-			<td>Row 1, column 3</td>
-		</tr>
-		<tr class~="row-odd">
-			<td>Row 2, column 1</td>
-			<td>Row 2, column 2</td>
-			<td>Row 2, column 3</td>
-		</tr>
-	</tbody>
+    <caption><span class~="caption-text">Title</span><a class~="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+    <colgroup> <col width="25%"> <col width="25%"> <col width="50%"> </colgroup>
+    <thead valign="bottom">
+        <tr class~="row-odd">
+            <th class~="head">Heading row 1, column 1</th>
+            <th class~="head">Heading row 1, column 2</th>
+            <th class~="head">Heading row 1, column 3</th>
+        </tr>
+    </thead>
+    <tbody valign="top">
+        <tr class~="row-even">
+            <td>Row 1, column 1</td>
+            <td>&nbsp;</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr class~="row-odd">
+            <td>Row 2, column 1</td>
+            <td>Row 2, column 2</td>
+            <td>Row 2, column 3</td>
+        </tr>
+    </tbody>
 </table>
 
 <br>
@@ -153,35 +151,33 @@ here's what
 the HTML rendered by reStructuredText looks like.
 </summary>
 
-
 ``` html
 <table border="0" class~="colwidths-given table" id="id1">
-	<caption><span class~="caption-text">Title</span><a class~="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
-	<colgroup> <col width="25%"> <col width="25%"> <col width="50%"> </colgroup>
-	<thead valign="bottom">
-		<tr class~="row-odd">
-			<th class~="head">Heading row 1, column 1</th>
-			<th class~="head">Heading row 1, column 2</th>
-			<th class~="head">Heading row 1, column 3</th>
-		</tr>
-	</thead>
-	<tbody valign="top">
-		<tr class~="row-even">
-			<td>Row 1, column 1</td>
-			<td>&nbsp;</td>
-			<td>Row 1, column 3</td>
-		</tr>
-		<tr class~="row-odd">
-			<td>Row 2, column 1</td>
-			<td>Row 2, column 2</td>
-			<td>Row 2, column 3</td>
-		</tr>
-	</tbody>
+    <caption><span class~="caption-text">Title</span><a class~="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+    <colgroup> <col width="25%"> <col width="25%"> <col width="50%"> </colgroup>
+    <thead valign="bottom">
+        <tr class~="row-odd">
+            <th class~="head">Heading row 1, column 1</th>
+            <th class~="head">Heading row 1, column 2</th>
+            <th class~="head">Heading row 1, column 3</th>
+        </tr>
+    </thead>
+    <tbody valign="top">
+        <tr class~="row-even">
+            <td>Row 1, column 1</td>
+            <td>&nbsp;</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr class~="row-odd">
+            <td>Row 2, column 1</td>
+            <td>Row 2, column 2</td>
+            <td>Row 2, column 3</td>
+        </tr>
+    </tbody>
 </table>
 ```
+
 </details>
-
-
 
 ## Can We Do That in Markdown?
 
@@ -223,7 +219,6 @@ the `<div>` and `</div>` be
 [followed by a blank line](https://spec.commonmark.org/0.28/#html-blocks).
 ]
 
-
 Using our regular CSS stylesheet,
 the list above renders like
 a normal list.
@@ -243,7 +238,6 @@ a normal list.
     [There are rules](https://www.11ty.io/docs/data/#fileslug).
 
 </div>
-
 
 Let's look at the HTML of that
 so we can
@@ -279,7 +273,6 @@ We can now map the table elements
 to list elements like this:^[Dogfooding!]
 <br>
 
-
 <div class="t">
 
 - - **Table Elements**
@@ -300,7 +293,6 @@ that gives the
 [`display` property](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 of each of the table-related elements.
 
-
 ``` css
 table    { display: table }
 tr       { display: table-row }
@@ -318,7 +310,6 @@ and armed with the knowledge of
 how our HTML is rendered, we
 can use this CSS to make the list elements
 behave like tables. Probably.
-
 
 ``` css
 div[class~="t"] > ul {
@@ -372,7 +363,6 @@ to say nothing of the bullet points.
 
 ## Styling a List as a Table
 
-
 When I hit the wall in CSS,
 I just start pulling levers and pushing buttons.
 I played with
@@ -411,7 +401,6 @@ div[class~="t"] > ul > li > ul > li {
   padding: 0 .25em;
 }
 ```
-
 
 <style>
 
@@ -523,14 +512,11 @@ And this is the result. Pretty good.
 
 </div>
 
-
-
 ## Nested Tables?
 
 Although we didn't design the tables
 to be nested, it's totally possible
 to do it:
-
 
 <div class="t" markdown="1">
 
@@ -652,7 +638,6 @@ but still editable and legible.
 
 </details>
 
-
 ## What Now?
 
 It works^[on my machine] well enough
@@ -690,4 +675,3 @@ This [clip will show you](https://babelmark.github.io/?text=%3Cdiv+class%3D%22t%
 which processors
 don't like Markdown in their HTML
 and which don't like the way I make the lists.
-
