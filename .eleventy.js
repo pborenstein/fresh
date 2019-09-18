@@ -13,6 +13,9 @@ module.exports = function(eleventyConfig) {
 
   //  collections
   eleventyConfig.addCollection("tagList",    require("./js/get-tag-list.js"))
+  eleventyConfig.addCollection('posts', collection => {
+    return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
+  });
 
 
   // http://cornishweb.com/index.php/2019/05/25/using-mermaid-js-with-eleventy-io/
@@ -38,12 +41,6 @@ module.exports = function(eleventyConfig) {
           })
   );
 
-  // Custom collections
-  eleventyConfig.addCollection('posts', collection => {
-    return [
-      ...collection.getFilteredByGlob('./src/posts/*.md')
-    ].reverse();
-  });
 
 
 
