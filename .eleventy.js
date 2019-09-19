@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('dateFilter',   require('./js/date-filter.js'))
   eleventyConfig.addFilter('w3DateFilter', require('./js/w3-date-filter.js'))
   eleventyConfig.addFilter("pdump",        require("./js/pdump.js"))
+  eleventyConfig.addFilter("prettyDate",   require("./js/pretty-date.js"))
   
   // shortcodes
   eleventyConfig.addShortcode('hasMermaid', require("./js/has-mermaid.js"))

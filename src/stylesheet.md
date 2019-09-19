@@ -9,8 +9,16 @@ tags:
 # Heading 1
 
 Title: {{title}}<br>
+
 date | w3DateFilter: `{{date | w3DateFilter }}`<br>
 date | dateFilter: `{{date | dateFilter }}`
+
+date | prettyDate('html'): `{{date | prettyDate('html') }}`<br>
+date | prettyDate('DmY'): `{{date | prettyDate('DmY') }}`<br>
+date | prettyDate('DMY'): `{{date | prettyDate('DMY') }}`<br>
+date | prettyDate('DmYt'): `{{date | prettyDate('DmYt') }}`<br>
+date | prettyDate('DMYt'): `{{date | prettyDate('DMYt') }}`<br>
+
 
 Nostra gravida felis suspendisse lectus netus
 adipiscing, erat cubilia elementum nibh senectus,
