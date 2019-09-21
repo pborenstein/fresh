@@ -86,10 +86,3 @@ code {
   word-break: normal;
 }
 
-table {
-  max-width: 100%;
-  overflow: auto;
-  padding: 1em 1.5em;
-  display: block;
-  overflow-wrap: break-word;
-}

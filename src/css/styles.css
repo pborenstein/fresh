@@ -1,5 +1,6 @@
 :root {
   --color-body:         #111;
+  --color-background:   #fff;
   --color-darkgray:     #666;
   --color-darkred:      #7F0036; /* 127, 0, 54 */
   --color-fadeddarkred: #7F00364d;
@@ -198,10 +199,58 @@ code {
   word-break: normal;
 }
 
+
+:root {
+  --color-table-background: var(--color-background);
+  --color-table-contrast:   var(--color-lightgray);
+  --color-table-body:       var(--color-body);
+  --color-table-heading:    var(--color-heading);
+  --color-table-caption:    var(--color-heading);
+  --font-table-caption:     var(--font-heading);
+  --font-table-heading:     var(--font-heading);
+  --font-table-body:        var(--font-body);
+}
+
 table {
-  max-width: 100%;
-  overflow: auto;
-  padding: 1em 1.5em;
-  display: block;
-  overflow-wrap: break-word;
+  width:  100%;
+  border-collapse: collapse;
+  font-family: var(--font-table-body);
+  color: var(--color-table-body);
+}
+
+
+thead {
+  font-family: var(--font-table-heading);
+}
+
+tbody {
+  hyphens: manual;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--color-table-contrast);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--color-table-background);
+}
+
+th, td {
+  vertical-align: text-top;
+  padding: 5px;
+}
+
+th {
+  padding-bottom: 0;
+  color: var(--color-table-heading);
+}
+
+
+table caption {
+  caption-side: top;
+  text-align: right;
+  font-family: var(--font-table-caption);
+  color: var(--color-table-caption);
+  margin-top: 1em;
+  padding: 0;
 }

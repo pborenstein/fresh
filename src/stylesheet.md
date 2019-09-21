@@ -113,26 +113,26 @@ per tristique nec dictum.
 | `inputPath`       | Path to this file including the `input` directory.<hr><code class="phony">./src/articles/finding-oz.md</code>                                                               |
 | `outputPath`      | Path to the rendered file.<hr><code class="phony">articles/finding-oz/index.html</code>                                                                                     |
 | `fileSlug`        | Short name from the file name. [There are rules](https://www.11ty.io/docs/data/#fileslug). <hr><code class="phony">./src/articles/finding-oz.md</code>                      |
-[<div class="table-caption">table caption</div>]
+[table caption]
 
 ## Date formats &mdash; H2
 
-| prettyDate | Renders |
+| prettyDate format | Renders |
 | :----- | :------ |
 | `date`                       | {{date}}  |
-| `'iso':` |  {{date | prettyDate('iso') }} |
-| `'isoDate':` |  {{date | prettyDate('isoDate') }} |
-| `'isoTime':` |  {{date | prettyDate('isoTime') }} |
-| `'DmY': ` |  {{date | prettyDate('DmY') }} |
-| `'DMY': ` |  {{date | prettyDate('DMY') }} |
-| `'DmYt':` |  {{date | prettyDate('DmYt') }} |
-| `'DMYt':` |  {{date | prettyDate('DMYt') }} |
-| `'FFFF':` |  {{date | prettyDate('FFFF') }} |
-| `'DDDD':` |  {{date | prettyDate('DDDD') }} |
-| `'relative':` |  {{date | prettyDate('relative') }} |
-| `'relativeCalendar':` |  {{date | prettyDate('relativeCalendar') }} |
-| `'http':` |  {{date | prettyDate('http') }} |
-| `'rfc2822':` |  {{date | prettyDate('rfc2822') }} |
+| `'iso'` |  {{date | prettyDate('iso') }} |
+| `'isoDate'` |  {{date | prettyDate('isoDate') }} |
+| `'isoTime'` |  {{date | prettyDate('isoTime') }} |
+| `'DmY' ` |  {{date | prettyDate('DmY') }} |
+| `'DMY' ` |  {{date | prettyDate('DMY') }} |
+| `'DmYt'` |  {{date | prettyDate('DmYt') }} |
+| `'DMYt'` |  {{date | prettyDate('DMYt') }} |
+| `'FFFF'` |  {{date | prettyDate('FFFF') }} |
+| `'DDDD'` |  {{date | prettyDate('DDDD') }} |
+| `'relative'` |  {{date | prettyDate('relative') }} |
+| `'relativeCalendar'` |  {{date | prettyDate('relativeCalendar') }} |
+| `'http'` |  {{date | prettyDate('http') }} |
+| `'rfc2822'` |  {{date | prettyDate('rfc2822') }} |
 
 
 ## Weights &mdash; H2

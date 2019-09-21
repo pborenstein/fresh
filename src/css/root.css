@@ -1,5 +1,6 @@
 :root {
   --color-body:         #111;
+  --color-background:   #fff;
   --color-darkgray:     #666;
   --color-darkred:      #7F0036; /* 127, 0, 54 */
   --color-fadeddarkred: #7F00364d;
