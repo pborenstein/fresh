@@ -99,7 +99,7 @@ In [reStructuredText](http://docutils.sourceforge.net/rst.html) (RST)
 you can use the [`list-table`](http://docutils.sourceforge.net/docs/ref/rst/directives.html#list-table)
 directive to express a table as a list:
 
-``` text
+```rest
 .. list-table:: Title
    :widths: 25 25 50
    :header-rows: 1

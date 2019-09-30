@@ -131,6 +131,8 @@ per tristique nec dictum.
 | `'relativeCalendar'` |  {{page.date | prettyDate('relativeCalendar') }} |
 | `'http'` |  {{page.date | prettyDate('http') }} |
 | `'rfc2822'` |  {{page.date | prettyDate('rfc2822') }} |
+| slug | {{  page.date  | prettyDate('slug')}} |
+| locale | {{  page.date  | prettyDate('locale')}} |
 [ formatting dates<br>with `prettyDate`]
 
 ## Weights &mdash; H2

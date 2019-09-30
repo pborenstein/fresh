@@ -32,8 +32,8 @@ module.exports = function prettyDate(date, fmt) {
                 return dateObject.toRelativeCalendar()
                 
     case 'DmY':
-                return dateObject.toFormat('d LLL yyyy')
-      
+               return dateObject.toFormat('d LLL yyyy')
+ 
     case 'DMY':
                 return dateObject.toFormat('d LLLL yyyy')
       
@@ -44,8 +44,18 @@ module.exports = function prettyDate(date, fmt) {
     case 'DMYt':
         return dateObject.toFormat('d LLLL yyyy')
           + (dateObject.toFormat(' t').toLowerCase())
-                        
-    default:
+
+         case 'slug': 
+                let str2 = ""
+                str2 = dateObject.toFormat('ccc d LLL yyyy')
+                return str2   
+
+    case 'locale':
+      let str3 = ""
+      str3 = dateObject.toLocaleString(DateTime.DATE_HUGE)
+      return str3
+
+         default:
                 return dateObject.toFormat(fmt)
   }
 }

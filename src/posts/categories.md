@@ -42,7 +42,7 @@ Use the `category` property
 like this to specify
 the category an article belongs to:
 
-``` text
+```markdown
 ---
 date: 10/30/2018
 title: Loomings

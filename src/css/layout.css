@@ -89,3 +89,9 @@ code {
 pre[class*="language-"] {
   border-radius: 0.5em;
 }
+
+/*  dateline */
+
+.dateline {
+  font-size: .7rem;
+}

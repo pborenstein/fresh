@@ -1,10 +1,10 @@
 {% extends "layouts/base.njk" %}
-
 {% set pagetype = "post" %}
 
 {% block kontent %}
   <article>
     {% include "partials/common-title.njk" %}
+    {% include "partials/post-dateline.njk" %}
     <hr>
     {{ content | safe }}
   </article>
