@@ -199,6 +199,9 @@ code {
   word-break: normal;
 }
 
+pre[class*="language-"] {
+  border-radius: 0.5em;
+}
 
 :root {
   --color-table-background: var(--color-background);

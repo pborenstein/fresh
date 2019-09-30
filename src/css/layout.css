@@ -86,3 +86,6 @@ code {
   word-break: normal;
 }
 
+pre[class*="language-"] {
+  border-radius: 0.5em;
+}

@@ -117,20 +117,20 @@ per tristique nec dictum.
 
 | prettyDate<br>format string | example |
 | :----- | :------ |
-| `date`                       | {{date}}  |
-| `'iso'` |  {{date | prettyDate('iso') }} |
-| `'isoDate'` |  {{date | prettyDate('isoDate') }} |
-| `'isoTime'` |  {{date | prettyDate('isoTime') }} |
-| `'DmY' ` |  {{date | prettyDate('DmY') }} |
-| `'DMY' ` |  {{date | prettyDate('DMY') }} |
-| `'DmYt'` |  {{date | prettyDate('DmYt') }} |
-| `'DMYt'` |  {{date | prettyDate('DMYt') }} |
-| `'FFFF'` |  {{date | prettyDate('FFFF') }} |
-| `'DDDD'` |  {{date | prettyDate('DDDD') }} |
-| `'relative'` |  {{date | prettyDate('relative') }} |
-| `'relativeCalendar'` |  {{date | prettyDate('relativeCalendar') }} |
-| `'http'` |  {{date | prettyDate('http') }} |
-| `'rfc2822'` |  {{date | prettyDate('rfc2822') }} |
+| `date`                       | {{page.date}}  |
+| `'iso'` |  {{page.date | prettyDate('iso') }} |
+| `'isoDate'` |  {{page.date | prettyDate('isoDate') }} |
+| `'isoTime'` |  {{page.date | prettyDate('isoTime') }} |
+| `'DmY' ` |  {{page.date | prettyDate('DmY') }} |
+| `'DMY' ` |  {{page.date | prettyDate('DMY') }} |
+| `'DmYt'` |  {{page.date | prettyDate('DmYt') }} |
+| `'DMYt'` |  {{page.date | prettyDate('DMYt') }} |
+| `'FFFF'` |  {{page.date | prettyDate('FFFF') }} |
+| `'DDDD'` |  {{page.date | prettyDate('DDDD') }} |
+| `'relative'` |  {{page.date | prettyDate('relative') }} |
+| `'relativeCalendar'` |  {{page.date | prettyDate('relativeCalendar') }} |
+| `'http'` |  {{page.date | prettyDate('http') }} |
+| `'rfc2822'` |  {{page.date | prettyDate('rfc2822') }} |
 [ formatting dates<br>with `prettyDate`]
 
 ## Weights &mdash; H2
@@ -228,7 +228,10 @@ nisl consectetur porta semper augue mollis quam hac
 > emotionally away yikes this instead therefore.
 >
 > ```
-> some { code }
+> some { code
+>   in a
+>   blockquote
+> }
 > ```
 
 
@@ -269,21 +272,11 @@ module.exports = function pdump(obj) {
 
 ##### Heading 5
 
-Tempus rutrum taciti mollis diam dapibus ligula, sit
-malesuada feugiat aptent donec, curabitur habitasse
-nisl consectetur porta semper augue mollis quam hac
-dictumst tellus lobortis etiam habitant ac.
-
-
-
+Don't use Heading 5
 
 ###### Heading 6
 
-Lorem ipsum velit lectus commodo auctor pharetra congue
-inceptos arcu venenatis, luctus ligula augue eros dolor
-suscipit odio et enim ut, vitae venenatis fermentum
-tempor purus curae duis interdum arcu laoreet conubia
-sollicitudin placerat ipsum.
+Don't use Heading 6
 
 
 
