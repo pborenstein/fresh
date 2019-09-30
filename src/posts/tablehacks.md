@@ -65,7 +65,7 @@ that help you format them.
 But what if you want a table with
 complicated cells:
 
-| State         | Capital & Top Cities                                                                                                      |
+| State         | Capital & Top Cities |
 | :------------ | :------------------------------------------------------------------------------------------------------------------------ |
 | New York      | Albany<ul><li>New York City<br>A lot of people think that this is the capital</li><li>Buffalo</li><li>Rochester</li></ul> |
 | Nebraska      | Lincoln<ul><li>Omaha</li><li>Lincoln</li><li>Bellevue</li></ul>                                                           |
@@ -417,7 +417,7 @@ div[class~="t"] > ul > li {
 }
 
 div[class~="t"]  > ul > li:nth-child(even) {
-    background-color: var(--lightgray);
+    background-color: #eee;
 }
 div[class~="t"]  > ul > li:nth-child(odd) {
     background-color: #fff;

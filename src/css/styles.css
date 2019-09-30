@@ -235,12 +235,13 @@ tbody tr:nth-child(even) {
   background-color: var(--color-table-background);
 }
 
-th, td {
+td {
   vertical-align: text-top;
   padding: 5px;
 }
 
 th {
+  vertical-align: bottom;
   padding-bottom: 0;
   color: var(--color-table-heading);
 }

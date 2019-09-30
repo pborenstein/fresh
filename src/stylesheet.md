@@ -78,8 +78,6 @@ dictumst tellus lobortis etiam habitant ac.
 
 ```js
 const decycle = require('json-cycle').decycle
-const debug = require("debug")("catlist");
-
 
 module.exports = function pdump(obj) {
   let decycled = JSON.stringify(decycle(obj), null, 2)
@@ -117,7 +115,7 @@ per tristique nec dictum.
 
 ## Date formats &mdash; H2
 
-| prettyDate format | Renders |
+| prettyDate<br>format string | example |
 | :----- | :------ |
 | `date`                       | {{date}}  |
 | `'iso'` |  {{date | prettyDate('iso') }} |
@@ -133,7 +131,7 @@ per tristique nec dictum.
 | `'relativeCalendar'` |  {{date | prettyDate('relativeCalendar') }} |
 | `'http'` |  {{date | prettyDate('http') }} |
 | `'rfc2822'` |  {{date | prettyDate('rfc2822') }} |
-
+[ formatting dates<br>with `prettyDate`]
 
 ## Weights &mdash; H2
 

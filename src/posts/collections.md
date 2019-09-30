@@ -214,7 +214,7 @@ which is derived from [`Sortable`][sortableSrc],
 and
 looks like this:
 
-```json
+```js
 {
   "items": [
     { ... },
@@ -262,7 +262,7 @@ For instance, this is how you'd make a collection
 that consists of an array of all the
 category properties:
 
-``` json
+``` js
 module.exports = function(collection) {
   let catSet = new Set()
 
