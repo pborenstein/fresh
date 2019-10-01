@@ -20,7 +20,7 @@ nav ul {
   display: inline;
   margin-right: 1em;
   margin-left: 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+  font-family: var(--font-heading);
   font-size: 60%;
 }
 
