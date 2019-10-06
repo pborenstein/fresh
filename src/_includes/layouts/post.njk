@@ -2,8 +2,8 @@
 {% set pagetype = "post" %}
 
 {% block kontent %}
+  {% include "partials/common-title.njk" %}
   <article>
-    {% include "partials/common-title.njk" %}
     {% include "partials/post-dateline.njk" %}
     {{ content | safe }}
   </article>
