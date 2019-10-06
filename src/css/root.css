@@ -33,6 +33,19 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
     /* border: 1px solid red !important; */
+    margin-top: 0;
+        /*  The idea here is that the tops
+            of paragraphs (and other blocklike things)
+            have no margins. They butt up against
+            the bottom of the thing above them.
+            If that happens to be a para, which it
+            probably is, then they'll just use the
+            bottom margin of the preceding element.
+            Is this enough to keep headings close?
+            All this because I don't like there to be
+            a space between the heading and the next
+            chunk of content.
+        */ 
 }
 
 body {
@@ -41,7 +54,7 @@ body {
     color: var(--color-body);
     background-color: var(--color-white);
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 /* links to markdown header with disappearing # */

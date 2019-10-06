@@ -1,4 +1,4 @@
-.wrapper {
+.one-col-grid {
   display: grid;
   grid-template-columns: minmax(2rem, 1.2fr) minmax(12rem, 32rem) minmax(2rem, 1.2fr);
   grid-template-rows: auto;
@@ -55,7 +55,6 @@ footer ul {
 }
 
 .footer-text {
-  line-height: 1.4em;
   vertical-align: top;
   margin: 0
 }
@@ -97,9 +96,12 @@ pre[class*="language-"] {
   font-family: var(--font-body);
   border-top: 1px solid var(--color-darkred);
   border-bottom: 1px solid var(--color-darkred);
-  padding: .125rem 0;
+  padding: .25rem 0;
+  margin-bottom: 1.5rem;
 }
 
 .dateline-date {
   font-variant: small-caps; 
 }
+
+/*  -----   paragraps   ----- */
