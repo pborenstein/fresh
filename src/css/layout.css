@@ -63,11 +63,8 @@ footer ul {
 	display: inline-block;
 }
 
-#sha a,
-#sha a:hover
-{
-  text-decoration: none;
-  color: var(--color-gray);
+footer a[href] {
+  color: inherit;
 }
 
 
@@ -104,4 +101,27 @@ pre[class*="language-"] {
   font-variant: small-caps; 
 }
 
-/*  -----   paragraps   ----- */
+/* Text scale
+    https://www.modularscale.com/?1&em&1.25
+
+        1.953em
+        1.563em
+        1.25em
+>>>>>>  1em
+        0.8em
+        0.64em
+        0.512em
+        0.41em
+*/
+
+
+/*  -----  links  ---------- */
+a[href] {
+  text-decoration: none;
+  color: var(--color-link)
+}
+
+a[href]:hover {
+  text-decoration: underline;
+}
+
