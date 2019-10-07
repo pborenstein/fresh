@@ -15,7 +15,7 @@
   --color-shadow:       3px 3px 4px 0px rgba(0, 0, 0, 0.19);
                         /* offset-x | offset-y | blur-radius | spread-radius | color */
 
-  --font-body:          'IBM Plex Serif','Cormorant Garamond','EB Garamond','Linden Hill', 'neue-kabel', Georgia, serif;
+  --font-body:          'IBM Plex Serif', 'neue-kabel', Georgia, serif;
   --font-caption:       'Cochin', 'Times', serif;
   --font-code-size:     .875em;
   --font-code:          Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
@@ -50,12 +50,12 @@ html {
 }
 
 body {
-    font-family: var(--font-body);
-    font-weight:  400;
-    color: var(--color-body);
-    background-color: var(--color-white);
-    font-size: 1rem;
-    line-height: 1.5;
+  font-family: var(--font-body);
+  font-weight:  400;
+  color: var(--color-body);
+  background-color: var(--color-white);
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 /* links to markdown header with disappearing # */
@@ -65,14 +65,16 @@ body {
 	font-style: normal;
 	margin-left: .1em;
 }
+
 a[href].direct-link,
 a[href].direct-link:visited {
 	color: transparent;
 }
+
 a[href].direct-link:focus,
 a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
-	color: #aaa;
+	color: var(--color-gray);
 }
 

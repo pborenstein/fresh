@@ -35,6 +35,24 @@ module.exports = function (eleventyConfig) {
       permalinkClass: "direct-link",
       permalinkSymbol: "•"
     })
+  
+    md.renderer.rules.footnote_caption = (tokens, idx/*, options, env, slf*/) => {
+      let n = Number(tokens[idx].meta.id + 1).toString();
+    
+      if (tokens[idx].meta.subId > 0) {
+        n += ':' + tokens[idx].meta.subId;
+      }
+    
+      return n;
+    }
+
+  md.renderer.rules.footnote_block_open = (tokens, idx) => (
+     `<div class="footnotes-sep"></div>
+      <section class="footnotes">
+      <ol class="footnotes-list">`
+  )
+    
+  
   eleventyConfig.setLibrary("md", md)
 
 
