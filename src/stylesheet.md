@@ -34,6 +34,37 @@ accurately far wherever conductive toucan komodo
 dalmatian much dove methodically gosh far near and
 objective sold more misheard dear hello.
 
+## Footnotes
+
+Unpacked now declared put you confined daughter improved. Celebrated imprudence few interested especially[^esp] reasonable off one. Wonder bed elinor family secure met. It want gave west into high no in. Depend repair met before man admire see and. An he observe be it covered delight hastily message. Margaret no ladyship endeavor ye to settling. 
+
+It allowance prevailed enjoyment in it. Calling observe for who pressed raising his. Can connection[^con] instrument astonished unaffected his motionless ^[Inline notes. It looks like newlines are forbidden here.]
+preference. Announcing say boy precaution unaffected difficulty alteration him. Above be would at so going heard. Engaged at village at am equally proceed. Settle nay length almost ham direct extent[^ext]. Agreement for listening remainder get attention law acuteness day. Now whatever surprise resolved elegance indulged own way outlived. 
+
+[^con]: A simple footnote.
+[^esp]: A more complicated footnote
+
+    Apartments simplicity or understood do it we. Song such eyes had
+    and off. Removed winding ask explain delight out few behaved
+    lasting. Letters old hastily ham sending not sex chamber because
+    present. Oh is indeed twenty entire figure. Occasional
+    diminution announcing new now literature terminated. Really
+    regard excuse off ten pulled. Lady am room head so lady four or
+    eyes an. He do of consulted sometimes concluded mr. An household
+    behaviour if pretended. 
+
+[^ext]:
+    All of these
+    have started on the first line. Not this one.
+    It's indented on the next line:
+
+    ```markdown
+    [^ext]:
+        All of these
+        have started on the first line. Not this one.
+        It's indented on the next line:
+    ```
+
 ## Lists, graphs, and tables &mdash; H2
 
 Ac vel nulla fermentum quis condimentum etiam sapien
