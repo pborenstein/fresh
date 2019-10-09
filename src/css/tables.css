@@ -1,7 +1,7 @@
 
 :root {
   --color-table-background: var(--color-background);
-  --color-table-contrast:   var(--color-lightgray);
+  --color-table-contrast:   var(--color-contrast);
   --color-table-body:       var(--color-body);
   --color-table-heading:    var(--color-heading);
   --color-table-caption:    var(--color-heading);
