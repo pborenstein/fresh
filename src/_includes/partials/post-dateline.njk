@@ -5,8 +5,8 @@
     {%- if tag.substring(0,1) !== "_" -%}
     {%- set tagUrl %}/tags/{{ tag }}/{%- endset -%}
     <a href="{{ tagUrl | url }}" class="dateline-tags-link">
-      <span class="dateline-tags">{{ tag }}&emsp13; </span>
-    </a>
+      <span class="dateline-tags">{{ tag }}</span>
+    </a><span>&emsp;</span>
     {%- endif -%}
   {%- endfor %}
 {%- endmacro -%}

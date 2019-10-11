@@ -70,34 +70,13 @@ footer a[href] {
 
 /*  --------------- BLOCKS ----------------  */
 
-pre {
-  max-width: 100%;
-  overflow: scroll;
-  padding: 1em 1.5em;
-  display: block;
-  overflow-wrap: normal;
-}
-
-code {
-  word-break: normal;
-}
-
-code[class*="language-"], pre[class*="language-"] {
-  background: var(--base0x) !important;
-}
-
-pre[class*="language-"] {
-  /* border-style: solid;
-  border-width: thin;
-  border-color: var(--color-gray); */
-  border-radius: 0.5em;
-}
 
 /*  dateline */
 
 .dateline {
   font-size: .7rem;
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
+  font-weight: 400;
   border-top: 1px solid var(--color-darkred);
   border-bottom: 1px solid var(--color-darkred);
   padding: .25rem 0;
@@ -105,7 +84,7 @@ pre[class*="language-"] {
 }
 
 .dateline-date {
-  font-variant: small-caps; 
+  font-weight: 300;
 }
 
 /* Text scale
