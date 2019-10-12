@@ -125,32 +125,32 @@ Divs are written like this:
     ::: parameters
     The text therein
     :::
+:::
 
 The `parameters` can be:
 - one or more class identifiers
 - an element id #thisway
 - a property/value pair `style=background-color:aliceblue`
 
-This container looks like this:
+The container above  looks like this:
 
-    ::: style=background-color:aliceblue;padding:0.75em
-    Divs are written like this:
-    . . .
-    :::
+``` md
+::: style=background-color:aliceblue;padding:0.75em
+Divs are written like this:
+. . .
+:::
+```
 
 which gets rendered like this:
 
-    <div style="background-color:aliceblue;padding:0.75em">
-    <p>Divs are written like this:</p>
-    . . .
-    </div>
-end
-:::
-
+``` html
+<div style="background-color:aliceblue;padding:0.75em">
+<p>Divs are written like this:</p>
+. . .
+</div>
+```
 
 Not far stuff she think the jokes. Going as by do known noise he wrote round leave. Warmly put branch people narrow see. Winding its waiting yet parlors married own feeling. Marry fruit do spite jokes an times. Whether at it unknown warrant herself winding if. Him same none name sake had post love. An busy feel form hand am up help. Parties it brother amongst an fortune of. Twenty behind wicket why age now itself ten. 
-
-
 
 ```js
 const decycle = require('json-cycle').decycle
@@ -187,7 +187,7 @@ per tristique nec dictum.
 | `inputPath`       | Path to this file including the `input` directory.<hr><code class="phony">./src/articles/finding-oz.md</code>                                                               |
 | `outputPath`      | Path to the rendered file.<hr><code class="phony">articles/finding-oz/index.html</code>                                                                                     |
 | `fileSlug`        | Short name from the file name. [There are rules](https://www.11ty.io/docs/data/#fileslug). <hr><code class="phony">./src/articles/finding-oz.md</code>                      |
-[table caption]
+[table caption][slug]
 
 ## Date formats &mdash; H2
 

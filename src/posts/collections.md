@@ -121,9 +121,9 @@ of all of the page objects that Eleventy generates.
 | `data`            | Data from the front matter of the rendered page. The global variables available to each page.                                                                               |
 | `date`            | The date of this file in UTC. [There are rules](https://www.11ty.io/docs/dates/). <hr><code class="phony">2009-08-07T13:52:12.000Z</code>                                   |
 | `url`             | Path to this content. Doesn't include protocol or host. <hr><code class="phony">/articles/finding-oz/</code>                                                                |
-| `templateContent` | The rendered content, not including any layout wrappers.<hr><code class="phony">&lt;p&gt;As with most books ... much about The Wizard of Oz&lt;/li&gt;\n&lt;/ul&gt;\n</code>|
+| `templateContent` | The rendered content, not including any layout wrappers.<hr><code class="phony">&lt;p&gt;As with most books ... much about The Wizard of Oz&lt;/p&gt;</code>|
 | `template`        | All sorts of data parsed out of the template. Things like the Eleventy configuration, markdown engine setup, and lots of stuff we probably shouldn't rely on.               |
-[<div class="table-caption">collection item properties</div>]
+[<div class="table-caption">collection item properties</div>][collection-item-properties]
 
 !!! Implementation: How a tag becomes a collection
 
@@ -242,7 +242,7 @@ to get the items.
 | `getAllSorted()`              | Gets all of the items in order.                                            |
 | `getFilteredByTag(tagName)` | Get all of the items with a specific tag.                                  |
 | `getFilteredByGlob(glob)`   | Gets all of the items whose `inputPath` matches one or more glob patterns. |
-[<div class="table-caption">collection api methods</div>]
+[collection api methods]
 
 The items are almost [the same](#collection-items) as the ones
 in the tag-based collections.

@@ -15,12 +15,13 @@ table {
   border-collapse: collapse;
   font-family: var(--font-table-body);
   color: var(--color-table-body);
-  margin-bottom: 1.5rem;
+  margin: 1.5em 0;
 }
 
 
 thead {
   font-family: var(--font-table-heading);
+  border-bottom: 1px solid var(--base01);
 }
 
 tbody {
@@ -28,11 +29,11 @@ tbody {
 }
 
 tbody tr:nth-child(odd) {
-  background-color: var(--color-table-contrast);
+  background-color: var(--color-table-background);
 }
 
 tbody tr:nth-child(even) {
-  background-color: var(--color-table-background);
+  background-color: var(--color-table-contrast);
 }
 
 td {
@@ -51,7 +52,16 @@ table caption {
   caption-side: top;
   text-align: right;
   font-family: var(--font-table-caption);
-  color: var(--color-table-caption);
-  margin-top: 1em;
+  font-style: italic;
+  font-weight: 200;
+  color: var(--color-body-contrast);
+  margin-bottom: 0;
+}
+
+
+.table-caption {
+  width: max-content;
   padding: 0;
+  float: right;
+  background-image: linear-gradient(180deg,transparent 75%,var(--color-fadedred) 0) /* from https://www.ideo.com/ */
 }
