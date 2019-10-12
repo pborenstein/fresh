@@ -38,6 +38,7 @@ html {
     box-sizing: inherit;
     /* border: 1px solid red !important; */
     margin-top: 0;
+    margin-bottom: 1em;
         /*  The idea here is that the tops
             of paragraphs (and other blocklike things)
             have no margins. They butt up against

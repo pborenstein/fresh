@@ -17,6 +17,7 @@
 header {
   display: grid;
   grid-area: head;
+  margin-bottom: 0;
 }
 
 
@@ -111,3 +112,35 @@ a[href]:hover {
   text-decoration: underline;
 }
 
+/*  --------  folding ------- */
+
+summary {
+  font-family: var(--font-body);
+  font-weight: 500;
+  background-color: var(--base0x);
+  padding: .75em;
+  border-radius: 0;
+  border-color: var(--base0x);
+  border-bottom-color: var(--color-body-contrast);
+  border-top-color: var(--color-body-contrast);
+  border-width: thin;
+  border-style: solid;
+}
+
+
+ /* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+ */
+details {
+  /* outline: greenyellow solid 1px; */
+
+}
+
+details:focus,
+summary:focus {
+  outline: 0;
+}
+
+details > summary::-webkit-details-marker {
+  color: var(--color-body-contrast);
+
+}
