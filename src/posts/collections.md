@@ -55,7 +55,7 @@ as properties
 of the global `collections` object.
 
 ``` liquid
-{% raw %}
+{%- raw -%}
 <p>
   The title of this page is:
   {{ collections.books[0].data.title }}
@@ -68,7 +68,7 @@ in loops to iterate over each
 item in the collection.
 
 ``` liquid
-{% raw %}
+{%- raw -%}
 {% for post in collections.books %}
   {{ post.data.title }}
   {{ post.url }}

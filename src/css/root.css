@@ -2,17 +2,14 @@
   --color-body:         #111;
   --color-heading:      #333;
   --color-link:         var(--color-red);
-  --color-contrast:     var(--color-lightgray);
+  --color-contrast:     var(--base0x);
   --color-background:   #fff;
   --color-body-contrast: var(--color-darkred);
 
-  --color-darkgray:     #666;
   --color-gray:         #C0C0C0;
   --color-lightgray:    #f2f2f2;
   --color-darkred:      #7F0036; /* 127, 0, 54 */
-  --color-fadeddarkred: #7F00364d;
-  --color-fadedred:     #c223234d;
-  --color-fadedred2:    #dab3c3; /* faded red with 100 alpha */
+  --color-fadedred:     #fde2e2;
   --color-red:          #c22323;
   --color-white:        #fff;
   --color-shadow:       3px 3px 4px 0px rgba(0, 0, 0, 0.19);
@@ -85,6 +82,6 @@ a[href].direct-link:focus,
 a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
-	color: var(--color-gray);
+	color: var(--color-body-contrast);
 }
 

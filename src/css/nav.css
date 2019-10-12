@@ -31,7 +31,7 @@ nav ul {
 
 .nav-item a[href] {
   text-decoration: none;
-  color: var(--color-darkgray)
+  color: var(--color-conrast)
 }
 
 .nav-item a[href]:hover {

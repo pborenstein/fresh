@@ -117,7 +117,7 @@ a[href]:hover {
 summary {
   font-family: var(--font-body);
   font-weight: 500;
-  background-color: var(--base01);
+  background-color: var(--color-fadedred);
   padding: .75em;
   border-radius: 0.5em;
   border-color: var(--base01);
