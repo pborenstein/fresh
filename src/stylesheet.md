@@ -299,8 +299,10 @@ nostra eros lectus tempor aenean senectus rutrum congue
 mauris nunc diam ut, in pretium semper ultrices odio,
 conubia sodales ipsum diam molestie.
 
-<details>
-<summary>Some code</summary>
+
+!!! Some code
+
+This is maybe an implementation note.
 
 ``` js
 const decycle = require('json-cycle').decycle
@@ -313,8 +315,7 @@ module.exports = function pdump(obj) {
   return decycled;
 }
 ```
-</details>
-
+!!!
 
 ##### Heading 5
 

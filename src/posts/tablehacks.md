@@ -143,13 +143,7 @@ This gets rendered as a table:
 
 <br>
 
-<details>
-<summary>
-We're not going to talk about it,
-but if you're curious,
-here's what
-the HTML rendered by reStructuredText looks like.
-</summary>
+!!! Here's what the HTML rendered by reStructuredText looks like.
 
 ``` html
 <table border="0" class~="colwidths-given table" id="id1">
@@ -177,7 +171,7 @@ the HTML rendered by reStructuredText looks like.
 </table>
 ```
 
-</details>
+!!!
 
 ## Can We Do That in Markdown?
 
@@ -573,11 +567,7 @@ to do it:
 
 </div>
 
-<details>
-<summary>
-The Markdown for that is a little messy,
-but still editable and legible.
-</summary>
+!!! The Markdown for that is a little messy, but still editable and legible.
 
 ``` markdown
 <div class="t" markdown="1">
@@ -633,10 +623,9 @@ but still editable and legible.
     </div>
 
 </div>
-
 ```
 
-</details>
+!!!
 
 ## What Now?
 

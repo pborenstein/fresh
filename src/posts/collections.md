@@ -125,10 +125,7 @@ of all of the page objects that Eleventy generates.
 | `template`        | All sorts of data parsed out of the template. Things like the Eleventy configuration, markdown engine setup, and lots of stuff we probably shouldn't rely on.               |
 [<div class="table-caption">collection item properties</div>]
 
-<details style="margin-top: 1em">
-<summary>
-Implementation: How a tag becomes a collection
-</summary>
+!!! Implementation: How a tag becomes a collection
 
 [`getTaggedCollectionsData()`](https://github.com/11ty/eleventy/blob/7cac4ac0b6b99dd79d07ab94d1a443c276fe73db/src/TemplateMap.js#L146-L161)
 is the function that turns tags into collections.
@@ -155,7 +152,7 @@ async getTaggedCollectionsData() {
 `getTaggedCollectionsData()` gets called
 in `TemplateMap.cache()` which is where
 Eleventy builds the collections.
-</details>
+!!!
 
 ## Custom Collections
 
@@ -275,10 +272,7 @@ module.exports = function(collection) {
 
 ```
 
-<details style="margin-top: 1em" id=getUserConfigCollectionsData>
-<summary>
-Implementation: How custom collections get built
-</summary>
+!!! Implementation: How custom collections get built
 
 [`getUserConfigCollectionsData()`](https://github.com/11ty/eleventy/blob/7cac4ac0b6b99dd79d07ab94d1a443c276fe73db/src/TemplateMap.js#L167-L191)
 is the function that calls `addCollection()`'s callback.
@@ -314,4 +308,4 @@ async getUserConfigCollectionsData() {
 `getUserConfigCollectionsData()` gets called
 in `TemplateMap.cache()` which is where
 Eleventy builds the collections.
-</details>
+!!!
