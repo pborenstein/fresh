@@ -53,14 +53,19 @@ html {
         */ 
 }
 
+hr {
+  margin: initial;
+}
+
 body {
   font-family: var(--font-body);
   font-weight:  400;
   color: var(--color-body);
-  background-color: var(--color-white);
-  font-size: 1rem;
+  background-color: var(--color-background);
   line-height: 1.5;
 }
+
+
 
 /* links to markdown header with disappearing # */
 .direct-link {

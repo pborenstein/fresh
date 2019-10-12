@@ -117,22 +117,25 @@ a[href]:hover {
 summary {
   font-family: var(--font-body);
   font-weight: 500;
-  background-color: var(--base0x);
+  background-color: var(--base01);
   padding: .75em;
-  border-radius: 0;
-  border-color: var(--base0x);
-  border-bottom-color: var(--color-body-contrast);
-  border-top-color: var(--color-body-contrast);
+  border-radius: 0.5em;
+  border-color: var(--base01);
   border-width: thin;
   border-style: solid;
+  margin-bottom: 0;
 }
 
+details[open] summary {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 
- /* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
- */
-details {
-  /* outline: greenyellow solid 1px; */
-
+details[open] aside {
+  background-color: var(--base0x);
+  padding: 0.75em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 }
 
 details:focus,

@@ -21,12 +21,18 @@ module.exports = function (eleventyConfig) {
   //  note that we're not using the official 11ty syntax highlighter
   //  we're using markdown-it's plugin instead
 
+  const mddiv = require("markdown-it-div")
+  const mdcont = require("markdown-it-container")
+  
   const md = require("markdown-it")({
     html: true,
     breaks: false,
     linkify: false,
     typographer: true
   })
+
+    md
+    .use(mddiv)
     .use(require("markdown-it-multimd-table"))
     .use(require('markdown-it-footnote'))
     .use(require("markdown-it-prism"))
@@ -34,6 +40,26 @@ module.exports = function (eleventyConfig) {
       permalink: true,
       permalinkClass: "direct-link",
       permalinkSymbol: "•"
+    })
+    .use(mdcont, 'container',  {
+        marker: '!',
+      validate: function (params) {
+        return true
+      },
+      render: function (tokens, idx) {
+        var m = tokens[idx].info.trim() // .match(/^well\s+(.*)$/);
+        if (tokens[idx].nesting === 1) {
+          // opening tag
+          let summary =  m === ''
+                         ? ''
+                         : '<summary>' + md.utils.escapeHtml(m) + '</summary>\n'
+          
+          return '<details>' + summary + '<aside>';
+        } else {
+          // closing tag
+          return '</aside>\n</details>\n';
+        }
+      }
     })
   
     md.renderer.rules.footnote_caption = (tokens, idx/*, options, env, slf*/) => {

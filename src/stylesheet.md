@@ -99,13 +99,54 @@ graph TD;
     C-.->D;
 ```
 
-<details markdown="1">
-<summary>Folding text for asides</summary>
-Tempus *rutrum* taciti mollis diam dapibus ligula, sit
-malesuada feugiat aptent donec, curabitur habitasse
-nisl consectetur porta semper augue mollis quam hac
-dictumst tellus lobortis etiam habitant ac.
-</details>
+
+
+### Containers
+
+Two kinds of containers:
+
+- one for expanding text
+- one for general divs
+
+!!! Expanding text
+Expanding text looks like this
+
+    !!! Expanding text
+    Expanding text looks like this
+    !!!
+!!!
+
+Right now all expanding text
+starts out folded.
+
+::: style=background-color:aliceblue;padding:0.75em
+Divs are written like this:
+
+    ::: parameters
+    The text therein
+    :::
+
+The `parameters` can be:
+- one or more class identifiers
+- an element id #thisway
+- a property/value pair `style=background-color:aliceblue`
+
+This container looks like this:
+
+    ::: style=background-color:aliceblue;padding:0.75em
+    Divs are written like this:
+    . . .
+    :::
+
+which gets rendered like this:
+
+    <div style="background-color:aliceblue;padding:0.75em">
+    <p>Divs are written like this:</p>
+    . . .
+    </div>
+end
+:::
+
 
 Not far stuff she think the jokes. Going as by do known noise he wrote round leave. Warmly put branch people narrow see. Winding its waiting yet parlors married own feeling. Marry fruit do spite jokes an times. Whether at it unknown warrant herself winding if. Him same none name sake had post love. An busy feel form hand am up help. Parties it brother amongst an fortune of. Twenty behind wicket why age now itself ten. 
 
@@ -172,77 +213,45 @@ per tristique nec dictum.
 
 ## Weights &mdash; H2
 
-<div style='column-count: 3'>
+<div>
 <p style="font-weight: 100; margin-top: 0">
-Taped mammoth adroit woefully aboard much beaver ouch
-misheard selfishly greyhound wherever rat darn
-domestic without credibly said yikes this passably when
-much next much jeepers iguanodon this thus giraffe
-hence mannish much less wailed hamster steadfastly 100
+Taped mammoth adroit woefully aboard much  100
 </p>
 
 <p style="font-weight: 200">
-Taped mammoth adroit woefully aboard much beaver ouch
-misheard selfishly greyhound wherever rat darn
-domestic without credibly said yikes this passably when
-much next much jeepers iguanodon this thus giraffe
-hence mannish much less wailed hamster steadfastly 200
+Taped mammoth adroit woefully aboard much  200
 </p>
 
 <p style="font-weight: 300">
-Taped mammoth adroit woefully aboard much beaver ouch
-misheard selfishly greyhound wherever rat darn
-domestic without credibly said yikes this passably when
-much next much jeepers iguanodon this thus giraffe
-hence mannish much less wailed hamster steadfastly 300
+Taped mammoth adroit woefully aboard much  300
+<code>dateline-date</code>
 </p>
 
 <p style="font-weight: 400">
-Taped mammoth adroit woefully aboard much beaver ouch
-misheard selfishly greyhound wherever rat darn
-domestic without credibly said yikes this passably when
-much next much jeepers iguanodon this thus giraffe
-hence mannish much less wailed hamster steadfastly 400
+Taped mammoth adroit woefully aboard much  400
+<code>body, dateline</code>
 </p>
 
 <p style="font-weight: 500">
-Taped mammoth adroit woefully aboard much beaver ouch
-misheard selfishly greyhound wherever rat darn
-domestic without credibly said yikes this passably when
-much next much jeepers iguanodon this thus giraffe
-hence mannish much less wailed hamster steadfastly 500
+Taped mammoth adroit woefully aboard much  500
+<code>summary</code>
 </p>
 
 <p style="font-weight: 600">
-Taped mammoth adroit woefully aboard much beaver ouch
-misheard selfishly greyhound wherever rat darn
-domestic without credibly said yikes this passably when
-much next much jeepers iguanodon this thus giraffe
-hence mannish much less wailed hamster steadfastly 600
+Taped mammoth adroit woefully aboard much  600
 </p>
 
 <p style="font-weight: 700">
-Taped mammoth adroit woefully aboard much beaver ouch
-misheard selfishly greyhound wherever rat darn
-domestic without credibly said yikes this passably when
-much next much jeepers iguanodon this thus giraffe
-hence mannish much less wailed hamster steadfastly 700
+Taped mammoth adroit woefully aboard much  700
+<code>logo, nav</code>
 </p>
 
 <p style="font-weight: 800">
-Taped mammoth adroit woefully aboard much beaver ouch
-misheard selfishly greyhound wherever rat darn
-domestic without credibly said yikes this passably when
-much next much jeepers iguanodon this thus giraffe
-hence mannish much less wailed hamster steadfastly 800
+Taped mammoth adroit woefully aboard much  800
 </p>
 
 <p style="font-weight: 900">
-Taped mammoth adroit woefully aboard much beaver ouch
-misheard selfishly greyhound wherever rat darn
-domestic without credibly said yikes this passably when
-much next much jeepers iguanodon this thus giraffe
-hence mannish much less wailed hamster steadfastly 900
+Taped mammoth adroit woefully aboard much  900
 </p>
 
 </div>

@@ -25,12 +25,10 @@ a[href] > code {
 
 
 code[class*="language-"], pre[class*="language-"] {
-  background: var(--base0x) !important;
+  background: var(--base01) !important;
 }
 
 pre[class*="language-"] {
-  border-style: solid;
-  border-width: thin;
-  border-color: var(--color-fadedred);
-  border-radius: 0.5em;
+  border-style: none;
+  border-radius: 0.25em;
 }
