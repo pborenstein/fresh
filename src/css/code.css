@@ -18,6 +18,9 @@ code:not([class]) {
   font-size: var(--font-code-size);
   color: var(--color-body-contrast);
 }
+pre:not([class]) code:not([class]) {
+  background-color: inherit;
+}
 
 a[href] > code {
   text-decoration: underline;
