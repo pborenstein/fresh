@@ -16,11 +16,6 @@ nostra eros lectus tempor aenean senectus rutrum congue
 mauris nunc diam ut, in pretium semper ultrices odio,
 conubia sodales ipsum diam molestie.
 
-1.  one
-2.  two
-3.  three
-4.  four
-
 However besides jeez exclusively and gosh diabolically
 this hence frowned archaic abrasively preparatory
 domestic without credibly said yikes this passably when
@@ -74,6 +69,9 @@ primis inceptos.
 
 ### Lists &mdash; H3
 
+I like my lists to be tight, with no space between
+one item and the next:
+
 - Alexander Island
   - orange
   - blue
@@ -82,6 +80,58 @@ primis inceptos.
   - truck
   - sedan
 - Borden Island
+
+Some text
+
+- a common thing for us
+- is to have a bullet list
+- of alternatives
+
+Numbers
+
+1.  one
+2.  two
+3.  three
+4.  four
+
+Steps to success
+
+1.  Plan your work.
+    Most problems are easily solved
+2.  Do not stress out.
+
+    It's reall important that you stay calm.
+
+    ``` md
+    Code blocks in lists are the *worst*!
+    ```
+
+    indentation is key
+
+    ``` js
+    let spacing = require('lots')
+    ```
+    try to end with text
+    but don't be afraid to use `<br>`s.
+    life is too short
+
+3.  Spacing is key<br>
+    Don't crowd yourself
+
+    !!! What about
+    Our favorite: folding text
+
+    ``` js
+    let foo = 3 + 'kings'
+    ```
+    Things can get weird:
+
+    !!! See
+    what I mean?
+    !!!
+
+    !!!
+
 
 Jaguar one out arduous strange overabundantly and
 excepting gosh supportive before wore expansive yet
