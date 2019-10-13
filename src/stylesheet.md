@@ -323,7 +323,7 @@ nisl consectetur porta semper augue mollis quam hac
 > fondly far and snickered neurotically this this
 > emotionally away yikes this instead therefore.
 >
-> ```
+> ``` js
 > some { code
 >   in a
 >   blockquote
