@@ -3,6 +3,10 @@
  * Tomorrow scheme by Chris Kempson (http://chriskempson.com)
 */
 
+/*
+https://transform.isthe.link/?dropEmpty=null&replace=%2F.base%2F--base%2F&replace=%2F%7B+color%2F%2F&replace=%2F%7B+background-color%2F%2F&replace=%2F%3B+%7D%2F%2F
+*/
+
 :root {
   --base00: #ffffff;  /* 0 - Default Background  */
   --base0x: #f2f2f2;  /* x - between 0 and 1 */

@@ -6,7 +6,10 @@
     {%- set tagUrl %}/tags/{{ tag }}/{%- endset -%}
     <a href="{{ tagUrl | url }}" class="dateline-tags-link">
       <span class="dateline-tags">{{ tag }}</span>
-    </a><span>&emsp;</span>
+    </a>
+    {%- if not loop.last  -%}
+    <span>•</span>
+    {%- endif -%}
     {%- endif -%}
   {%- endfor %}
 {%- endmacro -%}
