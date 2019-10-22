@@ -8,7 +8,7 @@ Yet another basic eleventy starting template
 
 ## How to use this repo as a template
 
-
+It's not as straightforward as one might think.
 
 
 ## This doesn't work 
