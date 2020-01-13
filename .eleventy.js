@@ -1,19 +1,40 @@
 
 module.exports = function (eleventyConfig) {
   
-  eleventyConfig.addPassthroughCopy("src/css")
+  eleventyConfig.addPassthroughCopy("src/assets")
 
   // Filters
   eleventyConfig.addFilter("pdump", require("./js/pdump.js"))
   eleventyConfig.addFilter("prettyDate", require("./js/pretty-date.js"))
+
+  // Get the first `n` elements of a collection.
+  eleventyConfig.addFilter("head", (array, n) =>
+        n < 0 ? array.slice(n) : array.slice(0,n))
 
   // shortcodes
   eleventyConfig.addShortcode('hasMermaid', require("./js/has-mermaid.js"))
 
   //  collections
   eleventyConfig.addCollection("tagList", require("./js/get-tag-list.js"))
+
+
+  // https://remysharp.com/2019/06/26/scheduled-and-draft-11ty-posts
+
+  const nodrafts = function (item) {
+    if (!('tags' in item.data)) return false
+
+    let tags = (typeof item.data.tags === 'string')
+      ? [item.data.tags]
+      : item.data.tags
+
+    return ! tags.some(tag => tag === '_draft')
+  }
+  
+
   eleventyConfig.addCollection('posts', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
+    return collection.getFilteredByGlob('./src/posts/*.md')
+                     .filter(nodrafts)
+                     .reverse();
   });
 
 
@@ -58,7 +79,7 @@ module.exports = function (eleventyConfig) {
           // opening tag
           let summary =  m === ''
                          ? ''
-                         : '<summary>' + md.utils.escapeHtml(m) + '</summary>\n'
+                         : '<summary>' + md.renderInline(m) + '</summary>\n'
           
           return '<details>' + summary + '<aside>';
         } else {

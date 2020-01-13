@@ -2,7 +2,7 @@
 
 .one-col-grid {
   display: grid;
-  grid-template-columns: minmax(2rem, 1.2fr) minmax(12rem, 32rem) minmax(2rem, 1.2fr);
+  grid-template-columns: minmax(.5rem, 1.2fr) minmax(12rem, 32rem) minmax(.5rem, 1.2fr);
   grid-template-rows: auto;
   grid-row-gap: 0;
   grid-column-gap: 0;
@@ -40,10 +40,9 @@ nav {
 
 footer {
   grid-area: foot;
-  font-size: 1rem;
+  font-size: var(--font-size-minus-2);
   color: var(--color-footer);
   font-family: var(--font-footer);
-  font-size: 0.6rem;
   margin: 0 0 1rem 0;
   border-top: 1px solid var(--color-darkred-faded);
   padding-top: 0.5em;
@@ -87,21 +86,13 @@ footer a[href] {
 }
 
 .dateline-date {
-  font-weight: 300;
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--color-gray-40);
+  font-style: italic;
 }
 
-/* Text scale
-    https://www.modularscale.com/?1&em&1.25
 
-        1.953em
-        1.563em
-        1.25em
->>>>>>  1em
-        0.8em
-        0.64em
-        0.512em
-        0.41em
-*/
 
 
 /*  -----  links  ---------- */
@@ -126,8 +117,8 @@ summary {
   font-weight: 500;
   background-color: var(--color-fold-head);
   padding: .25em;
-  border-radius: 0.5em;
-  border-color: var(--color-fold-border);
+  border-radius: 0.1875em;
+  border-color: var(--color-fold-head);
   border-width: thin;
   border-style: solid;
   margin-bottom: 0;
@@ -139,10 +130,12 @@ details[open] summary {
 }
 
 details[open] aside {
-  background-color: var(--color-fold-expanded);
-  padding: 0.75em;
-  border-bottom-left-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-fold-expanded);
+  padding-left: .5em;
+  padding-right: 0.5em;
+  border-bottom-left-radius: 0.1875em;
+  border-bottom-right-radius: 0.1875em;
 }
 
 details:focus,
@@ -152,4 +145,12 @@ summary:focus {
 
 details > summary::-webkit-details-marker {
   color: var(--color-fold-marker);
+}
+
+
+/*  --------  blockquote ------- */
+
+blockquote {
+  margin-left: 1em;
+  margin-right: 1em;
 }

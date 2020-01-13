@@ -1,12 +1,16 @@
 /* ----- footnotes.css ------ */
 
 .footnotes {
-  font-size: .8rem;
+  font-size: var(--font-size-minus-1);
 }
 
 .footnote-ref {
-  font-size: .64em;
-  font-variant-numeric: oldstyle-nums;
+  font-size: var(--font-size-minus-2);
+  margin-left: 1px;
+}
+
+.footnote-ref a {
+  color: var(--color-darkred)
 }
 
 .footnotes-sep {
