@@ -1,7 +1,6 @@
 ---
 date: 2018-01-02T12:34:56.123-05:00
-tags:
-  - _nav
+
 title: Stylesheet
 layout: layouts/page.njk
 ---

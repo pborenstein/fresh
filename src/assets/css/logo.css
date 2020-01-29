@@ -12,10 +12,6 @@
   font-weight: 700;
 }
 
-#logo a {
-  color: var(--color-heading)
-}
-
 .nav-item {
   font-weight: 400;
 }

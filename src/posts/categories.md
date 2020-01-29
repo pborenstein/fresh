@@ -1,11 +1,16 @@
 ---
 title: Implementing Categories
 date: 2019-01-20
-subhead: A collection of collections.
+summary:  When I was figuring out
+          how collections work,
+          I tried my hand at implementing
+          a collection of
+          collections. I called the
+          things in the collection
+          of collections categories.
 category: Tech
 tags:
   - eleventy
-  - collections
 ---
 
 I want there to be Categories in Eleventy

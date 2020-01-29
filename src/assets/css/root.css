@@ -39,9 +39,9 @@
   --color-nav-text:       var(--color-gray-20);
   --color-nav-hover:      var(--color-darkred);
   --color-heading:        var(--color-gray-20);
-  --color-link:           var(--color-red);
+  --color-link:           var(--color-darkred);
   --color-footer:         var(--color-gray-75);
-  --color-code:           var(--color-darkred);   /* naked code */
+  --color-code:           var(--color-gray-30);   /* naked code */
   --color-code-bg:        var(--base0x);
   --color-fold-marker:    var(--color-darkred);
   --color-fold-expanded:  var(--color-gray-95);
@@ -59,7 +59,7 @@
   --font-heading:       var(--font-sans-serif);
   --font-list:          var(--font-sans-serif);
   --font-code:          var(--font-mono);
-  --font-code-size:     .875rem;
+  --font-code-size:     1em;
 
   --font-features:      "xnum";   /*  onum:   Old style numbers */
 
@@ -69,16 +69,16 @@
     https://www.modularscale.com/?1&em&1.25
   */
 
-    --font-size-plus-3:   1.953rem ;
-    --font-size-plus-2:   1.563rem ;
-    --font-size-plus-1:   1.25rem ;
-    --font-size-plus-0:   1rem ;
-    --font-size-base:     1rem ;
-    --font-size-minus-0:  1rem ;
-    --font-size-minus-1:  0.8rem ;
-    --font-size-minus-2:  0.64rem ;
-    --font-size-minus-3:  0.512rem ;
-    --font-size-minus-4:  0.41rem ;
+    --font-size-plus-3:   1.953em ;
+    --font-size-plus-2:   1.563em;
+    --font-size-plus-1:   1.25em;
+    --font-size-plus-0:   1em;
+    --font-size-base:     1em;
+    --font-size-minus-0:  1em;
+    --font-size-minus-1:  0.8em;
+    --font-size-minus-2:  0.64em;
+    --font-size-minus-3:  0.512em;
+    --font-size-minus-4:  0.41em;
 }
 
 html {
@@ -119,14 +119,14 @@ body {
   scroll-behavior: smooth;
   --tt-key: body;
   --tt-ease: linear;
-  --tt-max: 800;
+  --tt-max: 1200;
 }
 
 @keyframes body {
   0% {
     font-size: var(--font-size-minus-2);
   }
-  62.5% {   /* 500px */
+  41.67% {   /* 500px */
     font-size: var(--font-size-base);
   }
   100% {
