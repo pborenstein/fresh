@@ -145,6 +145,10 @@ enthusiastically more alas when close unceremoniously
 hey well tragic while far far ouch unthinkingly one
 vibrant far much ouch.
 
+## Pictures
+
+Let's figure this out.
+
 ## Mermaid Graphs
 
 You can use [Mermaid](https://mermaid-js.github.io/mermaid/)
