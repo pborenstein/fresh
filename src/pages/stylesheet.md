@@ -313,7 +313,19 @@ Tempus rutrum taciti mollis diam dapibus ligula, sit
 malesuada feugiat aptent donec, curabitur habitasse
 nisl consectetur porta semper augue mollis quam hac
 
-> We shall come back, no doubt, to walk down the Row and watch young people on the tennis courts by the clump of mimosas and walk down the beach by the bay, where the diving floats lift gently in the sun, and on out to the pine grove, where the needles thick on the ground will deaden the footfall so that we shall move among the trees as soundlessly as smoke. But that will be a long time from now, and soon now we shall  go out of the house and go into the convulsion of the world, out of history into history and the awful responsibility of Time.
+> We shall come back, no doubt, to walk down the
+Row and watch young people on the tennis courts
+by the clump of mimosas and walk down the
+beach by the bay, where the diving floats
+lift gently in the sun, and on out to the
+pine grove, where the needles thick on the 
+ground will deaden the footfall so that we 
+shall move among the trees as soundlessly as smoke. 
+But that will be a long time from now, and soon 
+now we shall  go out of the house and go into 
+the convulsion of the world, out of history into 
+history and the awful responsibility of Time.
+><cite>Robert Penn Warren</cite>
 
 Tempus rutrum taciti mollis diam dapibus ligula, sit
 malesuada feugiat aptent donec, curabitur habitasse
@@ -322,7 +334,8 @@ nisl consectetur porta semper augue mollis quam hac
 > Or classically a far some grizzly rode however jeepers
 > along mounted fishy bet owing versus leapt because
 > fondly far and snickered neurotically this this
-> emotionally away yikes this instead therefore.
+><cite>Cite in the middle</cite>
+>emotionally away yikes this instead therefore.
 >
 > ``` js
 > some { code
@@ -330,6 +343,7 @@ nisl consectetur porta semper augue mollis quam hac
 >   blockquote
 > }
 > ```
+><cite>The Way of the Squirrel</cite>
 
 
 ## Footnotes
