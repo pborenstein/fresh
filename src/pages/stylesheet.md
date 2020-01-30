@@ -15,12 +15,12 @@ conubia sodales ipsum diam molestie.
 
 [toc]
 
-However besides jeez exclusively and gosh diabolically
-this hence frowned archaic abrasively preparatory
+"She was *never* on time." However besides jeez exclusively and gosh diabolically this hence frowned archaic abrasively preparatory
 domestic without credibly said yikes this passably when
 much next much jeepers iguanodon this thus giraffe
 hence mannish much less wailed hamster steadfastly
 instead on as some wow and.
+
 
 Taped mammoth adroit woefully aboard much beaver ouch
 misheard selfishly greyhound wherever rat darn
@@ -118,7 +118,7 @@ Steps to success
     let spacing = require('lots')
     ```
     try to end with text
-    but don't be afraid to use `<br>`s.
+    but don't be afraid to use  <code>&lt;</code><code>br</code><code>&gt;</code>s.
     life is too short
 
 3.  Spacing is key<br>
@@ -313,7 +313,19 @@ Tempus rutrum taciti mollis diam dapibus ligula, sit
 malesuada feugiat aptent donec, curabitur habitasse
 nisl consectetur porta semper augue mollis quam hac
 
-> We shall come back, no doubt, to walk down the Row and watch young people on the tennis courts by the clump of mimosas and walk down the beach by the bay, where the diving floats lift gently in the sun, and on out to the pine grove, where the needles thick on the ground will deaden the footfall so that we shall move among the trees as soundlessly as smoke. But that will be a long time from now, and soon now we shall  go out of the house and go into the convulsion of the world, out of history into history and the awful responsibility of Time.
+> We shall come back, no doubt, to walk down the
+Row and watch young people on the tennis courts
+by the clump of mimosas and walk down the
+beach by the bay, where the diving floats
+lift gently in the sun, and on out to the
+pine grove, where the needles thick on the 
+ground will deaden the footfall so that we 
+shall move among the trees as soundlessly as smoke. 
+But that will be a long time from now, and soon 
+now we shall  go out of the house and go into 
+the convulsion of the world, out of history into 
+history and the awful responsibility of Time.
+><cite>Robert Penn Warren</cite>
 
 Tempus rutrum taciti mollis diam dapibus ligula, sit
 malesuada feugiat aptent donec, curabitur habitasse
