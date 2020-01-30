@@ -1,6 +1,19 @@
 
 module.exports = function (eleventyConfig) {
+ 
+ 
+  // https://github.com/johanbrook/eleventy-plugin-typeset
+  // https://typeset.lllllllllllllllll.com/
+  //    adding this was unnecessarily fidleish
+  //    somehow `eleventy-plugin-typeset` was
+  //    doing weird shit on a typoed path?
+  //    and after all that, cheerio was missing
+  //    wtf cheerio? 
   
+  const typesetPlugin = require('eleventy-plugin-typeset');
+  eleventyConfig.addPlugin(typesetPlugin({ only: 'p' }));
+
+
   eleventyConfig.addPassthroughCopy("src/assets")
 
   // Filters

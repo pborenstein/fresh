@@ -15,12 +15,12 @@ conubia sodales ipsum diam molestie.
 
 [toc]
 
-However besides jeez exclusively and gosh diabolically
-this hence frowned archaic abrasively preparatory
+"She was *never* on time." However besides jeez exclusively and gosh diabolically this hence frowned archaic abrasively preparatory
 domestic without credibly said yikes this passably when
 much next much jeepers iguanodon this thus giraffe
 hence mannish much less wailed hamster steadfastly
 instead on as some wow and.
+
 
 Taped mammoth adroit woefully aboard much beaver ouch
 misheard selfishly greyhound wherever rat darn
@@ -118,7 +118,7 @@ Steps to success
     let spacing = require('lots')
     ```
     try to end with text
-    but don't be afraid to use `<br>`s.
+    but don't be afraid to use  <code>&lt;</code><code>br</code><code>&gt;</code>s.
     life is too short
 
 3.  Spacing is key<br>
