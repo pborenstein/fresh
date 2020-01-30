@@ -334,7 +334,8 @@ nisl consectetur porta semper augue mollis quam hac
 > Or classically a far some grizzly rode however jeepers
 > along mounted fishy bet owing versus leapt because
 > fondly far and snickered neurotically this this
-> emotionally away yikes this instead therefore.
+><cite>Cite in the middle</cite>
+>emotionally away yikes this instead therefore.
 >
 > ``` js
 > some { code
@@ -342,6 +343,7 @@ nisl consectetur porta semper augue mollis quam hac
 >   blockquote
 > }
 > ```
+><cite>The Way of the Squirrel</cite>
 
 
 ## Footnotes
