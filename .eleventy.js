@@ -62,6 +62,7 @@ module.exports = function (eleventyConfig) {
     md
     .use(mddiv)
     .use(require("markdown-it-multimd-table"))
+    .use(require('markdown-it-deflist'))
     .use(require('markdown-it-footnote'))
     .use(require("markdown-it-prism"))
     .use(require("markdown-it-anchor"), {
