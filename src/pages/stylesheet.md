@@ -149,6 +149,26 @@ vibrant far much ouch.
 
 Let's figure this out.
 
+```html
+<img src="/assets/img/samuel-sianipar-scUBcasSvbE-unsplash.jpg"
+  width="100%">
+```
+
+
+<img src="/assets/img/samuel-sianipar-scUBcasSvbE-unsplash.jpg"
+  width="100%">
+
+
+```html
+<img src="https://picsum.photos/512/128?gravity=center&random"
+  width="100%" height="128" >
+```
+
+<img src="https://picsum.photos/512/128?gravity=center&random"
+  width="100%" height="128" >
+
+
+
 ## Mermaid Graphs
 
 You can use [Mermaid](https://mermaid-js.github.io/mermaid/)
