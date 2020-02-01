@@ -237,7 +237,7 @@ Divs are written like this:
 :::
 ```
 
-which gets rendered like this:
+which gets rendered into HTML like this:
 
 ``` html
 <div style="background-color:aliceblue;padding:0.75em">

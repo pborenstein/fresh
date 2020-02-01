@@ -127,6 +127,10 @@ strong, em {
   margin: initial
 }
 
+/**
+ *  typetura
+ **/
+
 body {
   font-family: var(--font-body);
   font-weight:  400;
@@ -136,14 +140,14 @@ body {
   scroll-behavior: smooth;
   --tt-key: body;
   --tt-ease: linear;
-  --tt-max: 1200;
+  --tt-max: 800;
 }
 
 @keyframes body {
-  0% {
-    font-size: var(--font-size-minus-2);
+  0%, 46.875% {   /* 375px */
+    font-size: var(--font-size-minus-1);
   }
-  41.67% {   /* 500px */
+  62.5%, 87.5%{   /* 500px - 700px */
     font-size: var(--font-size-base);
   }
   100% {
