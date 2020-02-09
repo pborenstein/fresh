@@ -26,7 +26,7 @@ module.exports = function (eleventyConfig) {
         n < 0 ? array.slice(n) : array.slice(0,n))
 
   // The ever-popular markdown filter.
-  eleventyConfig.addFilter("markdown", (content) => md.render(content))
+  eleventyConfig.addFilter("markdown", (content) => md.renderInline(content))
 
 
 
