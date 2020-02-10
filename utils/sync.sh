@@ -17,5 +17,6 @@ rsync -av --exclude=".git/" \
           --exclude="src/_data/git.js" \
           --exclude="src/_includes/partials/icons.njk" \
           --exclude="src/_includes/partials/logo.njk" \
+          --exclude="src/pages/about.md" \
       $source \
       $dest
