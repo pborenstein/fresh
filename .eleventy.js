@@ -10,9 +10,16 @@ module.exports = function (eleventyConfig) {
   //    and after all that, `cheerio` was missing.
   //    wtf cheerio? 
   
-  const typesetPlugin = require('eleventy-plugin-typeset');
-  eleventyConfig.addPlugin(typesetPlugin({ only: 'p',
-     disable: []}));
+  const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
+  const typesetPlugin = require('eleventy-plugin-typeset')
+
+    // let's try to use the official 11ty syntax highlight plugin
+
+  eleventyConfig.addPlugin(syntaxHighlight)
+  eleventyConfig.addPlugin(
+    typesetPlugin({ only: 'p',
+                    disable: []
+                  }))
 
 
   eleventyConfig.addPassthroughCopy("src/assets")
@@ -74,7 +81,9 @@ module.exports = function (eleventyConfig) {
     .use(require("markdown-it-multimd-table"))
     .use(require('markdown-it-deflist'))
     .use(require('markdown-it-footnote'))
-    .use(require("markdown-it-prism"))
+        // let's use the official version,
+        // not the markdown-'native' one
+    // .use(require("markdown-it-prism"))
     .use(require("markdown-it-anchor"), {
           permalink: true,
           permalinkClass: "direct-link",
