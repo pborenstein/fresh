@@ -97,7 +97,7 @@ has a property for each category.
 Each property refers to an array of articles.
 It looks something like this:
 
-``` json
+``` json/2,4-6
 collections: {
   all: [ items ],
   categories: {

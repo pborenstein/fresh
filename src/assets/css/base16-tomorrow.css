@@ -18,7 +18,8 @@ https://transform.isthe.link/?dropEmpty=null&replace=%2F.base%2F--base%2F&replac
   --base06: #282a2e;  /* 6 - Light Foreground (Not often used)  */
   --base07: #1d1f21;  /* 7 - Light Background (Not often used)  */
   --base08: #c82829;  /* 8 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted  */
-  --base09: #f5871f;  /* 9 - Integers, Boolean, Constants, XML Attributes, Markup Link Url  */
+  /* --base09: #f5871f;  /* 9 - Integers, Boolean, Constants, XML Attributes, Markup Link Url  */
+  --base09: #a05813;  /* 9 - Integers, Boolean, Constants, XML Attributes, Markup Link Url  */
   /* --base0A: #eab700;  /* A - Classes, Markup Bold, Search Text Background  */
   --base0A: #c39900;  /* A - Classes, Markup Bold, Search Text Background  */
   --base0B: #718c00;  /* B - Strings, Inherited Class, Markup Code, Diff Inserted  */
@@ -96,7 +97,7 @@ pre[class*="language-"] {
 .token.operator,
 .token.boolean,
 .token.number {
-  color: #f5871f;
+  color: var(--base09);
 }
 .token.property {
   color: #c39900;
@@ -111,7 +112,7 @@ pre[class*="language-"] {
   color: #8959a8;
 }
 .token.attr-name {
-  color: #f5871f;
+  color: var(--base09);
 }
 .token.entity,
 .token.url,

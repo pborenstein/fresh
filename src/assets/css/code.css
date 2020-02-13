@@ -12,6 +12,30 @@ code {
   word-break: normal;
 }
 
+/*  We're trying to use the official
+    eleventy syntax highlight plugin
+    The official plugin alters the HTML
+    so that it's all on one line.
+    That means that the plugin doesn't
+    rely on the spacing and newlines of
+    the <pre> tags.
+*/
+
+mark {
+  display: block;
+  margin: 0 -1em;
+  padding: 0 1em;
+  background-color: var(--base02);
+}
+
+  /* this is how we make br a noop */
+
+code + br,
+mark + br {
+  content: "";
+  line-height: initial;
+}
+
 
 /*  how to display in-line code:
       apply only to naked <code> blocks
