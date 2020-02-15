@@ -56,7 +56,10 @@ a[href] > code {
   text-decoration: underline;
 }
 
-
+/**
+ * let's avoid these changes to the vanilla base-16
+ *
+ *
 code[class*="language-"], pre[class*="language-"] {
   background: var(--color-code-bg) !important;
 }
@@ -66,3 +69,6 @@ pre[class*="language-"] {
   border-radius: 0.25em;
   margin: 0 0 1em 0 !important;
 }
+ *
+ **/
+ 
