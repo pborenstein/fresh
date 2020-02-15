@@ -15,7 +15,7 @@ module.exports = function (eleventyConfig) {
 
     // let's try to use the official 11ty syntax highlight plugin
 
-  eleventyConfig.addPlugin(syntaxHighlight)
+  eleventyConfig.addPlugin(syntaxHighlight, {alwaysWrapLineHighlights: true})
   eleventyConfig.addPlugin(
     typesetPlugin({ only: 'p',
                     disable: []
