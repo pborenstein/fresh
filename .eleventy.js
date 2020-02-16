@@ -16,10 +16,10 @@ module.exports = function (eleventyConfig) {
     // let's try to use the official 11ty syntax highlight plugin
 
   eleventyConfig.addPlugin(syntaxHighlight, {alwaysWrapLineHighlights: true})
-  eleventyConfig.addPlugin(
-    typesetPlugin({ only: 'p',
-                    disable: []
-                  }))
+  // eleventyConfig.addPlugin(
+  //   typesetPlugin({ only: 'p',
+  //                   disable: []
+  //                 }))
 
 
   eleventyConfig.addPassthroughCopy("src/assets")
