@@ -152,7 +152,7 @@ module.exports = function (eleventyConfig) {
 
   //  If we use the standard `markdown-it-prism` highlighter
   //  then `eleventyConfig.markdownHighlighter` doesn't get set
-  //  because prism stashes its highlighting function
+  //  because `markdown-it-prism` stashes its highlighting function
   //  in `md.options.highlight`
 
   //  In order to patch in mermaid highlighting
