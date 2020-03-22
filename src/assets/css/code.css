@@ -1,5 +1,36 @@
 /* ----- code.css ------ */
 
+/* base16-prism (https://github.com/atelierbram/base16-prism)
+ * by Bram de Haan (http://atelierbramdehaan.nl)
+ * Tomorrow scheme by Chris Kempson (http://chriskempson.com)
+*/
+
+/*
+https://transform.isthe.link/?dropEmpty=null&replace=%2F.base%2F--base%2F&replace=%2F%7B+color%2F%2F&replace=%2F%7B+background-color%2F%2F&replace=%2F%3B+%7D%2F%2F
+*/
+
+:root,
+.base16-tomorrow {
+  --base00: #ffffff;  /* 0 - Default Background  */
+  --base0x: #f2f2f2;  /* x - between 0 and 1 */
+  --base01: #e0e0e0;  /* 1 - Lighter Background (Used for status bars)  */
+  --base02: #d6d6d6;  /* 2 - Selection Background  */
+  --base03: #8e908c;  /* 3 - Comments, Invisibles, Line Highlighting  */
+  --base04: #969896;  /* 4 - Dark Foreground (Used for status bars)  */
+  --base05: #4d4d4c;  /* 5 - Default Foreground, Caret, Delimiters, Operators  */
+  --base06: #282a2e;  /* 6 - Light Foreground (Not often used)  */
+  --base07: #1d1f21;  /* 7 - Light Background (Not often used)  */
+  --base08: #c82829;  /* 8 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted  */
+  --base09: #f5871f;  /* 9 - Integers, Boolean, Constants, XML Attributes, Markup Link Url  */
+  --base0A: #eab700;  /* A - Classes, Markup Bold, Search Text Background  */
+  --base0B: #718c00;  /* B - Strings, Inherited Class, Markup Code, Diff Inserted  */
+  --base0C: #3e999f;  /* C - Support, Regular Expressions, Escape Characters, Markup Quotes  */
+  --base0D: #4271ae;  /* D - Functions, Methods, Attribute IDs, Headings  */
+  --base0E: #8959a8;  /* E - Keywords, Storage, Selector, Markup Italic, Diff Changed  */
+  --base0F: #a3685a;  /* F - Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>  */
+}
+
+
 pre {
   max-width: 100%;
   overflow: scroll;
@@ -31,81 +62,39 @@ a[href] > code {
   text-decoration: underline;
 }
 
-/* base16-prism (https://github.com/atelierbram/base16-prism)
- * by Bram de Haan (http://atelierbramdehaan.nl)
- * Tomorrow scheme by Chris Kempson (http://chriskempson.com)
-*/
 
-/*
-https://transform.isthe.link/?dropEmpty=null&replace=%2F.base%2F--base%2F&replace=%2F%7B+color%2F%2F&replace=%2F%7B+background-color%2F%2F&replace=%2F%3B+%7D%2F%2F
-*/
-
-:root,
-.base16-tomorrow {
-  --base00: #ffffff;  /* 0 - Default Background  */
-  --base0x: #f2f2f2;  /* x - between 0 and 1 */
-  --base01: #e0e0e0;  /* 1 - Lighter Background (Used for status bars)  */
-  --base02: #d6d6d6;  /* 2 - Selection Background  */
-  --base03: #8e908c;  /* 3 - Comments, Invisibles, Line Highlighting  */
-  --base04: #969896;  /* 4 - Dark Foreground (Used for status bars)  */
-  --base05: #4d4d4c;  /* 5 - Default Foreground, Caret, Delimiters, Operators  */
-  --base06: #282a2e;  /* 6 - Light Foreground (Not often used)  */
-  --base07: #1d1f21;  /* 7 - Light Background (Not often used)  */
-  --base08: #c82829;  /* 8 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted  */
-  --base09: #f5871f;  /* 9 - Integers, Boolean, Constants, XML Attributes, Markup Link Url  */
-  --base0A: #eab700;  /* A - Classes, Markup Bold, Search Text Background  */
-  --base0B: #718c00;  /* B - Strings, Inherited Class, Markup Code, Diff Inserted  */
-  --base0C: #3e999f;  /* C - Support, Regular Expressions, Escape Characters, Markup Quotes  */
-  --base0D: #4271ae;  /* D - Functions, Methods, Attribute IDs, Headings  */
-  --base0E: #8959a8;  /* E - Keywords, Storage, Selector, Markup Italic, Diff Changed  */
-  --base0F: #a3685a;  /* F - Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>  */
-}
-
-:robot, 
-.base16-solarized-light {
---base00: #fdf6e3;
---base0x: #f2f2f2;  /* x - between 0 and 1 */
---base01: #eee8d5;
---base02: #93a1a1;
---base03: #839496;
---base04: #657b83;
---base05: #586e75;
---base06: #073642;
---base07: #002b36;
---base08: #dc322f;
---base09: #cb4b16;
---base0A: #b58900;
---base0B: #859900;
---base0C: #2aa198;
---base0D: #268bd2;
---base0E: #6c71c4;
---base0F: #d33682;
-}
 
 code[class*="language-"],
 pre[class*="language-"] {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
-  font-size: 14px;
-  line-height: 1.375;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  tab-size: 4;
-  hyphens: none;
+  -moz-hyphens: none;
+  -moz-tab-size: 4;
+  -ms-hyphens: none;
+  -o-tab-size: 4;
+  -webkit-hyphens: none;
   background: var(--color-code-bg);
-
+  color: black;
+  direction: ltr;
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-size: 1em;
+  hyphens: none;
+  line-height: 1.375;
+  tab-size: 4;
+  text-align: left;
+  text-shadow: 0 1px white;
+  white-space: pre;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
 }
+ 
 
 /* Code blocks */
 pre[class*="language-"] {
-  padding: 1em;
-  margin: .5em 0;
-  overflow: auto;
-  border-style: none;
   border-radius: 0.25em;
-  margin: 0 0 1em 0;
+  border-style: none;
+  margin: 0;
+  overflow: auto;
+  padding: 1em;
 }
 
 
@@ -114,7 +103,10 @@ pre[class*="language-"] {
 :not(pre) > code[class*="language-"] {
   padding: .1em;
   border-radius: .3em;
+  white-space: normal
 }
+
+/* begin token */
 
 .token.comment,
 .token.prolog,
@@ -182,7 +174,7 @@ pre[class*="language-"] {
 }
 
 .token.inserted {
-  border-bottom: 1px dotted #1d1f21;
+  border-bottom: 1px dotted var(--base07);
   text-decoration: none;
 }
 
@@ -193,15 +185,32 @@ pre[class*="language-"] {
 .token.important,
 .token.bold {
   font-weight: bold;
-}
-
-.token.important {
   color: var(--base08);
 }
 
 .token.entity {
   cursor: help;
 }
+
+.token.char,
+.token.builtin,
+.token.constant,
+.token.symbol {
+ color: var(--base09);
+}
+ 
+ .token.string {
+   color: #9a6e3a;
+   background: hsla(0, 0%, 100%, .5);
+ }
+ 
+ 
+ .token.function,
+ .token.class-name {
+   color: #DD4A68;
+ }
+ 
+/* end token */
 
 pre > code.highlight {
   outline: .4em solid var(--base08);
@@ -214,38 +223,15 @@ pre > code.highlight {
  * @author Lea Verou
  */
 
- code[class*="language-"],
- pre[class*="language-"] {
-   color: black;
-   background: none;
-   text-shadow: 0 1px white;
-   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-   font-size: 1em;
-   text-align: left;
-   white-space: pre;
-   word-spacing: normal;
-   word-break: normal;
-   word-wrap: normal;
-   line-height: 1.5;
- 
-   -moz-tab-size: 4;
-   -o-tab-size: 4;
-   tab-size: 4;
- 
-   -webkit-hyphens: none;
-   -moz-hyphens: none;
-   -ms-hyphens: none;
-   hyphens: none;
- }
- 
- pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
- code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-   text-shadow: none;
-   background: #b3d4fc;
- }
- 
- pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
- code[class*="language-"]::selection, code[class*="language-"] ::selection {
+
+ pre[class*="language-"]::-moz-selection,
+ pre[class*="language-"] ::-moz-selection,
+ code[class*="language-"]::-moz-selection,
+ code[class*="language-"] ::-moz-selection,
+ pre[class*="language-"]::selection,
+ pre[class*="language-"] ::selection,
+ code[class*="language-"]::selection,
+ code[class*="language-"] ::selection {
    text-shadow: none;
    background: #b3d4fc;
  }
@@ -257,96 +243,16 @@ pre > code.highlight {
    }
  }
  
- /* Code blocks */
- pre[class*="language-"] {
-   padding: 1em;
-   margin: .5em 0;
-   overflow: auto;
- }
- 
- :not(pre) > code[class*="language-"],
- pre[class*="language-"] {
-   background: #f5f2f0;
- }
- 
- /* Inline code */
- :not(pre) > code[class*="language-"] {
-   padding: .1em;
-   border-radius: .3em;
-   white-space: normal;
- }
- 
- .token.comment,
- .token.prolog,
- .token.doctype,
- .token.cdata {
-   color: slategray;
- }
- 
- .token.punctuation {
-   color: #999;
- }
- 
- .token.namespace {
-   opacity: .7;
- }
- 
- .token.property,
- .token.tag,
- .token.boolean,
- .token.number,
- .token.constant,
- .token.symbol,
- .token.deleted {
-   color: #905;
- }
- 
- .token.selector,
- .token.attr-name,
- .token.string,
- .token.char,
- .token.builtin,
- .token.inserted {
-   color: #690;
- }
- 
- .token.operator,
- .token.entity,
- .token.url,
- .language-css .token.string,
- .style .token.string {
-   color: #9a6e3a;
-   background: hsla(0, 0%, 100%, .5);
- }
- 
- .token.atrule,
- .token.attr-value,
- .token.keyword {
-   color: #07a;
- }
- 
- .token.function,
- .token.class-name {
-   color: #DD4A68;
- }
- 
- .token.regex,
- .token.important,
- .token.variable {
-   color: #e90;
- }
- 
- .token.important,
- .token.bold {
-   font-weight: bold;
- }
- .token.italic {
-   font-style: italic;
- }
- 
- .token.entity {
-   cursor: help;
- }
- 
 
+
+ ins,
+ .highlight-line-add {
+   background-color: rgb(197, 234, 197);
+   text-decoration: none;
+ }
+ 
+ .highlight-line-remove {
+   background-color: rgb(253, 204, 204);
+   text-decoration: none;
+ }
  
