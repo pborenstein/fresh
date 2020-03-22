@@ -14,8 +14,15 @@ module.exports = function (eleventyConfig) {
   const typesetPlugin = require('eleventy-plugin-typeset')
 
     // let's try to use the official 11ty syntax highlight plugin
+  
+  eleventyConfig.addPlugin(syntaxHighlight, {
+    alwaysWrapLineHighlights: true,
+    showLineNumbers: true,
+    numberingBase: 1
+  });
 
-  eleventyConfig.addPlugin(syntaxHighlight, {alwaysWrapLineHighlights: true})
+  
+  
   // eleventyConfig.addPlugin(
   //   typesetPlugin({ only: 'p',
   //                   disable: []
@@ -81,9 +88,6 @@ module.exports = function (eleventyConfig) {
     .use(require("markdown-it-multimd-table"))
     .use(require('markdown-it-deflist'))
     .use(require('markdown-it-footnote'))
-        // let's use the official version,
-        // not the markdown-'native' one
-    // .use(require("markdown-it-prism"))
     .use(require("markdown-it-anchor"), {
           permalink: true,
           permalinkClass: "direct-link",
