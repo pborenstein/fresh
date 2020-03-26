@@ -60,7 +60,7 @@
   --font-heading:       var(--font-sans-serif);
   --font-list:          var(--font-sans-serif);
   --font-code:          var(--font-mono);
-  --font-code-size:     1em;
+  --font-code-size:     var(--font-size-base);
 
   --font-features:      "xnum";   /*  onum:   Old style numbers */
 
@@ -80,7 +80,13 @@
     --font-size-minus-2:  0.64em;
     --font-size-minus-3:  0.512em;
     --font-size-minus-4:  0.41em;
+
+    --line-height-body:   1.5;
+    --line-height-code:   1.5;
 }
+
+
+
 
 html {
   box-sizing: border-box;
