@@ -30,82 +30,6 @@ https://transform.isthe.link/?dropEmpty=null&replace=%2F.base%2F--base%2F&replac
   --base0F: #a3685a;  /* F - Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>  */
 }
 
-
-pre {
-  max-width: 100%;
-  overflow: scroll;
-  padding: 0 1em;
-  display: block;
-  overflow-wrap: normal;
-}
-
-code { /* why is this here ? */
-  word-break: normal;
-}
-
-/*  how to display in-line code:
-      apply only to naked <code> blocks
-*/
-code:not([class]) {
-	font-family: var(--font-code);
-  font-size: var(--font-code-size);
-  color: var(--color-code);
-}
-
-/* for naked <code> */
-pre:not([class]) code:not([class]) {
-  background-color: inherit;
-  color: var(--color-darkred)
-}
-
-a[href] > code {
-  text-decoration: underline;
-}
-
-
-
-code[class*="language-"],
-pre[class*="language-"] {
-  -moz-hyphens: none;
-  -moz-tab-size: 4;
-  -ms-hyphens: none;
-  -o-tab-size: 4;
-  -webkit-hyphens: none;
-  background: var(--color-code-bg);
-  color: black;
-  direction: ltr;
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
-  font-size: 1em;
-  hyphens: none;
-  line-height: 1.375;
-  tab-size: 4;
-  text-align: left;
-  text-shadow: 0 1px white;
-  white-space: pre;
-  word-break: normal;
-  word-spacing: normal;
-  word-wrap: normal;
-}
- 
-
-/* Code blocks */
-pre[class*="language-"] {
-  border-radius: 0.25em;
-  border-style: none;
-  margin: 0;
-  overflow: auto;
-  padding: 1em;
-}
-
-
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
-  white-space: normal
-}
-
 /* begin token */
 
 .token.comment,
@@ -126,10 +50,10 @@ pre[class*="language-"] {
 .token.operator,
 .token.boolean,
 .token.number {
-  color: var(--base09);
+  color: var(--base0D);
 }
 .token.property {
-  color: var(--base0A)
+  color: var(--base08)
 }
 .token.tag {
   color: var(--base0D);
@@ -206,6 +130,82 @@ pre[class*="language-"] {
  }
  
 /* end token */
+
+
+pre {
+  max-width: 100%;
+  overflow: scroll;
+  padding: 0 1em;
+  display: block;
+  overflow-wrap: normal;
+}
+
+code { /* why is this here ? */
+  word-break: normal;
+}
+
+/*  how to display in-line code:
+      apply only to naked <code> blocks
+*/
+code:not([class]) {
+	font-family: var(--font-code);
+  font-size: var(--font-code-size);
+  color: var(--color-code);
+}
+
+/* for naked <code> */
+pre:not([class]) code:not([class]) {
+  background-color: inherit;
+  color: var(--color-darkred)
+}
+
+a[href] > code {
+  text-decoration: underline;
+}
+
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+  -moz-hyphens: none;
+  -moz-tab-size: 4;
+  -ms-hyphens: none;
+  -o-tab-size: 4;
+  -webkit-hyphens: none;
+  background: var(--color-code-bg);
+  color: black;
+  direction: ltr;
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-size: 1em;
+  hyphens: none;
+  line-height: 1.5;
+  tab-size: 4;
+  text-align: left;
+  white-space: pre;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+}
+ 
+
+/* Code blocks */
+pre[class*="language-"] {
+  border-radius: 0.25em;
+  border-style: none;
+  margin: 0;
+  overflow: auto;
+  padding: 1em;
+}
+
+
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal
+}
+
 
 pre > code.highlight {
   outline: .4em solid var(--base08);
@@ -293,7 +293,7 @@ pre[class*="language-"].line-numbers > code {
 .line-numbers .line-numbers-rows {
 	position: absolute;
 	pointer-events: none;
-	top: 0;
+	top: -4px; /* hack to get numbers to line up with text */
 	font-size: 100%;
 	left: -3.8em;
 	width: 3em; /* works for line-numbers below 1000 lines */
