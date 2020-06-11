@@ -13,7 +13,6 @@ module.exports = function (eleventyConfig) {
   const syntaxHighlight = require("eleventy-md-syntax-highlight")
   const typesetPlugin = require('eleventy-plugin-typeset')
 
-    // let's try to use the official 11ty syntax highlight plugin
 
   eleventyConfig.addPlugin(syntaxHighlight);
 
@@ -68,8 +67,6 @@ module.exports = function (eleventyConfig) {
 
 
   //  Set our markdown processor just how we like it.
-  //  note that we're not using the official 11ty syntax highlighter
-  //  we're using markdown-it's plugin instead
 
   const md = require("markdown-it")({
                       html: true,
