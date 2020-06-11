@@ -1,28 +1,24 @@
 
 module.exports = function (eleventyConfig) {
- 
- 
+
+
   // https://github.com/johanbrook/eleventy-plugin-typeset
   // https://typeset.lllllllllllllllll.com/
   //    adding this module was unnecessarily fiddly-ish
   //    Somehow `eleventy-plugin-typeset` was
   //    doing weird shit on a typoed path?
   //    and after all that, `cheerio` was missing.
-  //    wtf cheerio? 
-  
-  const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
+  //    wtf cheerio?
+
+  const syntaxHighlight = require("eleventy-md-syntax-highlight")
   const typesetPlugin = require('eleventy-plugin-typeset')
 
     // let's try to use the official 11ty syntax highlight plugin
-  
-  eleventyConfig.addPlugin(syntaxHighlight, {
-    alwaysWrapLineHighlights: true,
-    showLineNumbers: true,
-    numberingBase: 1
-  });
 
-  
-  
+  eleventyConfig.addPlugin(syntaxHighlight);
+
+
+
   // eleventyConfig.addPlugin(
   //   typesetPlugin({ only: 'p',
   //                   disable: []
@@ -62,7 +58,7 @@ module.exports = function (eleventyConfig) {
 
     return ! tags.some(tag => tag === '_draft')
   }
-  
+
 
   eleventyConfig.addCollection('posts', collection => {
     return collection.getFilteredByGlob('./src/posts/*.md')
@@ -109,7 +105,7 @@ module.exports = function (eleventyConfig) {
               let summary =  m === ''
                              ? ''
                              : '<summary>' + md.renderInline(m) + '</summary>\n'
-          
+
               return '<details>' + summary + '<aside>';
             } else {
               // closing tag
@@ -127,11 +123,11 @@ module.exports = function (eleventyConfig) {
 
   md.renderer.rules.footnote_caption = (tokens, idx/*, options, env, slf*/) => {
     let n = Number(tokens[idx].meta.id + 1).toString();
-  
+
     if (tokens[idx].meta.subId > 0) {
       n += ':' + tokens[idx].meta.subId;
     }
-  
+
     return n;
   }
 
