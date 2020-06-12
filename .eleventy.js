@@ -14,7 +14,8 @@ module.exports = function (eleventyConfig) {
   const typesetPlugin = require('eleventy-plugin-typeset')
 
 
-  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(syntaxHighlight,
+    {showLineNumbers: false})
 
 
 
@@ -46,22 +47,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("tagList", require("./js/get-tag-list.js"))
 
 
-  // https://remysharp.com/2019/06/26/scheduled-and-draft-11ty-posts
-
-  const nodrafts = function (item) {
-    if (!('tags' in item.data)) return false
-
-    let tags = (typeof item.data.tags === 'string')
-      ? [item.data.tags]
-      : item.data.tags
-
-    return ! tags.some(tag => tag === '_draft')
-  }
-
-
   eleventyConfig.addCollection('posts', collection => {
     return collection.getFilteredByGlob('./src/posts/*.md')
-                     .filter(nodrafts)
                      .reverse();
   });
 
