@@ -10,12 +10,12 @@ module.exports = function (eleventyConfig) {
   //    and after all that, `cheerio` was missing.
   //    wtf cheerio?
 
-  const syntaxHighlight = require("eleventy-md-syntax-highlight")
+  const syntaxHighlight = require("@pborenstein/eleventy-md-syntax-highlight")
   const typesetPlugin = require('eleventy-plugin-typeset')
 
 
   eleventyConfig.addPlugin(syntaxHighlight,
-    {showLineNumbers: false})
+    {showLineNumbers: true})
 
 
 
