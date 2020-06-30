@@ -28,7 +28,7 @@
 /*
 ### Foreground/Background
 */
-  
+
   --color-white:          #fff;
 
   --color-foreground:     var(--color-gray-07);
@@ -110,7 +110,7 @@ html {
             All this because I don't like there to be
             a space between the heading and the next
             chunk of content.
-        */ 
+        */
 }
 
         /*  ... and of course
@@ -141,22 +141,6 @@ body {
   color: var(--color-body);
   background-color: var(--color-background);
   scroll-behavior: smooth;
-  --tt-key: body;
-  --tt-ease: linear;
-  --tt-max: 1200;
-}
-
-@keyframes body {
-  0% {
-    font-size: var(--font-size-minus-2);
-  }
-  41.67% {   /* 500px */
-    font-size: var(--font-size-base);
-  }
-  100% {
-    font-size: var(--font-size-plus-1);
-  }
-
 }
 
 /* links to markdown header with disappearing # */

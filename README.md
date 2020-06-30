@@ -6,6 +6,7 @@ Yet another basic eleventy starting template
 - flexible
 - minimally styled
 
+<!--
 ## How to use this repo as a template
 
 It's not as straightforward as one might think.
@@ -14,11 +15,11 @@ It's not as straightforward as one might think.
 - on and on
 
 
-## This doesn't work 
+## This doesn't work
 
 but this thing does: https://stackoverflow.com/a/50996201/285528x0
 
-Clone the repo 
+Clone the repo
 
 ``` shell
 
@@ -90,3 +91,4 @@ upstream	git@github.com:pborenstein/fresh.git (fetch)
 upstream	no_push (push)
 
 ```
+ -->

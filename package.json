@@ -8,15 +8,14 @@
     "build:colors": "utils/make-colors",
     "build:styles": "utils/make-styles",
     "serve": "npm run build && eleventy --serve",
-    "debug": "DEBUG=* npx eleventy",
-    "postinstall": "patch-package"
+    "debug": "DEBUG=* npx eleventy"
   },
   "keywords": [],
   "repository": "github:pborenstein/fresh",
   "author": "Philip Borenstein",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^0.11.0",
     "@pborenstein/eleventy-md-syntax-highlight": "^1.0.1",
     "async-git": "^1.13.0",
     "cheerio": "^1.0.0-rc.3",
@@ -31,8 +30,6 @@
     "markdown-it-div": "^1.1.0",
     "markdown-it-footnote": "^3.0.2",
     "markdown-it-multimd-table": "^4.0.2",
-    "markdown-it-toc-done-right": "^4.1.0",
-    "patch-package": "^6.2.2",
-    "typeturajs": "^1.1.1"
+    "markdown-it-toc-done-right": "^4.1.0"
   }
 }

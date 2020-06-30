@@ -2,16 +2,8 @@
 module.exports = function (eleventyConfig) {
 
 
-  // https://github.com/johanbrook/eleventy-plugin-typeset
-  // https://typeset.lllllllllllllllll.com/
-  //    adding this module was unnecessarily fiddly-ish
-  //    Somehow `eleventy-plugin-typeset` was
-  //    doing weird shit on a typoed path?
-  //    and after all that, `cheerio` was missing.
-  //    wtf cheerio?
 
   const syntaxHighlight = require("@pborenstein/eleventy-md-syntax-highlight")
-  const typesetPlugin = require('eleventy-plugin-typeset')
 
 
   eleventyConfig.addPlugin(syntaxHighlight,
