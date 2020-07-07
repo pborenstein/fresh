@@ -43,7 +43,6 @@
   --color-link:           var(--color-darkred);
   --color-footer:         var(--color-gray-75);
   --color-code:           var(--color-gray-30);   /* naked code */
-  --color-code-bg:        var(--base0x);
   --color-fold-marker:    var(--color-darkred);
   --color-fold-expanded:  var(--color-gray-95);
   --color-fold-head:      var(--color-red-faded);
@@ -94,45 +93,6 @@ html {
   overflow: scroll;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-    /* border: 1px solid red !important; */
-    margin-top: 0;
-    margin-bottom: 1em;
-        /*  The idea here is that the tops
-            of paragraphs (and other blocklike things)
-            have no margins. They butt up against
-            the bottom of the thing above them.
-            If that happens to be a para, which it
-            probably is, then they'll just use the
-            bottom margin of the preceding element.
-            Is this enough to keep headings close?
-            All this because I don't like there to be
-            a space between the heading and the next
-            chunk of content.
-        */
-}
-
-        /*  ... and of course
-            the '*' selectors were catching
-            the inline elements, giving them
-            huge margins, which wouldn't
-            ordinarily matter, but sometimes,
-            in cases like
-            <span class="foo">
-            where "foo" has "display: inline-block",
-            the margin on <span> takes on
-            a strange and sinister quality.
-            So, we reset the margins of
-            inline elementsto their initial state.
-                    */
-
-em,
-hr,
-span,
-strong, em {
-  margin: initial
-}
 
 body {
   font-family: var(--font-body);
@@ -162,6 +122,16 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link:visited {
   color: var(--color-link);
   text-decoration: none;
+}
+
+
+/*  how to display in-line code:
+      apply only to naked <code> blocks
+*/
+code:not([class]) {
+	font-family: var(--font-code);
+  font-size: var(--font-code-size);
+  color: var(--color-code);
 }
 
 /***
