@@ -7,10 +7,15 @@
 ### Grays
 */
 
-  --color-gray-07:  #111111;  /* 07%  body text                            */
-  --color-gray-20:  #333333;  /* 20%  headings, nav text                   */
-  --color-gray-30:  #4d4d4d;  /* 30%  prism background                     */
-  --color-gray-40:  #666666;  /* 40% dateline date                         */
+  --color-gray-07:  hsl(0,0%,07%);  /* 07%  #121212 body text                            */
+  --color-gray-10:  hsl(0,0%,10%);
+  --color-gray-13:  hsl(0,0%,13%);  /* 13%                     */
+  --color-gray-20:  hsl(0,0%,20%);  /* 20%  headings, nav text                   */
+  --color-gray-25:  hsl(0,0%,25%);
+  --color-gray-30:  hsl(0,0%,30%);  /* 30%  prism background                     */
+  --color-gray-35:  hsl(0,0%,35%);
+  --color-gray-40:  hsl(0,0%,40%);;  /* 40% dateline date                         */
+  --color-gray-60:  hsl(0,0%,60%);
   --color-gray-75:  #c0c0c0;  /* 75%  footer                               */
   --color-gray-88:  #e0e0e0;  /* 88%  table head/body sep, border of fold  */
   --color-gray-95:  #f2f2f2;  /* 95%  even row, bg of fold exp fold        */
@@ -31,23 +36,35 @@
 
   --color-white:          #fff;
 
-  --color-foreground:     var(--color-gray-07);
-  --color-background:     var(--color-white);
-  --color-bg-contrast:    var(--color-gray-95);     /* table even row */
+  --color-foreground:     var(--color-gray-60);
+  --color-background:     var(--color-gray-10);
+  --color-bg-contrast:    var(--color-gray-40);     /* table even row */
 
   --color-body:           var(--color-foreground);
   --color-nav-text:       var(--color-gray-20);
   --color-nav-hover:      var(--color-darkred);
-  --color-heading:        var(--color-gray-20);
+  --color-heading:        var(--color-gray-75);
   --color-figure-caption: var(--color-gray-40);
   --color-link:           var(--color-darkred);
   --color-footer:         var(--color-gray-75);
-  --color-code:           var(--color-gray-30);   /* naked code */
+  --color-code:           var(--color-gray-60);   /* naked code */
   --color-code-bg:        var(--base0x);
-  --color-fold-marker:    var(--color-darkred);
-  --color-fold-expanded:  var(--color-gray-95);
-  --color-fold-head:      var(--color-red-faded);
-  --color-fold-border:    var(--color-gray-88);
+  --color-fold-marker:    var(--color-red-faded);
+  --color-fold-expanded:  var(--color-gray-30);
+  --color-fold-head:      var(--color-darkred);
+  --color-fold-border:    var(--color-gray-30);
+
+
+  --color-table-odd:        var(--color-bg-contrast);
+  --color-table-even:       var(--color-background);
+  --color-table-body:       var(--color-body);
+  --color-table-heading:    var(--color-heading);
+  --color-table-caption:    var(--color-darkred);
+  --color-table-sep:        var(--color-gray-88);
+
+  --font-table-caption:     var(--font-heading);
+  --font-table-heading:     var(--font-heading);
+  --font-table-body:        var(--font-body);
 
 
   --font-serif:           Georgia, serif;
