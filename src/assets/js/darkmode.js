@@ -1,3 +1,12 @@
+/****
+ * darkmode.js
+ *
+ *  dark mode handler from:
+ *    https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
+ *    https://codepen.io/adhuham/pen/BaNroxd
+ *
+ ****/
+
 const btn = document.querySelector(".btn-toggle");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
