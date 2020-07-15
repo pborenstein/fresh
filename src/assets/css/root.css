@@ -1,8 +1,6 @@
 /* ----- root.css ------ */
 
 :root {
-  /*  GRAYS   */
-
 /*
 ### Grays
 */
@@ -10,16 +8,19 @@
   --color-gray-07:  hsl(0,0%,07%);  /* 07%  #121212 body text                            */
   --color-gray-10:  hsl(0,0%,10%);
   --color-gray-13:  hsl(0,0%,13%);  /* 13%                     */
+  --color-gray-15:  hsl(0,0%,15%);
   --color-gray-20:  hsl(0,0%,20%);  /* 20%  headings, nav text                   */
   --color-gray-25:  hsl(0,0%,25%);
   --color-gray-30:  hsl(0,0%,30%);  /* 30%  prism background                     */
   --color-gray-35:  hsl(0,0%,35%);
-  --color-gray-40:  hsl(0,0%,40%);;  /* 40% dateline date                         */
+  --color-gray-40:  hsl(0,0%,40%);  /* 40% dateline date                         */
+  --color-gray-50:  hsl(0,0%,50%);
   --color-gray-60:  hsl(0,0%,60%);
-  --color-gray-75:  #c0c0c0;  /* 75%  footer                               */
-  --color-gray-88:  #e0e0e0;  /* 88%  table head/body sep, border of fold  */
-  --color-gray-95:  #f2f2f2;  /* 95%  even row, bg of fold exp fold        */
+  --color-gray-75:  hsl(0,0%,75%);  /* 75%  footer                               */
+  --color-gray-88:  hsl(0,0%,88%);  /* 75%  footer                               */
+  --color-gray-95:  hsl(0,0%,95%);  /* 95%  even row, bg of fold exp fold        */
 
+  --color-white:    #fff;
 
 /*
 ### Reds
@@ -27,33 +28,118 @@
 
   --color-red:            #c22323;
   --color-red-faded:      #fde2e2;      /* folded text bg, table-caption highlight */
-  --color-darkred:        #7F0036;
+  --color-darkred:        #7f0036;
   --color-darkred-faded:  #7f00364d;
+  --color-terracotta:     #4d1f1f;
+  --color-brightred:      #a00707;
 
-/*
-### Foreground/Background
-*/
+}
 
-  --color-white:          #fff;
+/****
+ *  darkmode implementation from
+ *  https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
+ ****/
 
-  --color-foreground:     var(--color-gray-60);
-  --color-background:     var(--color-gray-10);
-  --color-bg-contrast:    var(--color-gray-40);     /* table even row */
 
-  --color-body:           var(--color-foreground);
+body {
+  --color-foreground:     var(--color-gray-07);
+  --color-background:     var(--color-white);
+  --color-bg-contrast:    var(--color-gray-95);     /* table even row */
+
   --color-nav-text:       var(--color-gray-20);
   --color-nav-hover:      var(--color-darkred);
-  --color-heading:        var(--color-gray-75);
+
+  --color-body:           var(--color-foreground);
+  --color-heading:        var(--color-gray-20);
   --color-figure-caption: var(--color-gray-40);
   --color-link:           var(--color-darkred);
   --color-footer:         var(--color-gray-75);
+  --color-code:           var(--color-gray-30);   /* naked code */
+
+  --color-fold-marker:    var(--color-darkred);
+  --color-fold-expanded:  var(--color-gray-95);
+  --color-fold-head:      var(--color-red-faded);
+  --color-fold-border:    var(--color-gray-88);
+}
+
+body.dark-theme {
+  --color-foreground:     var(--color-gray-60);
+  --color-background:     var(--color-gray-10);
+  --color-bg-contrast:    var(--color-gray-20);     /* table even row */
+
+  --color-nav-text:       var(--color-gray-50);
+  --color-nav-hover:      var(--color-darkred);
+
+  --color-body:           var(--color-foreground);
+  --color-heading:        var(--color-brightred);
+  --color-figure-caption: var(--color-gray-40);
+  --color-link:           var(--color-brightred);
+  --color-footer:         var(--color-gray-25);
   --color-code:           var(--color-gray-60);   /* naked code */
+
   --color-fold-marker:    var(--color-red-faded);
-  --color-fold-expanded:  var(--color-gray-30);
-  --color-fold-head:      var(--color-darkred);
-  --color-fold-border:    var(--color-gray-30);
+  --color-fold-expanded:  var(--color-terracotta);
+  --color-fold-head:      var(--color-terracotta);
+  --color-fold-border:    var(--color-terracotta);
+}
 
 
+
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    --color-foreground:     var(--color-gray-60);
+    --color-background:     var(--color-gray-10);
+    --color-bg-contrast:    var(--color-gray-20);     /* table even row */
+
+    --color-nav-text:       var(--color-gray-50);
+    --color-nav-hover:      var(--color-darkred);
+
+    --color-body:           var(--color-foreground);
+    --color-heading:        var(--color-brightred);
+    --color-figure-caption: var(--color-gray-40);
+    --color-link:           var(--color-brightred);
+    --color-footer:         var(--color-gray-25);
+    --color-code:           var(--color-gray-60);   /* naked code */
+
+    --color-fold-marker:    var(--color-red-faded);
+    --color-fold-expanded:  var(--color-terracotta);
+    --color-fold-head:      var(--color-terracotta);
+    --color-fold-border:    var(--color-terracotta);
+  }
+
+  body.light-theme {
+    --color-foreground:     var(--color-gray-07);
+    --color-background:     var(--color-white);
+    --color-bg-contrast:    var(--color-gray-95);     /* table even row */
+
+    --color-nav-text:       var(--color-gray-20);
+    --color-nav-hover:      var(--color-darkred);
+
+    --color-body:           var(--color-foreground);
+    --color-heading:        var(--color-gray-20);
+    --color-figure-caption: var(--color-gray-40);
+    --color-link:           var(--color-darkred);
+    --color-footer:         var(--color-gray-75);
+    --color-code:           var(--color-gray-30);   /* naked code */
+
+    --color-fold-marker:    var(--color-darkred);
+    --color-fold-expanded:  var(--color-gray-95);
+    --color-fold-head:      var(--color-red-faded);
+    --color-fold-border:    var(--color-gray-88);
+  }
+
+}
+
+
+
+
+/*
+### Tables
+*/
+
+:root {
   --color-table-odd:        var(--color-bg-contrast);
   --color-table-even:       var(--color-background);
   --color-table-body:       var(--color-body);
@@ -104,6 +190,7 @@
 
 
 
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -119,6 +206,7 @@ body {
   background-color: var(--color-background);
   scroll-behavior: smooth;
 }
+
 
 /* links to markdown header with disappearing # */
 .direct-link {
