@@ -20,7 +20,6 @@
     "async-git": "^1.13.0",
     "cheerio": "^1.0.0-rc.3",
     "debug": "^4.1.1",
-    "eleventy-plugin-typeset": "^1.0.0",
     "json-cycle": "^1.3.0",
     "luxon": "^1.24.1",
     "markdown-it": "^10.0.0",
