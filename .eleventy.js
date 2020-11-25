@@ -1,23 +1,16 @@
 
 module.exports = function (eleventyConfig) {
-
-
-
   const syntaxHighlight = require("@pborenstein/eleventy-md-syntax-highlight")
-
 
   eleventyConfig.addPlugin(syntaxHighlight,
     {showLineNumbers: true})
-
-
 
   // eleventyConfig.addPlugin(
   //   typesetPlugin({ only: 'p',
   //                   disable: []
   //                 }))
 
-
-  eleventyConfig.addPassthroughCopy("src/assets")
+    eleventyConfig.addPassthroughCopy("src/assets")
 
   // Filters
   eleventyConfig.addFilter("pdump", require("./js/pdump.js"))

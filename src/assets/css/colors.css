@@ -1,0 +1,56 @@
+:root {
+
+/* blues */ ;
+  --color-ghost:              hsl(235, 23%, 81%)    /* #c3c5da */ ;
+  --color-logan:              hsl(235, 19%, 68%)    /* #9ea0bd */ ;
+  --color-waterloo:           hsl(235, 19%, 55%)    /* #777ba2 */ ;
+  --color-victoria:           hsl(235, 26%, 42%)    /* #4f5487 */ ;
+  --color-biscay:             hsl(235, 45%, 28%)    /* #262d68 */ ;
+
+/* bricks */ ;
+  --color-wafer:              hsl(2, 23%, 81%)      /* #d9c4c2 */ ;
+  --color-thatch:             hsl(1, 19%, 68%)      /* #bd9e9e */ ;
+  --color-pharlap:            hsl(2, 19%, 55%)      /* #a27876 */ ;
+  --color-lotus:              hsl(2, 26%, 42%)      /* #865250 */ ;
+  --color-red-devil:          hsl(3, 45%, 28%)      /* #672b27 */ ;
+
+/* grays */ ;
+
+  --color-concrete:           hsl(121, 0%, 95%)     /* #f2f2f2 */ ;
+  --color-magnesium:          hsl(121, 0%, 70%)     /* #b3b3b3 */ ;
+  --color-gray:               hsl(121, 0%, 50%)     /* #808080 */ ;
+  --color-charcoal:           hsl(121, 0%, 25%)     /* #404040 */ ;
+  --color-woodsmoke:          hsl(121, 0%, 5%)      /* #0d0d0d */ ;
+
+/* greens */ ;
+  --color-conch:              hsl(164, 23%, 81%)    /* #c3dad4 */ ;
+  --color-shadow-green:       hsl(164, 19%, 68%)    /* #9ebdb5 */ ;
+  --color-sea-nymph:          hsl(164, 19%, 55%)    /* #76a295 */ ;
+  --color-breaker-bay:        hsl(164, 26%, 42%)    /* #4f8878 */ ;
+  --color-eden:               hsl(164, 45%, 28%)    /* #276956 */ ;
+
+/* reddishes */ ;
+  --color-sundown:            hsl(0, 80%, 82%)      /* #f6acac */ ;
+  --color-sunglo:             hsl(0, 70%, 64%)      /* #e26463 */ ;
+  --color-well-read:          hsl(0, 60%, 45%)      /* #b72e2f */ ;
+  --color-guardsman-red:      hsl(0, 50%, 38%)      /* #913030 */ ;
+  --color-red-devil:          hsl(0, 40%, 30%)      /* #692d2d */ ;
+
+/* reds */ ;
+  --color-sundown:            hsl(0, 92%, 82%)      /* #fba7a7 */ ;
+  --color-red-orange:         hsl(0, 92%, 64%)      /* #f7504f */ ;
+  --color-ku-crimson:         hsl(0, 92%, 45%)      /* #dc0a0a */ ;
+  --color-milano-red:         hsl(0, 92%, 38%)      /* #b90909 */ ;
+  --color-sangria:            hsl(0, 92%, 30%)      /* #920807 */ ;
+
+/* pborenstein.com */
+
+  --color-pippin:         hsl(  0,  87%, 94%)     /* #fde2e2 */ ;
+  --color-we-peep:        hsl(344,  52%, 92%)     /* #f5e0e6 */;
+  --color-tapestry:       hsl(340,  37%, 59%)     /* #be718b */;
+  --color-vin-rouge:      hsl(336,  48%, 42%)     /* #9e3861 */;
+  --color-siren:          hsl(334, 100%, 25%)     /* #7f0036 */;
+
+
+
+}
