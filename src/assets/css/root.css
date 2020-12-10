@@ -1,5 +1,24 @@
 /* ----- root.css ------ */
 
+/* https://codepen.io/RockStarwind/pen/vYKBadV?editors=1100 */
+
+:root {
+	--true: ;
+	--false: initial;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --is-dark: var(--true);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --is-dark: var(--false) ;
+  }
+}
 
 
 
@@ -8,45 +27,69 @@
 */
 
 :root {
-  --color-gray-00:              black;
-  --color-gray-10:              hsl(0, 0%, 10%);
-  --color-gray-20:              hsl(0, 0%, 20%);
-  --color-gray-30:              hsl(0, 0%, 30%);
-  --color-gray-40:              hsl(0, 0%, 40%);
-  --color-gray-50:              hsl(0, 0%, 50%);
-  --color-gray-60:              hsl(0, 0%, 60%);
-  --color-gray-70:              hsl(0, 0%, 70%);
-  --color-gray-80:              hsl(0, 0%, 80%);
-  --color-gray-90:              hsl(0, 0%, 90%);
-  --color-gray-95:              hsl(0, 0%, 95%);
-  --color-gray-100:             white;
+  --color-gray-00:  black;
+  --color-gray-10:  hsl(0, 0%, 10%);
+  --color-gray-20:  hsl(0, 0%, 20%);
+  --color-gray-30:  hsl(0, 0%, 30%);
+  --color-gray-40:  hsl(0, 0%, 40%);
+  --color-gray-50:  hsl(0, 0%, 50%);
+  --color-gray-60:  hsl(0, 0%, 60%);
+  --color-gray-70:  hsl(0, 0%, 70%);
+  --color-gray-80:  hsl(0, 0%, 80%);
+  --color-gray-90:  hsl(0, 0%, 90%);
+  --color-gray-95:  hsl(0, 0%, 95%);
+  --color-gray-100: white;
 }
 
 :root {
-  --color-foreground:           var(--color-gray-10);
-  --color-foreground-lighter:   var(--color-gray-40);
-  --color-foreground-lightest:  var(--color-gray-50);
 
-  --color-background:           var(--color-gray-95);
-  --color-background-darker:    var(--color-gray-80);
-  --color-background-darkest:   var(--color-gray-70);
+  /***
+   *    light-mode: foreground (lighter->) background
+   *    dark-mode:  foreground (darker ->) background
+   ***/
 
-  --color-accent-lightest:      hsl(164, 23%, 81%);
-  --color-accent-lighter:       hsl(164, 19%, 68%);
-  --color-accent:               hsl(164, 19%, 55%);
-  --color-accent-darker :       hsl(164, 26%, 42%);
-  --color-accent-darkest:       hsl(164, 45%, 28%);
+  --lt-color-foreground:            var(--color-gray-10);
+  --lt-color-foreground-lighter:    var(--color-gray-30);
+  --lt-color-foreground-lightest:   var(--color-gray-40);
+  --lt-color-background-darkest:    var(--color-gray-70);
+  --lt-color-background-darker:     var(--color-gray-80);
+  --lt-color-background:            var(--color-gray-95);
+
+  --dk-color-foreground:            var(--is-dark) var(--color-gray-90);
+  --dk-color-foreground-lighter:    var(--is-dark) var(--color-gray-80);
+  --dk-color-foreground-lightest:   var(--is-dark) var(--color-gray-70);
+  --dk-color-background-darkest:    var(--is-dark) var(--color-gray-30);
+  --dk-color-background-darker:     var(--is-dark) var(--color-gray-20);
+  --dk-color-background:            var(--is-dark) var(--color-gray-10);
+
+/*
+### Foreground / Background
+*/
+
+  --color-foreground:               var(--dk-color-foreground         , var(--lt-color-foreground         ));
+  --color-foreground-lighter:       var(--dk-color-foreground-lighter , var(--lt-color-foreground-lighter ));
+  --color-foreground-lightest:      var(--dk-color-foreground-lightest, var(--lt-color-foreground-lightest));
+  --color-background-darkest:       var(--dk-color-background-darkest , var(--lt-color-background-darkest ));
+  --color-background-darker:        var(--dk-color-background-darker  , var(--lt-color-background-darker  ));
+  --color-background:               var(--dk-color-background         , var(--lt-color-background         ));
+
+/*
+### Accents
+*/
+
+  --color-accent-lightest:      hsl(  0,  87%, 94%) /* #fde2e2 */;
+  --color-accent-lighter:       hsl(344,  52%, 92%) /* #f5e0e6 */;
+  --color-accent:               hsl(340,  37%, 59%) /* #be718b */;
+  --color-accent-darker:        hsl(336,  48%, 42%) /* #9e3861 */;
+  --color-accent-darkest:       hsl(334, 100%, 25%) /* #7f0036 */;
 }
 
 
+/*
+### Elements
+*/
+
 :root {
-  --color-logo:       var(--color-accent-darkest);
-  --color-logo-link:  var(--color-accent-darkest);
-
-
-  --color-nav-text:             var(--color-foreground-lighter);
-  --color-nav-hover:            var(--color-accent);
-
   --color-body:                 var(--color-foreground);
   --color-body-light:           var(--color-foreground-lighter);
   --color-heading:              var(--color-foreground);
@@ -54,12 +97,32 @@
   --color-link:                 var(--color-accent-darkest);
   --color-code:                 var(--color-foreground);
 
-  --color-fold-marker:          var(--color-accent-darkest);
-  --color-fold-expanded:        var(--color-accent-lighter);
-  --color-fold-head:            var(--color-accent-lighter);
+  --color-logo:       var(--color-accent-darkest);
+  --color-logo-link:  var(--color-accent-darkest);
 
-  --color-footer:               var(--color-background-darker);
-  --color-footer-sep:           var(--color-accent-lightest);
+
+  --color-nav-text:             var(--color-foreground-lighter);
+  --color-nav-hover:            var(--color-accent);
+
+
+
+
+  --dk-color-fold-marker:   var(--is-dark) var(--color-accent-lighter);
+  --dk-color-fold-head:     var(--is-dark) var(--color-accent-darker);
+  --dk-color-fold-expanded: var(--is-dark) var(--color-accent);
+
+  --color-fold-marker:      var(--dk-color-fold-marker, var(--color-accent-darkest));
+  --color-fold-head:        var(--dk-color-fold-head, var(--color-accent-lighter));
+  --color-fold-expanded:    var(--dk-color-fold-expanded, var(--color-accent-lighter));
+
+  --color-footer:           var(--color-background-darker);
+  --color-footer-sep:       var(--color-accent-lightest);
+
+
+        /*****
+            fold-head:  light: --color-accent-lighter
+                        dark:  --color-accent-darker
+        *****/
 
 }
 

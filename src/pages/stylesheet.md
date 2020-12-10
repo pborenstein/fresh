@@ -9,8 +9,14 @@ layout: layouts/page.njk
 Nostra gravida felis suspendisse lectus netus
 adipiscing, erat cubilia elementum nibh senectus,
 
-<button class="btn-toggle">Toggle Dark-Mode</button>
-<button class="btn-system">Use System Mode</button>
+<button class="btn-dark">Dark</button>
+<button class="btn-light">Light</button>
+<button class="btn-system">System</button>
+
+<div id="appearance" class="appearance">
+dalmatian much dove methodically gosh far near and
+objective sold more misheard dear hello.
+</div>
 
 nostra eros lectus tempor aenean senectus rutrum congue
 mauris nunc diam ut, in pretium semper ultrices odio,
