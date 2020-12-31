@@ -4,7 +4,8 @@
  *  dark mode handler from:
  *    https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
  *    https://codepen.io/adhuham/pen/BaNroxd
- *
+ *    https://codepen.io/pborenstein/details/WNraaGx
+ *    https://andy-bell.design/wrote/create-a-user-controlled-dark-or-light-mode/
  ****/
 
 const STORAGE_KEY = 'user-color-scheme-pref'
