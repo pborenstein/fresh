@@ -35,6 +35,8 @@ how it goes switching from my custom CSS
 to Tailwind, so I'm not starting with
 a starter project.
 
+### Dive right in
+
 So the first thing to do is to install
 the thing. We'll start with the
 instructions in the
@@ -104,6 +106,8 @@ it looks like there's a bunch of other stuff
 and that everyone knows what's going on.
 
 Let's roll back and start with PostCSS.
+
+### Let's install PostCSS
 
 
 
