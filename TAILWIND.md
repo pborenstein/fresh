@@ -128,6 +128,19 @@ There's this tantalizing bit in the section
 
 So let's install `postcss-cli`:
 
+```sh
+[tailwind/beginnings ]$ npm install postcss postcss-cli --save-dev
++ postcss@8.2.2
++ postcss-cli@8.3.1
+added 59 packages from 34 contributors, removed 2 packages, updated 1 package and audited 517 packages in 3.477s
+
+23 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+```
+
+
 [tailwind]:             https://tailwindcss.com/
 [installation guide]:   https://tailwindcss.com/docs/installation
 [install-postcss]:      https://tailwindcss.com/docs/installation#installing-tailwind-css-as-a-post-css-plugin
