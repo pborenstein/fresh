@@ -140,6 +140,19 @@ added 59 packages from 34 contributors, removed 2 packages, updated 1 package an
 found 0 vulnerabilities
 ```
 
+And the things the Tailwind doc says.
+
+```sh
+[tailwind/beginnings ]$ npm install tailwindcss autoprefixer
++ autoprefixer@10.1.0
++ tailwindcss@2.0.2
+added 54 packages from 39 contributors and audited 572 packages in 4.604s
+
+28 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+```
 
 [tailwind]:             https://tailwindcss.com/
 [installation guide]:   https://tailwindcss.com/docs/installation
