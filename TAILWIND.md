@@ -109,8 +109,24 @@ Let's roll back and start with PostCSS.
 
 ### Let's install PostCSS
 
+Still not clear to me that we need PostCSS to begin with,
+but all I've been reading indicates that we really want it.
 
+What does the PostCSS page say?
 
+There's this tantalizing bit in the section
+[**npm Scripts**](https://github.com/postcss/postcss#npm-scripts):
+
+> To use PostCSS from your command-line interface or with npm scripts
+> there is [`postcss-cli`].
+>
+> ```sh
+> postcss --use autoprefixer -o main.css css/*.css
+> ```
+
+[`postcss-cli`]: https://github.com/postcss/postcss-cli
+
+So let's install `postcss-cli`:
 
 [tailwind]:             https://tailwindcss.com/
 [installation guide]:   https://tailwindcss.com/docs/installation
