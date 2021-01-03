@@ -154,6 +154,23 @@ added 54 packages from 39 contributors and audited 572 packages in 4.604s
 found 0 vulnerabilities
 ```
 
+Set up Tailwinds and PostCSS config files.
+
+```sh
+[tailwind/beginnings *]$ npx tailwindcss init -p
+
+   tailwindcss 2.0.2
+
+   ✅ Created Tailwind config file: tailwind.config.js
+   ✅ Created PostCSS config file: postcss.config.js
+
+```
+
+
+
+
+
+---
 [tailwind]:             https://tailwindcss.com/
 [installation guide]:   https://tailwindcss.com/docs/installation
 [install-postcss]:      https://tailwindcss.com/docs/installation#installing-tailwind-css-as-a-post-css-plugin
