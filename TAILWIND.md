@@ -17,6 +17,8 @@ Why?
 
 - [Plan](#plan)
 - [tailwind/beginnings](#tailwindbeginnings)
+  - [Dive right in](#dive-right-in)
+  - [Let's install PostCSS](#lets-install-postcss)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
