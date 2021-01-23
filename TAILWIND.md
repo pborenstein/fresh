@@ -19,6 +19,11 @@ Why?
 - [tailwind/beginnings](#tailwindbeginnings)
   - [Dive right in](#dive-right-in)
   - [Let's install PostCSS](#lets-install-postcss)
+- [tailwind/now-what](#tailwindnow-what)
+  - [The site laid bare](#the-site-laid-bare)
+  - [Adding PostCSS to our build](#adding-postcss-to-our-build)
+- [tailwind/styling](#tailwindstyling)
+- [So, I've been thinking](#so-ive-been-thinking)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -165,11 +170,107 @@ Set up Tailwinds and PostCSS config files.
 
    ✅ Created Tailwind config file: tailwind.config.js
    ✅ Created PostCSS config file: postcss.config.js
-
 ```
 
 
+I think that's as far as beginnings.
+Let's merge this with our `tailwind/main`
 
+```sh
+[tailwind/beginnings ]$ git co tailwind/main
+Switched to branch 'tailwind/main'
+
+philip@ehecatl: ~/projects/fresh
+[tailwind/main ]$ git merge tailwind/beginnings --no-ff
+Merge made by the 'recursive' strategy.
+ TAILWIND.md        |  158 ++++++++-
+ package-lock.json  | 1000 ++++++++++++++++++++++++++++++++++++++++++++++++++---
+ package.json       |    8 +-
+ postcss.config.js  |    6 +
+ tailwind.config.js |   11 +
+ 5 files changed, 1137 insertions(+), 46 deletions(-)
+ create mode 100644 postcss.config.js
+ create mode 100644 tailwind.config.js
+```
+
+
+## tailwind/now-what
+
+We've got Tailwind and PostCSS installed,
+but it's not connected to our website.
+There are two things we need to do:
+
+- make PostCSS part of our build process
+- remove our existing CSS
+- add tailwind
+
+I'm curious what this site looks like with
+no styles whatsoever. So we'll start with that.
+
+### The site laid bare
+
+Easiest thing to do is to remove all the CSS files.
+
+```sh
+philip@ehecatl: ~/projects/fresh/src/assets/css
+[tailwind/now-what ]$ ls
+code.css       footnotes.css  lists.css      prism/         tables.css
+colors.css     headings.css   local.css      root.css       toc.css
+dark.txt       layout.css     logo.css       styles.css
+figures.css    light.txt      nav.css        swatches.md
+
+philip@ehecatl: ~/projects/fresh/src/assets/css
+[tailwind/now-what ]$ rm styles.css
+
+philip@ehecatl: ~/projects/fresh/src/assets/css
+[tailwind/now-what ]$ rm -rf *
+```
+
+Well, it doesn't look terrible.
+
+
+### Adding PostCSS to our build
+
+I'm borrowing from the `package.json` of
+[this starter project][alpine]
+
+This is what my build process looks like now
+
+```json
+"scripts": {
+  "build": "rm -rf ./dist; eleventy",
+  "serve": "npm run build && eleventy --serve",
+  "debug": "DEBUG=* npx eleventy",
+  "pstart": "eleventy --serve && postcss src/assets/css/tailwind.css --o _tmp/style.css --watch",
+  "pbuild": "eleventy && postcss src/assets/css/tailwind.css --o dist/assets/css/styles.css"
+}
+```
+
+
+## tailwind/styling
+
+Well, we're here.
+
+Using the [typography](https://tailwindcss.com/docs/typography-plugin)
+plugin, but it's not not quite what we want.
+So we want to define styles for the
+tags that markdown generates.
+
+We'll do it this way: [Adding Base Styles](https://tailwindcss.com/docs/adding-base-styles)
+
+
+## So, I've been thinking
+
+I'm spending a lot of time redefining
+the same styles.
+I'm not sure what the advantage is
+for this kind of website.
+Then I read this article,
+[Why Tailwind Isn't for Me](https://dev.to/jaredcwhite/why-tailwind-isn-t-for-me-5c90)
+which captured some of what
+I was finding.
+
+So, I'm stopping the Tailwind experiment here.
 
 
 ---
@@ -178,3 +279,4 @@ Set up Tailwinds and PostCSS config files.
 [install-postcss]:      https://tailwindcss.com/docs/installation#installing-tailwind-css-as-a-post-css-plugin
 [using-postcss]:        https://tailwindcss.com/docs/using-with-preprocessors#using-post-css-as-your-preprocessor
 [goodbye-squarespace]:  https://sahilparikh.dev/posts/2020/moving-squarespace-eleventy/
+[alpine-starter]:       https://github.com/gregwolanski/eleventy-tailwindcss-alpinejs-starter/

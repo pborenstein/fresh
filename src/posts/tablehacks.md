@@ -78,7 +78,7 @@ complicated cells:
 | Nebraska      | Lincoln<ul><li>Omaha</li><li>Lincoln</li><li>Bellevue</li></ul>                                                           |
 | New Hampshire | Concord<ul><li>Manchester</li><li>Nashua</li><li>Concord</li></ul>                                                        |
 
-<br><a id="complex-table">
+<br><a id="complex-table"></a>
 
 In GFM, table cells can be only one line,
 so you can't use multiline Markdown inside them.

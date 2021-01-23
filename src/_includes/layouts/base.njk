@@ -6,23 +6,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  {% include "partials/icons.njk" %}
-  {%- if config.oneCss %}
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  {% else -%}
-  {% include "partials/full-css.njk" %}
-  {%- endif %}
+  {# % include "partials/icons.njk" % #}
   <link rel="stylesheet" href="/assets/css/prism/prism-tomorrow.css">
   <link rel="stylesheet" href="/assets/css/prism/prism-line-numbers.css">
-  <link rel="stylesheet" href="/assets/css/local.css">
-  {%- if config.kabel -%}
-  <link rel="stylesheet" href="https://use.typekit.net/ztn6rcs.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap">
-  {% endif -%}
-  {% hasMermaid content %}
-  <script src="/assets/js/darkmode.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  {# % hasMermaid content % #}
+
+  <style>
+    /****
+        PrismJS uses `table` and so does tailwind
+        tailwind uses is as the utility to
+        set `display: table`, which messes up PrismJS.
+        Prism helpfully adds a "token" class to everything
+        it touches.
+    ****/
+    .table[class~="token"]  {
+     display: inline;
+  }
+  </style>
 </head>
-<body class="one-col-grid">
+<body class="bg-gray-100 font-serif leading-normal tracking-normal">
+<div  id="container" class="container w-full max-w-prose mx-auto px-3 md:px-6 sm:px-2">
  <header>
     {% block header %}
       {% include "partials/logo.njk" %}
@@ -33,7 +37,7 @@
       {% include "partials/nav.njk" %}
     {% endblock %}
   </nav>
-  <main>
+  <main class="prose">
     {% block kontent %}
       {{ content | safe }}
     {% endblock %}
@@ -43,5 +47,6 @@
       {% include "partials/site-footer.njk" %}
     {% endblock %}
   </footer>
+  </div>
 </body>
 </html>

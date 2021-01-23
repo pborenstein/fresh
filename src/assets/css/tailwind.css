@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold;
+  }
+}
+
+
+@layer utilities {
+
+  .direct-link {
+    @apply no-underline ml-0.5 !important;
+  }
+  
+  a[href].direct-link,
+  a[href].direct-link:visited {
+    color: transparent !important;
+  }
+  
+  a[href].direct-link:focus,
+  a[href].direct-link:focus:visited,
+  :hover > a[href].direct-link,
+  :hover > a[href].direct-link:visited {
+    color: red !important;
+    text-decoration: none !important;
+  }
+  
+  sub,
+  sup, sup a {
+    @apply text-red-700 no-underline !important;
+  }
+  
+  .prose code {
+    @apply text-red-900;
+  }
+}
+
