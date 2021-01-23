@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf ./dist; npm run build:styles && npm run build:colors && eleventy",
-    "build:colors": "utils/make-colors",
-    "build:styles": "utils/make-styles",
+    "build": "rm -rf ./dist; eleventy",
     "serve": "npm run build && eleventy --serve",
-    "debug": "DEBUG=* npx eleventy"
+    "debug": "DEBUG=* npx eleventy",
+    "start": "postcss src/assets/css/tailwind.css --o dist/assets/css/styles.css && eleventy --serve"
   },
   "keywords": [],
   "repository": "github:pborenstein/fresh",
@@ -29,6 +28,15 @@
     "markdown-it-div": "^1.1.0",
     "markdown-it-footnote": "^3.0.2",
     "markdown-it-multimd-table": "^4.0.3",
-    "markdown-it-toc-done-right": "^4.1.0"
+    "markdown-it-toc-done-right": "^4.1.0",
+    "postcss": "^8.2.2",
+    "postcss-cli": "^8.3.1",
+    "socket.io": ">=2.4.0",
+    "axios": ">=0.21.1"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.3.1",
+    "autoprefixer": "^10.1.0",
+    "tailwindcss": "^2.0.2"
   }
 }

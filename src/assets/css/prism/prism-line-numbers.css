@@ -11,7 +11,7 @@ pre[class*="language-"].line-numbers {
 
 pre[class*="language-"].line-numbers > code {
 	position: relative;
-	white-space: inherit;
+  white-space: inherit;
 }
 
 .line-numbers .line-numbers-rows {
@@ -32,8 +32,14 @@ pre[class*="language-"].line-numbers > code {
 }
 
 	.line-numbers-rows > span {
-		display: block;
-		counter-increment: linenumber;
+    display: block;
+    /****
+     *  need this adjustment
+     *  to make numbers align
+     ****/
+    top: -0.33em;
+    position: relative;  
+    counter-increment: linenumber;
 	}
 
 		.line-numbers-rows > span:before {

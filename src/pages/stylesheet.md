@@ -127,8 +127,8 @@ Steps to success
     let spacing = require('lots')
     ```
     try to end with text
-    but don't be afraid to use  <code>&lt;</code><code>br</code><code>&gt;</code>s.
-    life is too short
+    but don't be afraid to use  `<br>`.
+    Life is too short.
 
 3.  Spacing is key
 
@@ -375,23 +375,23 @@ per tristique nec dictum.
 ## Date formats
 
 | prettyDate<br>format string | example |
-| :----- | :------ |
-| `date`                       | {{page.date}}  |
-| `'iso'` |  {{page.date | prettyDate('iso') }} |
-| `'isoDate'` |  {{page.date | prettyDate('isoDate') }} |
-| `'isoTime'` |  {{page.date | prettyDate('isoTime') }} |
-| `'DmY' ` |  {{page.date | prettyDate('DmY') }} |
-| `'DMY' ` |  {{page.date | prettyDate('DMY') }} |
-| `'DmYt'` |  {{page.date | prettyDate('DmYt') }} |
-| `'DMYt'` |  {{page.date | prettyDate('DMYt') }} |
-| `'FFFF'` |  {{page.date | prettyDate('FFFF') }} |
-| `'DDDD'` |  {{page.date | prettyDate('DDDD') }} |
-| `'relative'` |  {{page.date | prettyDate('relative') }} |
-| `'relativeCalendar'` |  {{page.date | prettyDate('relativeCalendar') }} |
-| `'http'` |  {{page.date | prettyDate('http') }} |
-| `'rfc2822'` |  {{page.date | prettyDate('rfc2822') }} |
-| slug | {{  page.date  | prettyDate('slug')}} |
-| locale | {{  page.date  | prettyDate('locale')}} |
+| :-----              | :------ |
+| `date`              | {{page.date}}  |
+| `iso`               |  {{page.date | prettyDate('iso') }} |
+| `isoDate`           |  {{page.date | prettyDate('isoDate') }} |
+| `isoTime`           |  {{page.date | prettyDate('isoTime') }} |
+| `DmY`               |  {{page.date | prettyDate('DmY') }} |
+| `DMY`               |   {{page.date | prettyDate('DMY') }} |
+| `DmYt`              |  {{page.date | prettyDate('DmYt') }} |
+| `DMYt`              |  {{page.date | prettyDate('DMYt') }} |
+| `FFFF`              |  {{page.date | prettyDate('FFFF') }} |
+| `DDDD`              |  {{page.date | prettyDate('DDDD') }} |
+| `relative`          |  {{page.date | prettyDate('relative') }} |
+| `relativeCalendar`  |  {{page.date | prettyDate('relativeCalendar') }} |
+| `http`              |  {{page.date | prettyDate('http') }} |
+| `rfc2822`           |  {{page.date | prettyDate('rfc2822') }} |
+| `slug`              | {{  page.date  | prettyDate('slug')}} |
+| `locale`            | {{  page.date  | prettyDate('locale')}} |
 [ formatting dates<br>with `prettyDate`]
 
 ## Blockquote
@@ -632,8 +632,4 @@ th {
 
 }
 </style>
-
-
-
-{% include "colors.html" %}
 

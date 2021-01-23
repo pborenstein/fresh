@@ -1,6 +1,6 @@
-<ul>
+<ul class="grid grid-flow-col font-sans text-2xs text-gray-400   w-1/3">
   {%- for nav in collections._nav  -%}
-    <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
+    <li class="hover:text-gray-800 nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
       <a href="{{ nav.url | url }}">{{ nav.data.navtitle or nav.data.title }}</a>
       {%- if config.debug -%}
         <br>
