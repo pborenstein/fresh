@@ -12,9 +12,9 @@ const STORAGE_KEY = 'user-color-scheme-pref'
 const DARK        = '  '
 const LIGHT       = 'initial'
 
-const light   = document.querySelector(".btn-light")
-const dark    = document.querySelector(".btn-dark")
-const system  = document.querySelector(".btn-system")
+const light   = document.querySelector('.btn-light')
+const dark    = document.querySelector('.btn-dark')
+const system  = document.querySelector('.btn-system')
 
 
 function applySetting (passedSetting) {
@@ -24,16 +24,17 @@ function applySetting (passedSetting) {
   if (setting) {
     localStorage.setItem(STORAGE_KEY, setting)
     document.documentElement /* root */
-    .style.setProperty('--is-dark',
-                       setting == 'dark' ? DARK
-                                         : LIGHT)
+            .style
+            .setProperty('--is-dark', setting == 'dark' ? DARK
+                                                        : LIGHT)
   }
 }
 
 if (light && dark && system) {
-  light.addEventListener ("click", () => applySetting('light'))
-  dark.addEventListener  ("click", () => applySetting('dark'))
-  system.addEventListener("click", () => { localStorage.removeItem(STORAGE_KEY)
+   light.addEventListener('click', () => applySetting('light'))
+    dark.addEventListener('click', () => applySetting('dark'))
+  system.addEventListener('click', () => {
+                                           localStorage.removeItem(STORAGE_KEY)
                                            window.location.reload()
                                          })
 }
