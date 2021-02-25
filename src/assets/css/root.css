@@ -62,7 +62,7 @@
   --dk-color-foreground-lightest: var(--is-dark) var(--color-gray-70);
   --dk-color-background-darkest:  var(--is-dark) var(--color-gray-30);
   --dk-color-background-darker:   var(--is-dark) var(--color-gray-20);
-  --dk-color-background:          var(--is-dark) var(--color-gray-10);
+  --dk-color-background:          var(--is-dark) var(--color-gray-15);
 
 /*
 ### Foreground / Background
