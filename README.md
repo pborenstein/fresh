@@ -6,7 +6,6 @@ Yet another basic eleventy starting template
 - flexible
 - minimally styled
 
-<!--
 ## How to use this repo as a template
 
 It's not as straightforward as one might think.
@@ -91,4 +90,3 @@ upstream	git@github.com:pborenstein/fresh.git (fetch)
 upstream	no_push (push)
 
 ```
- -->
