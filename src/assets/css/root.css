@@ -79,11 +79,11 @@
 ### Accents
 */
 
-  --color-accent-lightest:        hsl(50, 90%, 46%) /* #fde2e2 */;
-  --color-accent-lighter:         hsl(288, 89%, 42%) /* #f5e0e6 */;
-  --color-accent:                 hsl(247, 87%, 47%) /* #be718b */;
-  --color-accent-darker:          hsl(340,  92%, 45%) /* #9e3861 */;
-  --color-accent-darkest:         hsl(123, 89%, 29%) /* #7f0036 */;
+  --color-accent-1:               hsl( 50, 90%, 46%) /* #fde2e2 */;
+  --color-accent-2:               hsl(288, 89%, 42%) /* #f5e0e6 */;
+  --color-accent-3:               hsl(247, 87%, 47%) /* #be718b */;
+  --color-accent-4:               hsl(340, 92%, 45%) /* #9e3861 */;
+  --color-accent-5:               hsl(123, 89%, 29%) /* #7f0036 */;
 }
 
 
@@ -95,16 +95,16 @@
   --color-body:                   var(--color-foreground);
   --color-body-light:             var(--color-foreground-lighter);
   --color-heading:                var(--color-foreground);
-  --color-figure-caption:         var(--color-accent);
-  --color-link:                   var(--color-accent-darkest);
+  --color-figure-caption:         var(--color-accent-3);
+  --color-link:                   var(--color-accent-5);
   --color-code:                   var(--color-foreground);
 
-  --color-logo:                   var(--color-accent-darkest);
-  --color-logo-link:              var(--color-accent-darkest);
+  --color-logo:                   var(--color-accent-5);
+  --color-logo-link:              var(--color-accent-5);
 
 
   --color-nav-text:               var(--color-foreground-lighter);
-  --color-nav-hover:              var(--color-accent);
+  --color-nav-hover:              var(--color-accent-3);
 
 
 
@@ -114,17 +114,17 @@
    *    dark and light modes
    ****/
 
-  --dk-color-fold-marker:         var(--is-dark) var(--color-accent-lighter);
-  --dk-color-fold-head:           var(--is-dark) var(--color-accent-darker);
-  --dk-color-fold-expanded:       var(--is-dark) var(--color-accent);
+  --dk-color-fold-marker:         var(--is-dark) var(--color-accent-2);
+  --dk-color-fold-head:           var(--is-dark) var(--color-accent-4);
+  --dk-color-fold-expanded:       var(--is-dark) var(--color-accent-3);
 
-  --color-fold-marker:            var(--dk-color-fold-marker,   var(--color-accent-darkest));
-  --color-fold-head:              var(--dk-color-fold-head,     var(--color-accent-lighter));
-  --color-fold-expanded:          var(--dk-color-fold-expanded, var(--color-accent-lighter));
+  --color-fold-marker:            var(--dk-color-fold-marker,   var(--color-accent-5));
+  --color-fold-head:              var(--dk-color-fold-head,     var(--color-accent-2));
+  --color-fold-expanded:          var(--dk-color-fold-expanded, var(--color-accent-2));
 
 
   --color-footer:                 var(--color-background-darker);
-  --color-footer-sep:             var(--color-accent-lightest);
+  --color-footer-sep:             var(--color-accent-1);
 }
 
 /*
@@ -136,12 +136,12 @@
   --color-table-even:             var(--color-background);
   --color-table-body:             var(--color-body);
   --color-table-heading:          var(--color-heading);
-  --color-table-caption:          var(--color-accent-darker);
+  --color-table-caption:          var(--color-accent-4);
   --color-table-sep:              var(--color-background-darkest);
 }
 
 :root {
-  --color-logo:   var(--color-accent-darkest);
+  --color-logo:   var(--color-accent-5);
 }
 
 /*
@@ -212,7 +212,7 @@ body {
 
 hr {
   border-top:       1px;
-  border-color:     var(--color-accent);
+  border-color:     var(--color-accent-3);
 }
 
 

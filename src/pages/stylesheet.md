@@ -574,11 +574,11 @@ background
 
 accent
 <ul class="flex-container">
-  <li class="flex-item" style="background:var( --color-accent-lightest )">color-accent-lightest</li>
-  <li class="flex-item" style="background:var( --color-accent-lighter  )">color-accent-lighter </li>
-  <li class="flex-item" style="background:var( --color-accent          )">color-accent         </li>
-  <li class="flex-item" style="background:var( --color-accent-darker   )">color-accent-darker  </li>
-  <li class="flex-item" style="background:var( --color-accent-darkest  )">color-accent-darkest </li>
+  <li class="flex-item" style="background:var( --color-accent-1 )">color-accent-1</li>
+  <li class="flex-item" style="background:var( --color-accent-2  )">color-accent-2 </li>
+  <li class="flex-item" style="background:var( --color-accent-3          )">color-accent-3         </li>
+  <li class="flex-item" style="background:var( --color-accent-4   )">color-accent-4  </li>
+  <li class="flex-item" style="background:var( --color-accent-5  )">color-accent-5 </li>
 </ul>
 
 pborenstein.com
