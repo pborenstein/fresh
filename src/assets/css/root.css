@@ -79,11 +79,11 @@
 ### Accents
 */
 
-  --color-accent-lightest:        hsl(  0,  87%, 94%) /* #fde2e2 */;
-  --color-accent-lighter:         hsl(344,  52%, 92%) /* #f5e0e6 */;
-  --color-accent:                 hsl(340,  37%, 59%) /* #be718b */;
-  --color-accent-darker:          hsl(336,  48%, 42%) /* #9e3861 */;
-  --color-accent-darkest:         hsl(334, 100%, 25%) /* #7f0036 */;
+  --color-accent-lightest:        hsl(50, 90%, 46%) /* #fde2e2 */;
+  --color-accent-lighter:         hsl(288, 89%, 42%) /* #f5e0e6 */;
+  --color-accent:                 hsl(247, 87%, 47%) /* #be718b */;
+  --color-accent-darker:          hsl(340,  92%, 45%) /* #9e3861 */;
+  --color-accent-darkest:         hsl(123, 89%, 29%) /* #7f0036 */;
 }
 
 
