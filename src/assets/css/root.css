@@ -98,16 +98,13 @@
   --color-figure-caption:         var(--color-accent-3);
   --color-link:                   var(--color-accent-5);
   --color-code:                   var(--color-foreground);
+  --color-code-fence:             var(--color-accent-3);
 
   --color-logo:                   var(--color-accent-5);
   --color-logo-link:              var(--color-accent-5);
 
-
   --color-nav-text:               var(--color-foreground-lighter);
   --color-nav-hover:              var(--color-accent-3);
-
-
-
 
   /****
    *    we want to use different colors for
@@ -125,6 +122,14 @@
 
   --color-footer:                 var(--color-background-darker);
   --color-footer-sep:             var(--color-accent-1);
+
+  --color-footnote-ref:           var(--color-accent-3);
+  --color-footnote-sep:           var(--color-accent-1);
+
+  --color-dateline:               var(--color-accent-1);
+
+  --color-hr:                     var(--color-accent-3);
+
 }
 
 /*
@@ -138,10 +143,6 @@
   --color-table-heading:          var(--color-heading);
   --color-table-caption:          var(--color-accent-4);
   --color-table-sep:              var(--color-background-darkest);
-}
-
-:root {
-  --color-logo:   var(--color-accent-5);
 }
 
 /*
@@ -212,10 +213,8 @@ body {
 
 hr {
   border-top:       1px;
-  border-color:     var(--color-accent-3);
+  border-color:     var(--color-hr);
 }
-
-
 
 
 /* links to markdown header with disappearing link symbol */
