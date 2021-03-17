@@ -558,17 +558,12 @@ Don't use Heading 6
 }
 </style>
 
-foreground
+foreground - background
 <ul class="flex-container">
   <li class="flex-item" style="background: var(--color-foreground)          ">color-foreground</li>
-  <li class="flex-item" style="background: var(--color-foreground-lighter)  ">color-foreground-lighter</li>
-  <li class="flex-item" style="background: var(--color-foreground-lightest) ">color-foreground-lightest</li>
-</ul>
-
-background
-<ul class="flex-container">
-  <li class="flex-item" style="background: var(--color-background-darkest)"><p>color-background-darkest</p></li>
-  <li class="flex-item" style="background: var(--color-background-darker) ">color-background-darker</li>
+  <li class="flex-item" style="background: var(--color-midforeground)  ">color-midforeground</li>
+  <li class="flex-item" style="background: var(--color-midground)"><p>color-midground</p></li>
+  <li class="flex-item" style="background: var(--color-midbackground) ">color-midbackground</li>
   <li class="flex-item" style="background: var(--color-background)        ">color-background</li>
 </ul>
 

@@ -5,7 +5,6 @@
 <button class="btn-light">Light</button>
 <button class="btn-system">System</button>
 
-
 <style>
 .flex-container {
   padding: 0;
@@ -19,7 +18,7 @@
 .flex-item {
   padding: 2px;
   width: 200px;
-  height: 100px;
+  height: 20px;
   margin: .5em;
 
   line-height: auto;
@@ -40,35 +39,90 @@
 }
 </style>
 
-foreground
 <ul class="flex-container">
-  <li class="flex-item" style="background: var(--color-foreground)          ">color-foreground</li>
-  <li class="flex-item" style="background: var(--color-foreground-lighter)  ">color-foreground-lighter</li>
-  <li class="flex-item" style="background: var(--color-foreground-lightest) ">color-foreground-lightest</li>
+  <li class="flex-item" style="background: var(--color-foreground)    ">color-foreground    </li>
+  <li class="flex-item" style="background: var(--color-midforeground) ">color-midforeground </li>
+  <li class="flex-item" style="background: var(--color-midground)     ">color-midground     </li>
+  <li class="flex-item" style="background: var(--color-midbackground) ">color-midbackground </li>
+  <li class="flex-item" style="background: var(--color-background)    ">color-background    </li>
 </ul>
 
-background
 <ul class="flex-container">
-  <li class="flex-item" style="background: var(--color-background-darkest)"><p>color-background-darkest</p></li>
-  <li class="flex-item" style="background: var(--color-background-darker) ">color-background-darker</li>
-  <li class="flex-item" style="background: var(--color-background)        ">color-background</li>
+  <li class="flex-item" style="background:var( --color-accent-1)">color-accent-1</li>
+  <li class="flex-item" style="background:var( --color-accent-2)">color-accent-2</li>
+  <li class="flex-item" style="background:var( --color-accent-3)">color-accent-3</li>
+  <li class="flex-item" style="background:var( --color-accent-4)">color-accent-4</li>
+  <li class="flex-item" style="background:var( --color-accent-5)">color-accent-5</li>
 </ul>
+
+## Bands
+
+<ul class="flex-container">
+  <li class="flex-item" style="background: var(--color-foreground)    "> </li>
+  <li class="flex-item" style="background: var(--color-midforeground) "> </li>
+  <li class="flex-item" style="background: var(--color-midground)     "> </li>
+  <li class="flex-item" style="background: var(--color-midbackground) "> </li>
+  <li class="flex-item" style="background: var(--color-background)    "> </li>
+</ul>
+
+<ul class="flex-container">
+  <li class="flex-item" style="background:var( --color-accent-1)"> </li>
+  <li class="flex-item" style="background:var( --color-accent-2)"> </li>
+  <li class="flex-item" style="background:var( --color-accent-3)"> </li>
+  <li class="flex-item" style="background:var( --color-accent-4)"> </li>
+  <li class="flex-item" style="background:var( --color-accent-5)"> </li>
+</ul>
+
+
+## Table
+
+| -\-font-table-heading<br>-\-font-heading<br>-\-font-sans-serif | -\-color-table-heading<br>-\-color-heading<br>-\-color-foreground                           |
+| :------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
+| `inputPath`                                                    | -\-color-table-odd<br>-\-color-midbackground<hr>-\-color-hr<br>-\-color-accent-3</code> |
+| `outputPath`                                                   | -\-color-table-even<br>-\-color-background                                                  |
+| `fileSlug`                                                     | -\-color-table-sep<br>-\-color-midground                                           |
+[-\-font-table-caption<br>-\-font-heading<br>-\-color-table-caption<br>-\-color-accent-4][slug]
+
+## Folds
 
 accent
 <ul class="flex-container">
-  <li class="flex-item" style="background:var( --color-accent-1 )">color-accent-1</li>
-  <li class="flex-item" style="background:var( --color-accent-2  )">color-accent-2 </li>
-  <li class="flex-item" style="background:var( --color-accent-3          )">color-accent-3         </li>
-  <li class="flex-item" style="background:var( --color-accent-4   )">color-accent-4  </li>
-  <li class="flex-item" style="background:var( --color-accent-5  )">color-accent-5 </li>
+  <li class="flex-item" style="background:var( --color-accent-1)">color-accent-1</li>
+  <li class="flex-item" style="background:var( --color-accent-2)">color-accent-2</li>
+  <li class="flex-item" style="background:var( --color-accent-3)">color-accent-3</li>
+  <li class="flex-item" style="background:var( --color-accent-4)">color-accent-4</li>
+  <li class="flex-item" style="background:var( --color-accent-5)">color-accent-5</li>
 </ul>
 
-pborenstein.com
+A line of text
+
+!!! Folds -\-color-fold-head -\-color-accent-4 (dk) -\-color-accent-2 (lt)
+
+-\-color-fold-marker -\-color-accent-2 (dk) -\-color-accent-5(lt)
+
+-\-color-fold-frame -\-color-accent-3 (dk) -\-color-accent-2(lt)
+
+    !!! Expanding text
+    Expanding text looks like this
+    !!!
+!!!
+
+Some fake text so we don't butt into the footer.
+
+
 <ul class="flex-container">
-  <li class="flex-item" style="background:var(--color-pippin        )">--color-pippin        </li>
-  <li class="flex-item" style="background:var(--color-we-peep       )">--color-we-peep       </li>
-  <li class="flex-item" style="background:var(--color-tapestry      )">--color-tapestry      </li>
-  <li class="flex-item" style="background:var(--color-vin-rouge     )">--color-vin-rouge     </li>
-  <li class="flex-item" style="background:var(--color-siren         )">--color-siren         </li>
+  <li class="flex-item" style="background: var(--color-foreground)    "> </li>
+  <li class="flex-item" style="background: var(--color-midforeground) "> </li>
+  <li class="flex-item" style="background: var(--color-midground)     "> </li>
+  <li class="flex-item" style="background: var(--color-midbackground) "> </li>
+  <li class="flex-item" style="background: var(--color-background)    "> </li>
+</ul>
+
+<ul class="flex-container">
+  <li class="flex-item" style="background:var( --color-accent-1)"> </li>
+  <li class="flex-item" style="background:var( --color-accent-2)"> </li>
+  <li class="flex-item" style="background:var( --color-accent-3)"> </li>
+  <li class="flex-item" style="background:var( --color-accent-4)"> </li>
+  <li class="flex-item" style="background:var( --color-accent-5)"> </li>
 </ul>
 
