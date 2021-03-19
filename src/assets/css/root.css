@@ -22,32 +22,8 @@
 
 
 
-/*
-### Grays
-*/
 
-
-:root {
-  --color-gray-00:  black;
-  --color-gray-10:  hsl(0, 0%, 07%);  /* material design rec: #121212 */
-  --color-gray-10:  hsl(0, 0%, 10%);
-  --color-gray-15:  hsl(0, 0%, 15%);
-  --color-gray-20:  hsl(0, 0%, 20%);
-  --color-gray-30:  hsl(0, 0%, 30%);
-  --color-gray-35:  hsl(0, 0%, 35%);
-  --color-gray-40:  hsl(0, 0%, 40%);
-  --color-gray-50:  hsl(0, 0%, 50%);
-  --color-gray-55:  hsl(0, 0%, 55%);
-  --color-gray-60:  hsl(0, 0%, 60%);
-  --color-gray-70:  hsl(0, 0%, 70%);
-  --color-gray-75:  hsl(0, 0%, 75%);
-  --color-gray-80:  hsl(0, 0%, 80%);
-  --color-gray-85:  hsl(0, 0%, 85%);
-  --color-gray-90:  hsl(0, 0%, 90%);
-  --color-gray-95:  hsl(0, 0%, 95%);
-  --color-gray-100: white;
-}
-
+#five,
 :root {
 
   /***
@@ -55,48 +31,85 @@
    *    dark-mode:  foreground (darker ->) background
    ***/
 
-  --lt-color-foreground:      hsla(0, 0%,  7%, 1);
-  --lt-color-midforeground:   hsla(0, 0%, 27%, 1);
-  --lt-color-midground:       hsla(0, 0%, 47%, 1);
-  --lt-color-midbackground:   hsla(0, 0%, 67%, 1);
-  --lt-color-background:      hsla(0, 0%, 87%, 1);
+/* https://coolors.co/gradient-palette/f2f2f2-0d0d0d?number=5 */
 
-/***  https://uxplanet.org/8-tips-for-dark-theme-design-8dfc2f8f7ab6
-          High-emphasis text should have an opacity of 87%
-          Medium emphasis text is applied at 60%
-          Disabled text uses an opacity of 38%.
-***/
+/* five grays */
 
-  --dk-color-foreground:      var(--is-dark) hsla(0, 0%, 87%, 1);
-  --dk-color-midforeground:   var(--is-dark) hsla(0, 0%, 67%, 1);
-  --dk-color-midground:       var(--is-dark) hsla(0, 0%, 47%, 1);
-  --dk-color-midbackground:   var(--is-dark) hsla(0, 0%, 27%, 1);
-  --dk-color-background:      var(--is-dark) hsla(0, 0%,  7%, 1);
+  --lt-color-foreground:      hsl(0, 0%,  5%);  /* #0d0d0d -- woodsmoke */
+  --lt-color-midforeground5:  hsl(0, 0%, 27%);  /* #464646 -- charcoal  */
+  --lt-color-midground:       hsl(0, 0%, 50%);  /* #808080 -- gray      */
+  --lt-color-midbackground5:  hsl(0, 0%, 73%);  /* #b9b9b9 -- loblolly  */
+  --lt-color-background:      hsl(0, 0%, 95%);  /* #f2f2f2 -- concrete  */
+
+  --dk-color-foreground:      var(--is-dark) hsl(0, 0%, 95%);   /* #f2f2f2 -- concrete  */
+  --dk-color-midforeground5:  var(--is-dark) hsl(0, 0%, 73%);   /* #b9b9b9 -- loblolly  */
+  --dk-color-midground:       var(--is-dark) hsl(0, 0%, 50%);   /* #808080 -- gray      */
+  --dk-color-midbackground5:  var(--is-dark) hsl(0, 0%, 27%);   /* #464646 -- charcoal  */
+  --dk-color-background:      var(--is-dark) hsl(0, 0%,  5%);   /* #0d0d0d -- woodsmoke */
+
+  --color-foreground:         var(--dk-color-foreground   , var(--lt-color-foreground));
+  --color-midforeground5:     var(--dk-color-midforeground5, var(--lt-color-midforeground5));
+  --color-midground:          var(--dk-color-midground    , var(--lt-color-midground));
+  --color-midbackground5:     var(--dk-color-midbackground5, var(--lt-color-midbackground5));
+  --color-background:         var(--dk-color-background   , var(--lt-color-background));
 
 /*
 ### Foreground / Background
 */
 
-  --color-foreground:     var(--dk-color-foreground   , var(--lt-color-foreground));
-  --color-midforeground:  var(--dk-color-midforeground, var(--lt-color-midforeground));
-  --color-midground:      var(--dk-color-midground    , var(--lt-color-midground));
-  --color-midbackground:  var(--dk-color-midbackground, var(--lt-color-midbackground));
-  --color-background:     var(--dk-color-background   , var(--lt-color-background));
+}
 
+:root {
 
+  --lt-color-foreground:                      hsl(0, 0%,  5%);  /* #0d0d0d -- woodsmoke   */
+  --lt-color-foremidground:                   hsl(0, 0%, 20%);  /* #333333 -- mine shaft  */
+  --lt-color-midforeground:                   hsl(0, 0%, 35%);  /* #595959 -- bright gray */
+  --lt-color-midground:                       hsl(0, 0%, 50%);  /* #808080 -- gray        */
+  --lt-color-midbackground:                   hsl(0, 0%, 65%);  /* #a6a6a6 -- dark gray   */
+  --lt-color-backmidground:                   hsl(0, 0%, 80%);  /* #cccccc -- iron        */
+  --lt-color-background:                      hsl(0, 0%, 95%);  /* #f2f2f2 -- concrete    */
+
+  --dk-color-foreground:      var(--is-dark)  hsl(0, 0%, 95%);  /* #f2f2f2 -- concrete    */
+  --dk-color-foremidground:   var(--is-dark)  hsl(0, 0%, 80%);  /* #cccccc -- iron        */
+  --dk-color-midforeground:   var(--is-dark)  hsl(0, 0%, 65%);  /* #a6a6a6 -- dark gray   */
+  --dk-color-midground:       var(--is-dark)  hsl(0, 0%, 50%);  /* #808080 -- gray        */
+  --dk-color-midbackground:   var(--is-dark)  hsl(0, 0%, 35%);  /* #595959 -- bright gray */
+  --dk-color-backmidground:   var(--is-dark)  hsl(0, 0%, 20%);  /* #333333 -- mine shaft  */
+  --dk-color-background:      var(--is-dark)  hsl(0, 0%,  5%);  /* #0d0d0d -- woodsmoke   */
+
+  --color-foreground:         var(--dk-color-foreground   , var(--lt-color-foreground));
+  --color-foremidground:      var(--dk-color-foremidground, var(--lt-color-foremidground));
+  --color-midforeground:      var(--dk-color-midforeground, var(--lt-color-midforeground));
+  --color-midground:          var(--dk-color-midground    , var(--lt-color-midground));
+  --color-midbackground:      var(--dk-color-midbackground, var(--lt-color-midbackground));
+  --color-backmidground:      var(--dk-color-backmidground, var(--lt-color-backmidground));
+  --color-background:         var(--dk-color-background   , var(--lt-color-background));
 
 
 /*
-### Accentsz
+### Accents
 */
 
 
+  --lt-color-accent-1:                        hsl(  2,  94%, 94%); /* #fee2e1 -- pippin     */
+  --lt-color-accent-2:                        hsl(345,  45%, 77%); /* #dfaab7 -- blossom    */
+  --lt-color-accent-3:                        hsl(339,  38%, 60%); /* #bf718c -- tapestry   */
+  --lt-color-accent-4:                        hsl(336,  47%, 43%); /* #a03962 -- vin rouge  */
+  --lt-color-accent-5:                        hsl(334, 100%, 25%); /* #800037 -- siren      */
 
-  --color-accent-1:       hsl(  0,  87%, 94%)     ;
-  --color-accent-2:       hsl(344,  52%, 92%)     ;
-  --color-accent-3:       hsl(340,  37%, 59%)     ;
-  --color-accent-4:       hsl(336,  48%, 42%)     ;
-  --color-accent-5:       hsl(334, 100%, 25%)     ;
+  --dk-color-accent-1:        var(--is-dark)  hsl(334, 100%, 25%); /* #800037 -- siren      */
+  --dk-color-accent-2:        var(--is-dark)  hsl(336,  47%, 43%); /* #a03962 -- vin rouge  */
+  --dk-color-accent-3:        var(--is-dark)  hsl(339,  38%, 60%); /* #bf718c -- tapestry   */
+  --dk-color-accent-4:        var(--is-dark)  hsl(345,  45%, 77%); /* #dfaab7 -- blossom    */
+  --dk-color-accent-5:        var(--is-dark)  hsl(  2,  94%, 94%); /* #fee2e1 -- pippin     */
+
+
+
+  --color-accent-1:           var(--dk-color-accent-1, var(--lt-color-accent-1));
+  --color-accent-2:           var(--dk-color-accent-2, var(--lt-color-accent-2));
+  --color-accent-3:           var(--dk-color-accent-3, var(--lt-color-accent-3));
+  --color-accent-4:           var(--dk-color-accent-4, var(--lt-color-accent-4));
+  --color-accent-5:           var(--dk-color-accent-5, var(--lt-color-accent-5));
 }
 
 
@@ -123,8 +136,8 @@
   --color-code:           var(--color-foreground);
   --color-code-fence:     var(--color-accent-3);
 
-  --color-logo:           var(--color-accent-5);
-  --color-logo-link:      var(--color-accent-5);
+  --color-logo:           var(--lt-color-accent-5);
+  --color-logo-link:      var(--lt-color-accent-5);
 
   --color-nav-text:       var(--color-midforeground);
   --color-nav-hover:      var(--color-accent-3);
@@ -138,9 +151,9 @@
   --dk-color-fold-head:   var(--is-dark) var(--color-accent-4);
   --dk-color-fold-frame:  var(--is-dark) var(--color-accent-3);
 
-  --color-fold-marker:    var(--dk-color-fold-marker, var(--color-accent-5));
-  --color-fold-head:      var(--dk-color-fold-head,   var(--color-accent-2));
-  --color-fold-frame:     var(--dk-color-fold-frame,  var(--color-accent-2));
+  --color-fold-marker:    var(--color-accent-5);
+  --color-fold-head:      var(--color-accent-2);
+  --color-fold-frame:     var(--color-accent-2);
 
   --color-footer:         var(--color-midbackground);
   --color-footer-sep:     var(--color-accent-1);
@@ -158,12 +171,13 @@
 ### Tables
 */
 
+
 :root {
-  --color-table-odd:      var(--color-accent-1);
+  --color-table-odd:      var(--color-backmidground);
   --color-table-even:     var(--color-background);
   --color-table-body:     var(--color-body);
   --color-table-heading:  var(--color-heading);
-  --color-table-caption:  var(--color-accent-5);
+  --color-table-caption:  var(--color-accent-4);
   --color-table-sep:      var(--color-accent-3);
 }
 

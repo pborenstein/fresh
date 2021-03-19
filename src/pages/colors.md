@@ -41,9 +41,9 @@
 
 <ul class="flex-container">
   <li class="flex-item" style="background: var(--color-foreground)    ">color-foreground    </li>
-  <li class="flex-item" style="background: var(--color-midforeground) ">color-midforeground </li>
+  <li class="flex-item" style="background: var(--color-midforeground5) ">color-midforeground5 </li>
   <li class="flex-item" style="background: var(--color-midground)     ">color-midground     </li>
-  <li class="flex-item" style="background: var(--color-midbackground) ">color-midbackground </li>
+  <li class="flex-item" style="background: var(--color-midbackground5) ">color-midbackground5 </li>
   <li class="flex-item" style="background: var(--color-background)    ">color-background    </li>
 </ul>
 
@@ -55,13 +55,24 @@
   <li class="flex-item" style="background:var( --color-accent-5)">color-accent-5</li>
 </ul>
 
+<ul class="flex-container">
+  <li class="flex-item" style="background: var(--color-foreground)    ">color-foreground    </li>
+  <li class="flex-item" style="background: var(--color-foremidground) ">color-foremidground </li>
+  <li class="flex-item" style="background: var(--color-midforeground) ">color-midforeground </li>
+  <li class="flex-item" style="background: var(--color-midground)     ">color-midground     </li>
+  <li class="flex-item" style="background: var(--color-midbackground) ">color-midbackground </li>
+  <li class="flex-item" style="background: var(--color-backmidground) ">color-backmidground </li>
+  <li class="flex-item" style="background: var(--color-background)    ">color-background    </li>
+</ul>
+
+
 ## Bands
 
 <ul class="flex-container">
   <li class="flex-item" style="background: var(--color-foreground)    "> </li>
-  <li class="flex-item" style="background: var(--color-midforeground) "> </li>
+  <li class="flex-item" style="background: var(--color-midforeground5) "> </li>
   <li class="flex-item" style="background: var(--color-midground)     "> </li>
-  <li class="flex-item" style="background: var(--color-midbackground) "> </li>
+  <li class="flex-item" style="background: var(--color-midbackground5) "> </li>
   <li class="flex-item" style="background: var(--color-background)    "> </li>
 </ul>
 
@@ -71,6 +82,16 @@
   <li class="flex-item" style="background:var( --color-accent-3)"> </li>
   <li class="flex-item" style="background:var( --color-accent-4)"> </li>
   <li class="flex-item" style="background:var( --color-accent-5)"> </li>
+</ul>
+
+<ul class="flex-container">
+  <li class="flex-item" style="background: var(--color-foreground)    "> </li>
+  <li class="flex-item" style="background: var(--color-foremidground) "> </li>
+  <li class="flex-item" style="background: var(--color-midforeground) "> </li>
+  <li class="flex-item" style="background: var(--color-midground)     "> </li>
+  <li class="flex-item" style="background: var(--color-midbackground) "> </li>
+  <li class="flex-item" style="background: var(--color-backmidground) "> </li>
+  <li class="flex-item" style="background: var(--color-background)    "> </li>
 </ul>
 
 
@@ -112,9 +133,19 @@ Some fake text so we don't butt into the footer.
 
 <ul class="flex-container">
   <li class="flex-item" style="background: var(--color-foreground)    "> </li>
+  <li class="flex-item" style="background: var(--color-midforeground5) "> </li>
+  <li class="flex-item" style="background: var(--color-midground)     "> </li>
+  <li class="flex-item" style="background: var(--color-midbackground5) "> </li>
+  <li class="flex-item" style="background: var(--color-background)    "> </li>
+</ul>
+
+<ul class="flex-container">
+  <li class="flex-item" style="background: var(--color-foreground)    "> </li>
+  <li class="flex-item" style="background: var(--color-foremidground) "> </li>
   <li class="flex-item" style="background: var(--color-midforeground) "> </li>
   <li class="flex-item" style="background: var(--color-midground)     "> </li>
   <li class="flex-item" style="background: var(--color-midbackground) "> </li>
+  <li class="flex-item" style="background: var(--color-backmidground) "> </li>
   <li class="flex-item" style="background: var(--color-background)    "> </li>
 </ul>
 
