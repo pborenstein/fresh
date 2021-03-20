@@ -91,6 +91,34 @@
 */
 
 
+}
+
+
+#greens  {
+  --color-conch:              hsl(164, 23%, 81%)    /* #c3dad4 */ ;
+  --color-shadow-green:       hsl(164, 19%, 68%)    /* #9ebdb5 */ ;
+  --color-sea-nymph:          hsl(164, 19%, 55%)    /* #76a295 */ ;
+  --color-breaker-bay:        hsl(164, 26%, 42%)    /* #4f8878 */ ;
+  --color-eden:               hsl(164, 45%, 28%)    /* #276956 */ ;
+
+
+  --lt-color-accent-1:                        hsl(164, 23%, 81%)    /* #c3dad4 */ ;
+  --lt-color-accent-2:                        hsl(164, 19%, 68%)    /* #9ebdb5 */ ;
+  --lt-color-accent-3:                        hsl(164, 19%, 55%)    /* #76a295 */ ;
+  --lt-color-accent-4:                        hsl(164, 26%, 42%)    /* #4f8878 */ ;
+  --lt-color-accent-5:                        hsl(164, 45%, 28%)    /* #276956 */ ;
+
+  --dk-color-accent-1:        var(--is-dark)  hsl(164, 45%, 28%)    /* #276956 */ ;
+  --dk-color-accent-2:        var(--is-dark)  hsl(164, 26%, 42%)    /* #4f8878 */ ;
+  --dk-color-accent-3:        var(--is-dark)  hsl(164, 19%, 55%)    /* #76a295 */ ;
+  --dk-color-accent-4:        var(--is-dark)  hsl(164, 19%, 68%)    /* #9ebdb5 */ ;
+  --dk-color-accent-5:        var(--is-dark)  hsl(164, 23%, 81%)    /* #c3dad4 */ ;
+
+}
+
+:root,
+#pborenstein-two {
+
   --lt-color-accent-1:                        hsl(  2,  94%, 94%); /* #fee2e1 -- pippin     */
   --lt-color-accent-2:                        hsl(345,  45%, 77%); /* #dfaab7 -- blossom    */
   --lt-color-accent-3:                        hsl(339,  38%, 60%); /* #bf718c -- tapestry   */
@@ -103,8 +131,9 @@
   --dk-color-accent-4:        var(--is-dark)  hsl(345,  45%, 77%); /* #dfaab7 -- blossom    */
   --dk-color-accent-5:        var(--is-dark)  hsl(  2,  94%, 94%); /* #fee2e1 -- pippin     */
 
+}
 
-
+:root {
   --color-accent-1:           var(--dk-color-accent-1, var(--lt-color-accent-1));
   --color-accent-2:           var(--dk-color-accent-2, var(--lt-color-accent-2));
   --color-accent-3:           var(--dk-color-accent-3, var(--lt-color-accent-3));
@@ -132,7 +161,7 @@
   --color-body-light:     var(--color-midforeground);
   --color-heading:        var(--color-foreground);
   --color-figure-caption: var(--color-accent-3);
-  --color-link:           var(--color-accent-5);
+  --color-link:           var(--color-accent-4);
   --color-code:           var(--color-foreground);
   --color-code-fence:     var(--color-accent-3);
 
@@ -178,7 +207,7 @@
   --color-table-body:     var(--color-body);
   --color-table-heading:  var(--color-heading);
   --color-table-caption:  var(--color-accent-4);
-  --color-table-sep:      var(--color-accent-3);
+  --color-table-sep:      var(--color-midbackground);
 }
 
 /*

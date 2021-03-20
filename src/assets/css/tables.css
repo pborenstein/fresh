@@ -11,11 +11,12 @@ table {
 
 thead {
   font-family: var(--font-table-heading);
-  border-bottom: 1px solid var(--color-table-sep);
 }
 
 tbody {
   hyphens: manual;
+  border-top: 1px solid var(--color-table-sep);
+  border-bottom: 1px solid var(--color-table-sep);
 }
 
 tbody tr:nth-child(odd) {
@@ -46,6 +47,5 @@ table caption {
   color: var(--color-table-caption);
   margin-bottom: 0;
   padding-left: 5px;
-  border-top: 1px solid var(--color-table-sep);
 }
 
