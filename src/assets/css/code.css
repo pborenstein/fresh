@@ -13,19 +13,20 @@ code { /* why is this here ? */
   word-break: normal;
 }
 
-/*  how to display in-line code:
-      apply only to naked <code> blocks
+/*
+  apply only to naked <code> blocks
+  without a class
 */
 code:not([class]) {
-	font-family: var(--font-code);
-  font-size: var(--font-code-size);
-  color: var(--color-code);
+	font-family:  var(--font-code);
+  font-size:    var(--font-code-size);
+  color:        var(--color-code);
 }
 
-/* for naked <code> */
+/* for naked <pre><code> */
 pre:not([class]) code:not([class]) {
   background-color: inherit;
-  color: var(--color-accent)
+  color: var(--color-code-fence);
 }
 
 a[href] > code {

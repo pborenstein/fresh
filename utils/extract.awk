@@ -23,10 +23,10 @@ function printHead(title) {
   print  "      <code style='font-size:var(--font-size-minus-2)'><br>color-background</code><br>"
   print "      </th>"
   print "      <th>Value"
-  print  "      <code style='font-size:var(--font-size-minus-2)'><br>color-background-darker<br></code>"
+  print  "      <code style='font-size:var(--font-size-minus-2)'><br>color-midbackground<br></code>"
    print "      </th>"
  print "      <th>Notes"
-  print  "      <code style='font-size:var(--font-size-minus-2)'><br>color-background-darkest<br></code>"
+  print  "      <code style='font-size:var(--font-size-minus-2)'><br>color-midground<br></code>"
   print "      </th>"
   print "    </tr>"
   print "  </thead>"
@@ -73,10 +73,10 @@ function printEntry() {
   printf "    <td style='color: %s;background:var(--color-background)'>", $2
   print  "      aptent conubia enim eleifend habitasse id montes"
   print  "    </td>"
-  printf "    <td style='color: %s;background:var(--color-background-darker)'>", $2
+  printf "    <td style='color: %s;background:var(--color-midbackground)'>", $2
   print  "      aptent conubia enim eleifend habitasse id montes"
   print  "    </td>"
-  printf "    <td style='color: %s;background:var(--color-background-darkest)'>", $2
+  printf "    <td style='color: %s;background:var(--color-midground)'>", $2
   print  "      aptent conubia enim eleifend habitasse id montes"
   print  "    </td>"
   print  "  </tr>"

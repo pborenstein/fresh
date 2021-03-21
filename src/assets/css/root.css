@@ -22,25 +22,8 @@
 
 
 
-/*
-### Grays
-*/
 
-:root {
-  --color-gray-00:  black;
-  --color-gray-10:  hsl(0, 0%, 10%);
-  --color-gray-20:  hsl(0, 0%, 20%);
-  --color-gray-30:  hsl(0, 0%, 30%);
-  --color-gray-40:  hsl(0, 0%, 40%);
-  --color-gray-50:  hsl(0, 0%, 50%);
-  --color-gray-60:  hsl(0, 0%, 60%);
-  --color-gray-70:  hsl(0, 0%, 70%);
-  --color-gray-80:  hsl(0, 0%, 80%);
-  --color-gray-90:  hsl(0, 0%, 90%);
-  --color-gray-95:  hsl(0, 0%, 95%);
-  --color-gray-100: white;
-}
-
+#five,
 :root {
 
   /***
@@ -48,98 +31,185 @@
    *    dark-mode:  foreground (darker ->) background
    ***/
 
-  --lt-color-foreground:          var(--color-gray-10);
-  --lt-color-foreground-lighter:  var(--color-gray-30);
-  --lt-color-foreground-lightest: var(--color-gray-40);
-  --lt-color-background-darkest:  var(--color-gray-70);
-  --lt-color-background-darker:   var(--color-gray-80);
-  --lt-color-background:          var(--color-gray-95);
-
-  --dk-color-foreground:          var(--is-dark) var(--color-gray-90);
-  --dk-color-foreground-lighter:  var(--is-dark) var(--color-gray-80);
-  --dk-color-foreground-lightest: var(--is-dark) var(--color-gray-70);
-  --dk-color-background-darkest:  var(--is-dark) var(--color-gray-30);
-  --dk-color-background-darker:   var(--is-dark) var(--color-gray-20);
-  --dk-color-background:          var(--is-dark) var(--color-gray-10);
+/* https://coolors.co/gradient-palette/f2f2f2-0d0d0d?number=5 */
 
 /*
-### Foreground / Background
+### Foreground / Background 5 grays
 */
 
-  --color-foreground:             var(--dk-color-foreground         , var(--lt-color-foreground         ));
-  --color-foreground-lighter:     var(--dk-color-foreground-lighter , var(--lt-color-foreground-lighter ));
-  --color-foreground-lightest:    var(--dk-color-foreground-lightest, var(--lt-color-foreground-lightest));
-  --color-background-darkest:     var(--dk-color-background-darkest , var(--lt-color-background-darkest ));
-  --color-background-darker:      var(--dk-color-background-darker  , var(--lt-color-background-darker  ));
-  --color-background:             var(--dk-color-background         , var(--lt-color-background         ));
+  --lt-color-foreground:      hsl(0, 0%,  5%);  /* #0d0d0d -- woodsmoke */
+  --lt-color-midforeground5:  hsl(0, 0%, 27%);  /* #464646 -- charcoal  */
+  --lt-color-midground:       hsl(0, 0%, 50%);  /* #808080 -- gray      */
+  --lt-color-midbackground5:  hsl(0, 0%, 73%);  /* #b9b9b9 -- loblolly  */
+  --lt-color-background:      hsl(0, 0%, 95%);  /* #f2f2f2 -- concrete  */
+
+  --dk-color-foreground:      var(--is-dark) hsl(0, 0%, 95%);   /* #f2f2f2 -- concrete  */
+  --dk-color-midforeground5:  var(--is-dark) hsl(0, 0%, 73%);   /* #b9b9b9 -- loblolly  */
+  --dk-color-midground:       var(--is-dark) hsl(0, 0%, 50%);   /* #808080 -- gray      */
+  --dk-color-midbackground5:  var(--is-dark) hsl(0, 0%, 27%);   /* #464646 -- charcoal  */
+  --dk-color-background:      var(--is-dark) hsl(0, 0%,  5%);   /* #0d0d0d -- woodsmoke */
+
+  --color-foreground:         var(--dk-color-foreground   , var(--lt-color-foreground));
+  --color-midforeground5:     var(--dk-color-midforeground5, var(--lt-color-midforeground5));
+  --color-midground:          var(--dk-color-midground    , var(--lt-color-midground));
+  --color-midbackground5:     var(--dk-color-midbackground5, var(--lt-color-midbackground5));
+  --color-background:         var(--dk-color-background   , var(--lt-color-background));
+
+/*
+### Foreground / Background 7 grays
+*/
+
+}
+
+:root {
+
+  --lt-color-foreground:                      hsl(0, 0%,  5%);  /* #0d0d0d -- woodsmoke   */
+  --lt-color-foremidground:                   hsl(0, 0%, 20%);  /* #333333 -- mine shaft  */
+  --lt-color-midforeground:                   hsl(0, 0%, 35%);  /* #595959 -- bright gray */
+  --lt-color-midground:                       hsl(0, 0%, 50%);  /* #808080 -- gray        */
+  --lt-color-midbackground:                   hsl(0, 0%, 65%);  /* #a6a6a6 -- dark gray   */
+  --lt-color-backmidground:                   hsl(0, 0%, 80%);  /* #cccccc -- iron        */
+  --lt-color-background:                      hsl(0, 0%, 95%);  /* #f2f2f2 -- concrete    */
+
+  --dk-color-foreground:      var(--is-dark)  hsl(0, 0%, 95%);  /* #f2f2f2 -- concrete    */
+  --dk-color-foremidground:   var(--is-dark)  hsl(0, 0%, 80%);  /* #cccccc -- iron        */
+  --dk-color-midforeground:   var(--is-dark)  hsl(0, 0%, 65%);  /* #a6a6a6 -- dark gray   */
+  --dk-color-midground:       var(--is-dark)  hsl(0, 0%, 50%);  /* #808080 -- gray        */
+  --dk-color-midbackground:   var(--is-dark)  hsl(0, 0%, 35%);  /* #595959 -- bright gray */
+  --dk-color-backmidground:   var(--is-dark)  hsl(0, 0%, 20%);  /* #333333 -- mine shaft  */
+  --dk-color-background:      var(--is-dark)  hsl(0, 0%,  5%);  /* #0d0d0d -- woodsmoke   */
+
+  --color-foreground:         var(--dk-color-foreground   , var(--lt-color-foreground));
+  --color-foremidground:      var(--dk-color-foremidground, var(--lt-color-foremidground));
+  --color-midforeground:      var(--dk-color-midforeground, var(--lt-color-midforeground));
+  --color-midground:          var(--dk-color-midground    , var(--lt-color-midground));
+  --color-midbackground:      var(--dk-color-midbackground, var(--lt-color-midbackground));
+  --color-backmidground:      var(--dk-color-backmidground, var(--lt-color-backmidground));
+  --color-background:         var(--dk-color-background   , var(--lt-color-background));
+
 
 /*
 ### Accents
 */
 
-  --color-accent-lightest:        hsl(  0,  87%, 94%) /* #fde2e2 */;
-  --color-accent-lighter:         hsl(344,  52%, 92%) /* #f5e0e6 */;
-  --color-accent:                 hsl(340,  37%, 59%) /* #be718b */;
-  --color-accent-darker:          hsl(336,  48%, 42%) /* #9e3861 */;
-  --color-accent-darkest:         hsl(334, 100%, 25%) /* #7f0036 */;
+
 }
 
+
+#greens  {
+  --color-conch:              hsl(164, 23%, 81%)    /* #c3dad4 */ ;
+  --color-shadow-green:       hsl(164, 19%, 68%)    /* #9ebdb5 */ ;
+  --color-sea-nymph:          hsl(164, 19%, 55%)    /* #76a295 */ ;
+  --color-breaker-bay:        hsl(164, 26%, 42%)    /* #4f8878 */ ;
+  --color-eden:               hsl(164, 45%, 28%)    /* #276956 */ ;
+
+
+  --lt-color-accent-1:                        hsl(164, 23%, 81%)    /* #c3dad4 */ ;
+  --lt-color-accent-2:                        hsl(164, 19%, 68%)    /* #9ebdb5 */ ;
+  --lt-color-accent-3:                        hsl(164, 19%, 55%)    /* #76a295 */ ;
+  --lt-color-accent-4:                        hsl(164, 26%, 42%)    /* #4f8878 */ ;
+  --lt-color-accent-5:                        hsl(164, 45%, 28%)    /* #276956 */ ;
+
+  --dk-color-accent-1:        var(--is-dark)  hsl(164, 45%, 28%)    /* #276956 */ ;
+  --dk-color-accent-2:        var(--is-dark)  hsl(164, 26%, 42%)    /* #4f8878 */ ;
+  --dk-color-accent-3:        var(--is-dark)  hsl(164, 19%, 55%)    /* #76a295 */ ;
+  --dk-color-accent-4:        var(--is-dark)  hsl(164, 19%, 68%)    /* #9ebdb5 */ ;
+  --dk-color-accent-5:        var(--is-dark)  hsl(164, 23%, 81%)    /* #c3dad4 */ ;
+
+}
+
+:root,
+#pborenstein-two {
+
+  --lt-color-accent-1:                        hsl(  2,  94%, 94%); /* #fee2e1 -- pippin     */
+  --lt-color-accent-2:                        hsl(345,  45%, 77%); /* #dfaab7 -- blossom    */
+  --lt-color-accent-3:                        hsl(339,  38%, 60%); /* #bf718c -- tapestry   */
+  --lt-color-accent-4:                        hsl(336,  47%, 43%); /* #a03962 -- vin rouge  */
+  --lt-color-accent-5:                        hsl(334, 100%, 25%); /* #800037 -- siren      */
+
+  --dk-color-accent-1:        var(--is-dark)  hsl(334, 100%, 25%); /* #800037 -- siren      */
+  --dk-color-accent-2:        var(--is-dark)  hsl(336,  47%, 43%); /* #a03962 -- vin rouge  */
+  --dk-color-accent-3:        var(--is-dark)  hsl(339,  38%, 60%); /* #bf718c -- tapestry   */
+  --dk-color-accent-4:        var(--is-dark)  hsl(345,  45%, 77%); /* #dfaab7 -- blossom    */
+  --dk-color-accent-5:        var(--is-dark)  hsl(  2,  94%, 94%); /* #fee2e1 -- pippin     */
+
+}
+
+:root {
+  --color-accent-1:           var(--dk-color-accent-1, var(--lt-color-accent-1));
+  --color-accent-2:           var(--dk-color-accent-2, var(--lt-color-accent-2));
+  --color-accent-3:           var(--dk-color-accent-3, var(--lt-color-accent-3));
+  --color-accent-4:           var(--dk-color-accent-4, var(--lt-color-accent-4));
+  --color-accent-5:           var(--dk-color-accent-5, var(--lt-color-accent-5));
+}
+
+
+
+#exp {
+  --color-accent-1:       hsl( 50, 80%, 36%);
+  --color-accent-2:       hsl(288, 89%, 42%);
+  --color-accent-3:       hsl(247, 87%, 47%);
+  --color-accent-4:       hsl(340, 92%, 45%);
+  --color-accent-5:       hsl(123, 89%, 29%);
+
+}
 
 /*
 ### Elements
 */
 
 :root {
-  --color-body:                   var(--color-foreground);
-  --color-body-light:             var(--color-foreground-lighter);
-  --color-heading:                var(--color-foreground);
-  --color-figure-caption:         var(--color-accent);
-  --color-link:                   var(--color-accent-darkest);
-  --color-code:                   var(--color-foreground);
+  --color-body:           var(--color-foreground);
+  --color-body-light:     var(--color-midforeground);
+  --color-heading:        var(--color-foreground);
+  --color-figure-caption: var(--color-accent-3);
+  --color-link:           var(--color-accent-4);
+  --color-code:           var(--color-foreground);
+  --color-code-fence:     var(--color-accent-3);
 
-  --color-logo:                   var(--color-accent-darkest);
-  --color-logo-link:              var(--color-accent-darkest);
+  --color-logo:           var(--lt-color-accent-5);
+  --color-logo-link:      var(--lt-color-accent-5);
 
-
-  --color-nav-text:               var(--color-foreground-lighter);
-  --color-nav-hover:              var(--color-accent);
-
-
-
+  --color-nav-text:       var(--color-midforeground);
+  --color-nav-hover:      var(--color-accent-3);
 
   /****
    *    we want to use different colors for
    *    dark and light modes
    ****/
 
-  --dk-color-fold-marker:         var(--is-dark) var(--color-accent-lighter);
-  --dk-color-fold-head:           var(--is-dark) var(--color-accent-darker);
-  --dk-color-fold-expanded:       var(--is-dark) var(--color-accent);
+  --dk-color-fold-marker: var(--is-dark) var(--color-accent-2);
+  --dk-color-fold-head:   var(--is-dark) var(--color-accent-4);
+  --dk-color-fold-frame:  var(--is-dark) var(--color-accent-3);
 
-  --color-fold-marker:            var(--dk-color-fold-marker,   var(--color-accent-darkest));
-  --color-fold-head:              var(--dk-color-fold-head,     var(--color-accent-lighter));
-  --color-fold-expanded:          var(--dk-color-fold-expanded, var(--color-accent-lighter));
+  --color-fold-marker:    var(--color-accent-5);
+  --color-fold-head:      var(--color-accent-2);
+  --color-fold-frame:     var(--color-accent-2);
 
+  --color-footer:         var(--color-midbackground);
+  --color-footer-sep:     var(--color-accent-1);
 
-  --color-footer:                 var(--color-background-darker);
-  --color-footer-sep:             var(--color-accent-lightest);
+  --color-footnote-ref:   var(--color-accent-3);
+  --color-footnote-sep:   var(--color-accent-1);
+
+  --color-dateline:       var(--color-accent-1);
+
+  --color-hr:             var(--color-accent-3);
+
 }
 
 /*
 ### Tables
 */
 
-:root {
-  --color-table-odd:              var(--color-background-darker);
-  --color-table-even:             var(--color-background);
-  --color-table-body:             var(--color-body);
-  --color-table-heading:          var(--color-heading);
-  --color-table-caption:          var(--color-accent-darker);
-  --color-table-sep:              var(--color-background-darkest);
-}
 
 :root {
-  --color-logo:   var(--color-accent-darkest);
+  --color-table-odd:      var(--color-backmidground);
+  --color-table-even:     var(--color-background);
+  --color-table-body:     var(--color-body);
+  --color-table-heading:  var(--color-heading);
+  --color-table-caption:  var(--color-accent-4);
+  --color-table-sep:      var(--color-midbackground);
 }
 
 /*
@@ -147,24 +217,24 @@
 */
 
 :root {
-  --font-table-caption:     var(--font-heading);
-  --font-table-heading:     var(--font-heading);
-  --font-table-body:        var(--font-body);
+  --font-table-caption:   var(--font-heading);
+  --font-table-heading:   var(--font-heading);
+  --font-table-body:      var(--font-body);
 
 
-  --font-serif:             Georgia, serif;
-  --font-sans-serif:        "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
-  --font-mono:              Consolas, Menlo, Monaco, "Courier New", Courier, monospace;
+  --font-serif:           'neue-kabel', 'Spectral', Georgia, serif;
+  --font-sans-serif:      "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  --font-mono:            Consolas, Menlo, Monaco, "Courier New", Courier, monospace;
 
-  --font-body:              var(--font-serif);
-  --font-caption:           var(--font-sans-serif);
-  --font-footer:            var(--font-sans-serif);
-  --font-heading:           var(--font-sans-serif);
-  --font-list:              var(--font-sans-serif);
-  --font-code:              var(--font-mono);
-  --font-code-size:         var(--font-size-base);
+  --font-body:            var(--font-serif);
+  --font-caption:         var(--font-sans-serif);
+  --font-footer:          var(--font-sans-serif);
+  --font-heading:         var(--font-sans-serif);
+  --font-list:            var(--font-sans-serif);
+  --font-code:            var(--font-mono);
+  --font-code-size:       var(--font-size-base);
 
-  --font-features:          "xnum";   /*  onum:   Old style numbers */
+  --font-features:        "xnum";   /*  onum:   Old style numbers */
 
   /*
   ### Font size scale:
@@ -183,8 +253,8 @@
     --font-size-minus-3:  0.512em;
     --font-size-minus-4:  0.41em;
 
-    --line-height-body:   1.5;
-    --line-height-code:   1.5;
+    --line-height-body:   1.6;
+    --line-height-code:   1.6;
 }
 
 
@@ -199,28 +269,27 @@ html {
 
 
 body {
-  font-family:      var(--font-body);
-  font-weight:      400;
-  line-height:      1.5;
-  color:            var(--color-body);
-  background-color: var(--color-background);
-  scroll-behavior:  smooth;
+  font-family:            var(--font-body);
+  font-weight:            400;
+  line-height:            var(--line-height-body);
+  color:                  var(--color-body);
+  background-color:       var(--color-background);
+  scroll-behavior:        smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 hr {
-  border-top:       1px;
-  border-color:     var(--color-accent);
+  border-top:             1px;
+  border-color:           var(--color-hr);
 }
-
-
 
 
 /* links to markdown header with disappearing link symbol */
 .direct-link {
-	font-family:      var(--font-heading);
-	text-decoration:  none;
-	font-style:       normal;
-	margin-left:      .1em;
+	font-family:            var(--font-heading);
+	text-decoration:        none;
+	font-style:             normal;
+	margin-left:            0.1em;
 }
 
 a[href].direct-link,
@@ -237,14 +306,18 @@ a[href].direct-link:focus:visited,
 }
 
 
-/*  how to display in-line code:
+/***
+    how to display in-line code:
       apply only to naked <code> blocks
-*/
+      this also appears in code.css
+
 code:not([class]) {
 	font-family:  var(--font-code);
   font-size:    var(--font-code-size);
   color:        var(--color-code);
 }
+
+***/
 
 /***
  * for debugging typetura

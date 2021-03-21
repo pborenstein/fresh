@@ -536,7 +536,7 @@ Don't use Heading 6
 
 .flex-item {
   padding: 2px;
-  width: 200px;
+  width: 100%;
   height: 100px;
   margin: .5em;
 
@@ -558,27 +558,41 @@ Don't use Heading 6
 }
 </style>
 
-foreground
+foreground - background
+
 <ul class="flex-container">
-  <li class="flex-item" style="background: var(--color-foreground)          ">color-foreground</li>
-  <li class="flex-item" style="background: var(--color-foreground-lighter)  ">color-foreground-lighter</li>
-  <li class="flex-item" style="background: var(--color-foreground-lightest) ">color-foreground-lightest</li>
+  <li class="flex-item" style="background: #fff; color: black">white (#fff) </li>
+  <li class="flex-item" style="background: #000">black (#000)</li>
 </ul>
 
-background
 <ul class="flex-container">
-  <li class="flex-item" style="background: var(--color-background-darkest)"><p>color-background-darkest</p></li>
-  <li class="flex-item" style="background: var(--color-background-darker) ">color-background-darker</li>
+  <li class="flex-item" style="background: var(--color-foreground)          ">color-foreground</li>
+  <li class="flex-item" style="background: var(--color-midforeground)  ">color-midforeground</li>
+  <li class="flex-item" style="background: var(--color-midground)"><p>color-midground</p></li>
+  <li class="flex-item" style="background: var(--color-midbackground) ">color-midbackground</li>
   <li class="flex-item" style="background: var(--color-background)        ">color-background</li>
 </ul>
 
+<ul class="flex-container">
+  <li class="flex-item" style="background: #000">black (#000)</li>
+  <li class="flex-item" style="background: #fff; color: black">white (#fff) </li>
+</ul>
+
+
+<ul class="flex-container">
+  <li class="flex-item" style="background:#f00">red   (#f00)</li>
+  <li class="flex-item" style="background:#0f0">green (#0f0)</li>
+  <li class="flex-item" style="background:#00f">blue  (#00f)</li>
+</ul>
+
+
 accent
 <ul class="flex-container">
-  <li class="flex-item" style="background:var( --color-accent-lightest )">color-accent-lightest</li>
-  <li class="flex-item" style="background:var( --color-accent-lighter  )">color-accent-lighter </li>
-  <li class="flex-item" style="background:var( --color-accent          )">color-accent         </li>
-  <li class="flex-item" style="background:var( --color-accent-darker   )">color-accent-darker  </li>
-  <li class="flex-item" style="background:var( --color-accent-darkest  )">color-accent-darkest </li>
+  <li class="flex-item" style="background:var( --color-accent-1 )">color-accent-1</li>
+  <li class="flex-item" style="background:var( --color-accent-2  )">color-accent-2 </li>
+  <li class="flex-item" style="background:var( --color-accent-3          )">color-accent-3         </li>
+  <li class="flex-item" style="background:var( --color-accent-4   )">color-accent-4  </li>
+  <li class="flex-item" style="background:var( --color-accent-5  )">color-accent-5 </li>
 </ul>
 
 pborenstein.com

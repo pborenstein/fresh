@@ -3,7 +3,7 @@ module.exports = function (eleventyConfig) {
   const syntaxHighlight = require("@pborenstein/eleventy-md-syntax-highlight")
 
   eleventyConfig.addPlugin(syntaxHighlight,
-    {showLineNumbers: true})
+    {showLineNumbers: false})
 
   // eleventyConfig.addPlugin(
   //   typesetPlugin({ only: 'p',

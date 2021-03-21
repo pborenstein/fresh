@@ -51,6 +51,10 @@
   --color-vin-rouge:      hsl(336,  48%, 42%)     /* #9e3861 */;
   --color-siren:          hsl(334, 100%, 25%)     /* #7f0036 */;
 
-
-
+  
+  --color-pippin:     hsl(2, 94%, 94%);     /* #fee2e1 */
+  --color-blossom:    hsl(345, 45%, 77%);   /* #dfaab7 */
+  --color-tapestry:   hsl(339, 38%, 60%);   /* #bf718c */
+  --color-vin-rouge:  hsl(336, 47%, 43%);   /* #a03962 */
+  --color-siren:      hsl(334, 100%, 25%);  /* #800037 */
 }

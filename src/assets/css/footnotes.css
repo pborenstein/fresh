@@ -10,11 +10,11 @@
 }
 
 .footnote-ref a {
-  color: var(--color-accent)
+  color: var(--color-footnote-ref)
 }
 
 .footnotes-sep {
   margin-top: 2em;
-  border-top: 1px solid var(--color-accent-lightest);
+  border-top: 1px solid var(--color-footnote-sep);
   padding-top: 1em;
 }
