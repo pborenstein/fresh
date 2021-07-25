@@ -35,7 +35,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection('posts', collection => {
     return collection.getFilteredByGlob('./src/posts/*.md')
                      .reverse();
+  })
+
+  eleventyConfig.addCollection('tliltetl', collection => {
+    return collection.getFilteredByGlob('./src/tliltetl/*.md')
+                     .reverse();
   });
+
 
 
   //  Set our markdown processor just how we like it.
