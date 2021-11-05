@@ -4,7 +4,7 @@ Yet another basic eleventy starting template
 
 - minimal
 - flexible
-- minimally styled
+- minimal style
 
 ## How to use this repo as a template
 
